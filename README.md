@@ -68,10 +68,13 @@ python scripts/parse_outputs.py --out results/<slug>/outputs
 ```bash
 python scripts/selftest.py                  # 评分器自检 + 参考成绩回归
 python scripts/freeze_benchmark.py --check  # 基准哈希完整性
-python scripts/fetch_corpus.py              # 可选：下载原文 PDF/HTM 并校验 sha256
+python scripts/fetch_corpus.py              # 可选：从官方源下载原文 PDF/HTM 并校验 sha256
 python scripts/score_reits.py --pred-dir results/qwen4-max-preview/outputs/reits \
     --pdf-dir corpus_original --spotcheck   # 可选：REITs 页码抽查（需 pymupdf）
 ```
+
+原文 PDF/HTM（43 份，205MB）也归档在 [v1.0.0 Release](https://github.com/chuiziyao/AutoFinPDF-Bench/releases/tag/v1.0.0)
+（两个 zip，解压到 `corpus_original/` 即用）；仓库本体保持轻量，**不下载原文也能完整参评**。
 
 ## 固定评测办法（v1.0 冻结）
 

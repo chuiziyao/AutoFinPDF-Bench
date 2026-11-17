@@ -18,8 +18,13 @@ REITs 原文 PDF 未记录直链（交易所平台检索式披露），manifest 
   - `data/text/`：21 份抽取文本（带 `===== PAGE n =====` 物理页标记），约 3.4MB
   - `data/pages/`：24 张页面 PNG（T5 图表页 + T7 扫描页），约 8.9MB
   - `data/reits/`：16 份 REITs 定期报告文本 + 1511 页招募书文本，约 6.7MB
-- **不包含**：原文 PDF/HTM 二进制（总计 ~450MB，避免仓库膨胀）。
-  可选下载：`python scripts/fetch_corpus.py` → `corpus_original/`，逐文件 sha256 校验。
+- **不包含**：原文 PDF/HTM 二进制（总计 ~450MB，避免仓库膨胀）。两种获取方式：
+  1. **Release 归档（推荐）**：[v1.0.0 Release](https://github.com/chuiziyao/AutoFinPDF-Bench/releases/tag/v1.0.0)
+     提供基准对应的全部 43 份原文（205MB，逐文件 sha256 校验后打包）：
+     - `autofinpdf-bench-v1.0-originals-auto-hard.zip`（汽车档+硬档，含 manifest.json）
+     - `autofinpdf-bench-v1.0-originals-reits.zip`（REITs 16 份定期报告 + 1511 页招募书）
+     两个 zip 解压到仓库 `corpus_original/` 目录即可。
+  2. **官方源下载**：`python scripts/fetch_corpus.py` → `corpus_original/`，逐文件 sha256 校验。
   原文仅用于复核与可选 pdf_native 模式；**不下载也能完整参评**。
 
 ## 3. 抽取方法（可复现）

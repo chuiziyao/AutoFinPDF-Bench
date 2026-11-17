@@ -110,7 +110,8 @@ CI 绿 + 维护者核验证据后合并，你的模型就永久留在排行榜�
 ## 7. 常见问题
 
 - **没有 GPU/不能联网下载原文？** 不需要。官方输入（抽取文本+页面图像）已全在 `data/` 里。
-  原文 PDF 只用于可选复核：`python scripts/fetch_corpus.py`。
+  原文 PDF 只用于可选复核：从 [v1.0.0 Release](https://github.com/chuiziyao/AutoFinPDF-Bench/releases/tag/v1.0.0)
+  下载两个 zip 解压到 `corpus_original/`，或 `python scripts/fetch_corpus.py` 从官方源下载。
 - **上下文不够长？** 如实声明截断，按实际输出评分；不要分块喂 T2（分块策略只允许用于 REITs-B，且必须用冻结的 120 页协议）。
 - **模型拒绝输出 JSON？** 原样保存响应，解析器会尝试提取；提取失败该实例记 0 分并保留 raw 证据。
 - **想改 prompt/容差/题目？** 那是 benchmark 变更，走版本升级流程（CONTRIBUTING.md），不能混在成绩 PR 里。
