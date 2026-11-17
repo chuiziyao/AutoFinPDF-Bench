@@ -6,6 +6,7 @@
 
 评分口径见 [docs/SCORING.md](docs/SCORING.md)；诚信与核验政策见 [docs/INTEGRITY.md](docs/INTEGRITY.md)。
 Overall = mean(T1·F1, T2·F1, T5·F1, T6·要素F1, T7·事实召回, REITs-A, REITs-B)；† = 缺档（partial）。
+所有列均为 0–1 分，满分 1，越高越好。T1–T7 为对人工 GT 的准确率类指标；REITs 为验证式质量指标（口径见 docs/SCORING.md）。
 
 | # | 模型 | Overall | T1 F1 | T2 F1 | T5 F1 | T3 一致 | T6 F1 | T7 召回 | REITs-A | REITs-B | 核验 | 日期 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
