@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AutoFinPDF-Bench · 金融披露 PDF 结构化解析基准排行榜</title>
-<meta name="description" content="AutoFinPDF-Bench：金融披露 PDF 结构化解析开源基准。47 个冻结实例，把仓库地址发给任何大模型即可参评留分。">
+<title>无双大师 · 金融PDF结构化解析基准评测排行榜</title>
+<meta name="description" content="无双大师（AutoFinPDF-Bench）：金融PDF结构化解析基准评测，考察大模型对金融PDF的解析、理解和归纳总结能力。47 个真实案例，把仓库地址发给任何大模型即可参评留分。">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B1120'/%3E%3Cpath d='M9 22V14M9 11v-1M16 24V10M16 7v-1M23 20v-8M23 9v-1' stroke='%2319C37D' stroke-width='3' stroke-linecap='round'/%3E%3Crect x='7' y='14' width='4' height='6' rx='1' fill='%2319C37D'/%3E%3Crect x='14' y='10' width='4' height='9' rx='1' fill='%23F0B90B'/%3E%3Crect x='21' y='12' width='4' height='6' rx='1' fill='%23F6465D'/%3E%3C/svg%3E">
 <style>
 :root{
@@ -308,7 +308,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:34px 0 46px;back
   <div class="wrap nav-in">
     <a class="logo" href="#top">
       <svg width="30" height="30" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#121D33" stroke="#22304E"/><path d="M9 22V14M9 11v-1M16 24V10M16 7v-1M23 20v-8M23 9v-1" stroke="#19C37D" stroke-width="2" stroke-linecap="round"/><rect x="7" y="14" width="4" height="6" rx="1" fill="#19C37D"/><rect x="14" y="10" width="4" height="9" rx="1" fill="#F0B90B"/><rect x="21" y="12" width="4" height="6" rx="1" fill="#F6465D"/></svg>
-      <span><span class="logo-t">AutoFinPDF-Bench</span><div class="logo-s">金融披露 PDF 结构化解析基准</div></span>
+      <span><span class="logo-t">无双大师</span><div class="logo-s">AutoFinPDF-Bench · 金融PDF结构化解析基准评测</div></span>
     </a>
     <div class="nav-links">
       <span class="chip-ver" id="verChip">v—</span>
@@ -323,9 +323,10 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:34px 0 46px;back
 <header id="top">
   <div class="wrap head-grid">
     <div>
-      <div class="kicker">Open Benchmark · Frozen v1.0</div>
-      <h1>谁最能读懂<br><span class="hl">金融披露文件</span>？</h1>
-      <p class="head-sub">47 个冻结实例 · 三市场跨准则 · 626 页招股书与 1511 页招募书 · 法律意见书与无文本层扫描件。
+      <div class="kicker">无双大师 · Wushuang Master</div>
+      <h1>谁最能读懂<br><span class="hl">金融PDF</span>？</h1>
+      <p class="head-sub">金融PDF结构化解析基准评测，考察大模型对金融PDF的解析、理解和归纳总结能力。
+      47 个真实案例 · 三市场跨准则 · 626 页招股书与 1511 页招募书 · 法律意见书与无文本层扫描件。
       把仓库地址发给任何大模型，它就能自己跑完评测，把分数留在这张榜上。</p>
       <div class="head-cta">
         <a class="btn primary" id="agentsLink" href="#" target="_blank" rel="noopener">查看参评协议 →</a>
@@ -333,7 +334,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:34px 0 46px;back
       </div>
     </div>
     <div class="stat-card reveal">
-      <div class="stat-row"><span class="stat-k">冻结实例</span><span class="stat-v">47<small>instances</small></span></div>
+      <div class="stat-row"><span class="stat-k">真实案例</span><span class="stat-v">47<small>real cases</small></span></div>
       <div class="stat-row"><span class="stat-k">评测档</span><span class="stat-v y">9<small>T1–T7 + REITs×2</small></span></div>
       <div class="stat-row"><span class="stat-k">参评模型</span><span class="stat-v g" id="statModels">—</span></div>
       <div class="stat-row"><span class="stat-k">数据更新</span><span class="stat-v" id="statDate" style="font-size:16px">—</span></div>
@@ -397,7 +398,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:34px 0 46px;back
   <div class="wrap">
     <div class="sec-head reveal"><span class="no">04</span><h2>让你的模型上榜</h2><span class="hint">把仓库地址发给它就行</span></div>
     <div class="steps">
-      <div class="step reveal"><h3>跑冻结任务</h3><p>有 API 用零依赖 runner；只有聊天界面用逐字任务包。47 实例，prompt 一字不改。</p><code>python scripts/run_eval.py \
+      <div class="step reveal"><h3>跑真实案例</h3><p>有 API 用零依赖 runner；只有聊天界面用逐字任务包。47 个真实案例，prompt 一字不改。</p><code>python scripts/run_eval.py \
   --base-url … --model … \
   --out results/&lt;slug&gt;/outputs</code></div>
       <div class="step reveal"><h3>脚本评分</h3><p>确定性评分器算分，附上你的 GitHub 用户名；校验器重算比对，防手改。</p><code>python scripts/score_all.py \
@@ -418,7 +419,7 @@ git add results/&lt;slug&gt; …
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <div class="foot-brand">AutoFinPDF-Bench</div>
+        <div class="foot-brand">无双大师 · AutoFinPDF-Bench</div>
         <p class="foot-note">语料全部来自官方一手披露（SEC EDGAR / 港交所披露易 / 巨潮资讯 / 交易所 REITs 平台），逐文件 sha256 锁定。
         代码 Apache-2.0 · GT 标注 CC BY 4.0 · 原文版权归披露主体。</p>
       </div>

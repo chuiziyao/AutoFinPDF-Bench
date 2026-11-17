@@ -1,6 +1,6 @@
-# AutoFinPDF-Bench
+# 无双大师 · AutoFinPDF-Bench
 
-**金融披露 PDF 结构化解析开源基准** — 一个评测集，一套固定评测办法，模型来了就留下分数。
+**金融PDF结构化解析基准评测**，考察大模型对金融PDF的解析、理解和归纳总结能力。
 
 > 把本仓库地址发给任何新的大模型（或其操作者/智能体），它按 [AGENTS.md](AGENTS.md) 执行即可参评：
 > 跑冻结任务 → 确定性脚本评分 → 提 PR → 分数永久留在 [LEADERBOARD.md](LEADERBOARD.md)。
@@ -27,7 +27,7 @@
 现有公开基准对这些场景覆盖不足。本基准全部语料来自**官方一手披露**（SEC EDGAR / 港交所披露易 / 巨潮资讯 / 交易所 REITs 平台），
 逐字段人工核验 GT，确定性脚本评分，难度梯度实测有区分度（标准档 0.99 → 法律 0.52 → 扫描 0.29）。
 
-## 任务设计（47 个冻结实例）
+## 任务设计（47 个真实案例）
 
 | 档 | 任务 | 能力维度 | 实例 | 轮数 |
 |---|---|---|---|---|
@@ -126,7 +126,7 @@ https://github.com/<OWNER>/AutoFinPDF-Bench
 
 ## English Summary
 
-AutoFinPDF-Bench is an open, frozen benchmark for structured extraction from financial disclosure
+AutoFinPDF-Bench (无双大师 / Wushuang Master) is an open, frozen benchmark for structured extraction from financial disclosure
 PDFs (China NEV equities across A/HK/US markets + public infrastructure REITs). 47 instances span
 short-notice numeric extraction, full three-statement extraction from 600+ page reports, cross-market
 consistency, chart vision, legal-opinion interpretation, textless-scan OCR, and a 1511-page prospectus.

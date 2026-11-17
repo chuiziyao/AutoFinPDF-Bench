@@ -7,7 +7,7 @@
     "provider": "Alibaba Qwen",
     "submitter": "chuiziyao"
   },
-  "benchmark_version": "1.0.1",
+  "benchmark_version": "1.0.2",
   "scorer_hash": "4002506f7449ee906dff49820270cd460c9afdbd3bf00f373c53497f6a2bceb1",
   "submitted_at": "2026-11-15",
   "verification": "self-reported",

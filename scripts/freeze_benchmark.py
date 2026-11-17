@@ -17,7 +17,7 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 
-VERSION = "1.0.1"
+VERSION = "1.0.2"
 
 # ---- frozen instance list (doc_id, task, track, stem, input_mode, pages, runs) ----
 STANDARD = [
@@ -131,9 +131,11 @@ def build():
 
     return {
         "name": "AutoFinPDF-Bench",
+        "name_cn": "无双大师",
         "version": VERSION,
         "frozen_at": "2026-11-17",
-        "description": "金融披露 PDF 结构化解析基准：新能源汽车股（A/港/美三市场）+ 公募 REITs。"
+        "description": "无双大师（AutoFinPDF-Bench）：金融PDF结构化解析基准评测，考察大模型对金融PDF的解析、理解和归纳总结能力。"
+                       "语料：新能源汽车股（A/港/美三市场）+ 公募 REITs，全部官方真实披露。"
                        "标准档 T1–T5（T3 派生、T4 定性）+ 硬档 T6/T7 + REITs 档 A/B。",
         "runs_per_track": {"standard": 2, "hard": 2, "reits": 1},
         "reits_B_chunk_pages": 120,

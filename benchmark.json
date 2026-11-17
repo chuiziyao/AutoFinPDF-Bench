@@ -1,8 +1,9 @@
 {
   "name": "AutoFinPDF-Bench",
-  "version": "1.0.1",
+  "name_cn": "无双大师",
+  "version": "1.0.2",
   "frozen_at": "2026-11-17",
-  "description": "金融披露 PDF 结构化解析基准：新能源汽车股（A/港/美三市场）+ 公募 REITs。标准档 T1–T5（T3 派生、T4 定性）+ 硬档 T6/T7 + REITs 档 A/B。",
+  "description": "无双大师（AutoFinPDF-Bench）：金融PDF结构化解析基准评测，考察大模型对金融PDF的解析、理解和归纳总结能力。语料：新能源汽车股（A/港/美三市场）+ 公募 REITs，全部官方真实披露。标准档 T1–T5（T3 派生、T4 定性）+ 硬档 T6/T7 + REITs 档 A/B。",
   "runs_per_track": {
     "standard": 2,
     "hard": 2,
