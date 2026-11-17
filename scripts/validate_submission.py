@@ -77,6 +77,8 @@ def validate(res_dir, bench):
     if summary["benchmark_version"] != bench["version"]:
         problems.append("benchmark_version %s != current %s (re-run under the frozen benchmark)"
                         % (summary["benchmark_version"], bench["version"]))
+    if not (summary.get("model") or {}).get("submitter"):
+        problems.append("model.submitter missing — pass the submitter's GitHub username via score_all.py --submitter")
     if summary["scorer_hash"] != score_all.scorer_hash():
         problems.append("scorer_hash stale — re-run scripts/score_all.py with the current scorers")
     tracks = summary["tracks"]

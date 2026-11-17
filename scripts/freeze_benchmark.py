@@ -17,7 +17,7 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 
 # ---- frozen instance list (doc_id, task, track, stem, input_mode, pages, runs) ----
 STANDARD = [

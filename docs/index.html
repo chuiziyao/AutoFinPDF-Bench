@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AutoFinPDF-Bench · 金融披露 PDF 结构化解析基准排行榜</title>
+<meta name="description" content="AutoFinPDF-Bench：金融披露 PDF 结构化解析开源基准。47 个冻结实例，把仓库地址发给任何大模型即可参评留分。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B1120'/%3E%3Cpath d='M9 22V14M9 11v-1M16 24V10M16 7v-1M23 20v-8M23 9v-1' stroke='%2319C37D' stroke-width='3' stroke-linecap='round'/%3E%3Crect x='7' y='14' width='4' height='6' rx='1' fill='%2319C37D'/%3E%3Crect x='14' y='10' width='4' height='9' rx='1' fill='%23F0B90B'/%3E%3Crect x='21' y='12' width='4' height='6' rx='1' fill='%23F6465D'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#0B1120; --ink2:#0E1626; --surface:#121D33; --surface2:#182642;
+  --line:#22304E; --line2:#2C3D61;
+  --text:#E9EDF6; --muted:#93A0B8; --faint:#5C6B87;
+  --up:#19C37D; --gold:#F0B90B; --down:#F6465D; --info:#4DA3FF;
+  --cyan:#22D3EE; --violet:#A78BFA; --magenta:#E879F9; --amber:#FFB020;
+  --serif:"Noto Serif SC","Songti SC","SimSun",Georgia,serif;
+  --sans:"PingFang SC","Microsoft YaHei","Helvetica Neue",system-ui,sans-serif;
+  --mono:"JetBrains Mono","Cascadia Code",Consolas,"Courier New",monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--ink); color:var(--text); font-family:var(--sans);
+  font-size:15px; line-height:1.65; overflow-x:hidden;
+}
+/* layered ledger background */
+body::before{
+  content:""; position:fixed; inset:0; z-index:-2; pointer-events:none;
+  background:
+    radial-gradient(900px 520px at 12% -6%, rgba(25,195,125,.10), transparent 62%),
+    radial-gradient(820px 560px at 96% 12%, rgba(240,185,11,.07), transparent 60%),
+    radial-gradient(760px 620px at 55% 112%, rgba(77,163,255,.08), transparent 62%),
+    var(--ink);
+}
+body::after{
+  content:""; position:fixed; inset:0; z-index:-1; pointer-events:none; opacity:.5;
+  background:
+    repeating-linear-gradient(0deg, rgba(147,160,184,.045) 0 1px, transparent 1px 56px),
+    repeating-linear-gradient(90deg, rgba(147,160,184,.045) 0 1px, transparent 1px 56px);
+  mask-image:radial-gradient(1200px 800px at 50% 0%, #000 30%, transparent 90%);
+}
+::selection{background:rgba(240,185,11,.35)}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:var(--ink2)}
+::-webkit-scrollbar-thumb{background:var(--line2);border-radius:6px;border:2px solid var(--ink2)}
+::-webkit-scrollbar-thumb:hover{background:#3A507C}
+a{color:var(--info);text-decoration:none}
+a:hover{text-decoration:underline}
+.mono{font-family:var(--mono)}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+
+/* ---------- ticker ---------- */
+.ticker{
+  border-bottom:1px solid var(--line); background:rgba(14,22,38,.85);
+  overflow:hidden; white-space:nowrap; position:relative; height:38px;
+}
+.ticker::before,.ticker::after{
+  content:""; position:absolute; top:0; bottom:0; width:70px; z-index:2; pointer-events:none;
+}
+.ticker::before{left:0;background:linear-gradient(90deg,var(--ink2),transparent)}
+.ticker::after{right:0;background:linear-gradient(-90deg,var(--ink2),transparent)}
+.ticker-track{display:inline-flex;align-items:center;height:38px;animation:tick 46s linear infinite;will-change:transform}
+.ticker:hover .ticker-track{animation-play-state:paused}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.tk{display:inline-flex;align-items:center;gap:8px;padding:0 22px;font-family:var(--mono);font-size:12.5px;color:var(--muted);border-right:1px solid var(--line)}
+.tk b{color:var(--text);font-weight:600}
+.tk .v{font-weight:700}
+.tk .up{color:var(--up)} .tk .gold{color:var(--gold)} .tk .down{color:var(--down)} .tk .info{color:var(--info)}
+
+/* ---------- nav ---------- */
+nav{
+  position:sticky;top:0;z-index:50;background:rgba(11,17,32,.82);backdrop-filter:blur(12px);
+  border-bottom:1px solid transparent;transition:border-color .3s, box-shadow .3s;
+}
+nav.scrolled{border-bottom-color:var(--line);box-shadow:0 8px 30px rgba(0,0,0,.35)}
+.nav-in{display:flex;align-items:center;gap:16px;height:62px}
+.logo{display:flex;align-items:center;gap:11px;color:var(--text)}
+.logo:hover{text-decoration:none}
+.logo svg{flex:none}
+.logo-t{font-family:var(--serif);font-weight:700;font-size:18px;letter-spacing:.3px}
+.logo-s{font-size:11px;color:var(--muted);letter-spacing:1.5px;margin-top:-2px}
+.nav-links{margin-left:auto;display:flex;align-items:center;gap:6px}
+.nav-links a{color:var(--muted);font-size:13.5px;padding:7px 12px;border-radius:8px;transition:.2s;white-space:nowrap}
+.nav-links a:hover{color:var(--text);background:var(--surface);text-decoration:none}
+.nav-links a.active{color:var(--gold);background:rgba(240,185,11,.08)}
+.chip-ver{font-family:var(--mono);font-size:11.5px;color:var(--gold);border:1px solid rgba(240,185,11,.4);background:rgba(240,185,11,.08);padding:3px 9px;border-radius:99px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;font-size:14px;font-weight:600;border:1px solid var(--line2);color:var(--text);background:var(--surface);transition:.22s;cursor:pointer}
+.btn:hover{transform:translateY(-2px);border-color:var(--up);box-shadow:0 8px 24px rgba(25,195,125,.18);text-decoration:none}
+.btn.primary{background:linear-gradient(135deg,#15B877,#0E9E6E);border-color:transparent;color:#04120C}
+.btn.primary:hover{box-shadow:0 10px 28px rgba(25,195,125,.35)}
+.btn.ghost{background:transparent}
+
+/* ---------- header ---------- */
+header{padding:64px 0 30px;position:relative}
+.head-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:44px;align-items:end}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:3px;color:var(--up);text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.kicker::before{content:"";width:34px;height:1px;background:var(--up)}
+h1{font-family:var(--serif);font-size:clamp(34px,4.6vw,56px);line-height:1.22;font-weight:900;letter-spacing:1px}
+h1 .hl{color:var(--gold);position:relative;white-space:nowrap}
+h1 .hl::after{content:"";position:absolute;left:0;right:0;bottom:6px;height:10px;background:rgba(240,185,11,.18);z-index:-1;transform:skewX(-12deg)}
+.head-sub{margin-top:18px;color:var(--muted);font-size:15.5px;max-width:560px}
+.head-cta{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+.stat-card{border:1px solid var(--line);background:linear-gradient(160deg,var(--surface),var(--ink2));border-radius:14px;padding:22px 24px;position:relative;overflow:hidden}
+.stat-card::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--up),var(--gold),var(--down))}
+.stat-row{display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-bottom:1px dashed var(--line)}
+.stat-row:last-child{border-bottom:none}
+.stat-k{color:var(--muted);font-size:13px}
+.stat-v{font-family:var(--mono);font-size:22px;font-weight:700;color:var(--text)}
+.stat-v small{font-size:12px;color:var(--faint);font-weight:400;margin-left:4px}
+.stat-v.g{color:var(--up)} .stat-v.y{color:var(--gold)}
+
+/* ---------- sections ---------- */
+section{padding:44px 0;scroll-margin-top:76px}
+header{scroll-margin-top:76px}
+.sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:24px;flex-wrap:wrap}
+.sec-head h2{font-family:var(--serif);font-size:27px;font-weight:800;letter-spacing:.5px}
+.sec-head .no{font-family:var(--mono);color:var(--faint);font-size:13px}
+.sec-head .hint{color:var(--muted);font-size:13px;margin-left:auto}
+
+/* ---------- podium ---------- */
+.podium{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pcard{border:1px solid var(--line);background:linear-gradient(165deg,var(--surface) 0%,var(--ink2) 100%);border-radius:16px;padding:24px;position:relative;overflow:hidden;transition:.25s;cursor:pointer;opacity:0;transform:translateY(22px)}
+.pcard.in{opacity:1;transform:none;transition:opacity .6s ease,transform .6s ease,border-color .25s,box-shadow .25s}
+.pcard:hover{border-color:var(--line2);transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.4)}
+.pcard.rank1{border-color:rgba(240,185,11,.45)}
+.pcard.rank1::before{content:"";position:absolute;inset:0;background:radial-gradient(420px 200px at 85% -10%,rgba(240,185,11,.14),transparent 65%);pointer-events:none}
+.pcard.ghost{border-style:dashed;cursor:pointer;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:10px;color:var(--muted);min-height:250px}
+.pcard.ghost:hover{border-color:var(--up);color:var(--text)}
+.pcard.ghost .plus{font-size:34px;color:var(--up);font-family:var(--mono)}
+.p-top{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.rank-badge{font-family:var(--mono);font-weight:700;font-size:13px;width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;flex:none}
+.rank1 .rank-badge{background:rgba(240,185,11,.16);color:var(--gold);border:1px solid rgba(240,185,11,.5)}
+.rank2 .rank-badge{background:rgba(147,160,184,.12);color:#C7D0E0;border:1px solid var(--line2)}
+.rank3 .rank-badge{background:rgba(255,176,32,.12);color:var(--amber);border:1px solid rgba(255,176,32,.4)}
+.avatar{width:38px;height:38px;border-radius:50%;flex:none;position:relative;overflow:hidden;background:var(--surface2);border:1px solid var(--line2);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:14px;color:var(--gold)}
+.avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.p-who{min-width:0}
+.p-sub{font-size:12px;color:var(--muted);font-family:var(--mono)}
+.p-model{font-family:var(--serif);font-size:18.5px;font-weight:700;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.p-score{display:flex;align-items:baseline;gap:10px;margin:6px 0 14px}
+.p-score .n{font-family:var(--mono);font-size:44px;font-weight:700;color:var(--up);letter-spacing:-1px}
+.rank1 .p-score .n{color:var(--gold)}
+.p-score .l{font-size:12px;color:var(--faint)}
+.p-bars{display:grid;grid-template-columns:repeat(9,1fr);gap:5px;align-items:end;height:44px;margin-bottom:14px}
+.p-bar{background:var(--surface2);border-radius:3px 3px 0 0;position:relative;height:100%;overflow:hidden}
+.p-bar i{position:absolute;left:0;right:0;bottom:0;height:0;border-radius:3px 3px 0 0;transition:height 1s cubic-bezier(.2,.8,.2,1)}
+.p-foot{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted)}
+.verif{font-size:11px;padding:2px 9px;border-radius:99px;font-family:var(--mono)}
+.verif.ok{color:var(--up);background:rgba(25,195,125,.1);border:1px solid rgba(25,195,125,.35)}
+.verif.self{color:var(--muted);background:rgba(147,160,184,.08);border:1px solid var(--line)}
+.p-more{margin-left:auto;color:var(--info);font-size:12.5px}
+
+/* ---------- table ---------- */
+#board .wrap{max-width:1400px}
+.toolbar{display:flex;gap:12px;align-items:center;margin-bottom:16px;flex-wrap:wrap}
+.search{flex:1;min-width:240px;position:relative}
+.search input{width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:11px 14px 11px 40px;font-size:14px;font-family:var(--sans);outline:none;transition:.2s}
+.search input:focus{border-color:var(--up);box-shadow:0 0 0 3px rgba(25,195,125,.15)}
+.search input::placeholder{color:var(--faint)}
+.search svg{position:absolute;left:13px;top:50%;transform:translateY(-50%);pointer-events:none}
+.count-note{font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+.table-wrap{border:1px solid var(--line);border-radius:14px;overflow:auto;background:rgba(14,22,38,.6);max-height:640px}
+table{border-collapse:separate;border-spacing:0;width:100%;min-width:1060px;font-size:13px}
+thead th{
+  position:sticky;top:0;z-index:3;background:var(--surface2);color:var(--muted);
+  font-weight:600;font-size:11.5px;text-align:left;padding:10px 8px;white-space:nowrap;
+  border-bottom:1px solid var(--line2);cursor:pointer;user-select:none;transition:.15s;
+}
+thead th:hover{color:var(--text);background:#1D2C4C}
+thead th .arr{font-family:var(--mono);font-size:10px;margin-left:4px;color:var(--gold)}
+thead th small{display:block;font-weight:400;color:var(--faint);font-size:10.5px;letter-spacing:.5px}
+tbody td{padding:12px 8px;border-bottom:1px solid var(--line);white-space:nowrap;vertical-align:middle}
+tbody tr{cursor:pointer;transition:background .15s}
+tbody tr:hover{background:rgba(77,163,255,.06)}
+tbody tr:last-child td{border-bottom:none}
+td.num{font-family:var(--mono);font-weight:600;font-size:13.5px}
+td.overall{font-size:15.5px;font-weight:700}
+td.overall .bar{display:block;height:3px;border-radius:2px;background:var(--surface2);margin-top:5px;width:74px;overflow:hidden}
+td.overall .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--up),var(--gold));border-radius:2px}
+.rk{font-family:var(--mono);color:var(--faint);font-weight:700}
+.rk.r1{color:var(--gold)} .rk.r2{color:#C7D0E0} .rk.r3{color:var(--amber)}
+.cell-sub{display:flex;align-items:center;gap:9px}
+.cell-sub .avatar{width:26px;height:26px;font-size:11px}
+.cell-sub a{color:var(--muted);font-family:var(--mono);font-size:12.5px}
+.cell-sub a:hover{color:var(--info)}
+.m-name{font-weight:600;color:var(--text)}
+.m-ver{display:block;font-family:var(--mono);font-size:11px;color:var(--faint);max-width:150px;overflow:hidden;text-overflow:ellipsis}
+.tag-qual{font-size:11px;color:var(--violet);border:1px solid rgba(167,139,250,.4);background:rgba(167,139,250,.08);padding:2px 8px;border-radius:99px}
+.partial{color:var(--amber);font-family:var(--mono)}
+.empty-row td{text-align:center;color:var(--faint);padding:40px}
+.legend{margin-top:14px;color:var(--muted);font-size:13px;line-height:1.9}
+.legend b{color:var(--text)}
+.legend .dot{display:inline-block;width:8px;height:8px;border-radius:2px;margin:0 5px 0 12px;vertical-align:middle}
+
+/* ---------- drawer ---------- */
+.backdrop{position:fixed;inset:0;background:rgba(4,8,16,.6);backdrop-filter:blur(3px);opacity:0;pointer-events:none;transition:.3s;z-index:90}
+.backdrop.open{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(500px,100vw);background:var(--ink2);border-left:1px solid var(--line2);z-index:100;transform:translateX(102%);transition:transform .38s cubic-bezier(.2,.8,.2,1);overflow-y:auto;box-shadow:-24px 0 60px rgba(0,0,0,.5)}
+.drawer.open{transform:none}
+.d-in{padding:28px}
+.d-close{position:sticky;top:0;float:right;background:var(--surface);border:1px solid var(--line2);color:var(--muted);width:34px;height:34px;border-radius:9px;cursor:pointer;font-size:16px;transition:.2s;z-index:2}
+.d-close:hover{color:var(--text);border-color:var(--down)}
+.d-head{display:flex;gap:14px;align-items:center;margin-bottom:6px;padding-right:44px}
+.d-head .avatar{width:52px;height:52px;font-size:19px}
+.d-model{font-family:var(--serif);font-size:23px;font-weight:800;line-height:1.3}
+.d-sub{font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+.d-meta{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 18px}
+.d-meta span{font-size:11.5px;font-family:var(--mono);color:var(--muted);border:1px solid var(--line);background:var(--surface);padding:3px 10px;border-radius:99px}
+.d-overall{display:flex;align-items:baseline;gap:12px;border:1px solid rgba(25,195,125,.35);background:rgba(25,195,125,.06);border-radius:12px;padding:14px 18px;margin-bottom:20px}
+.d-overall .n{font-family:var(--mono);font-size:38px;font-weight:700;color:var(--up)}
+.d-overall .l{color:var(--muted);font-size:12.5px}
+.d-sec{font-family:var(--mono);font-size:11px;letter-spacing:2.5px;color:var(--faint);text-transform:uppercase;margin:22px 0 12px}
+.radar-box{display:flex;justify-content:center;padding:6px 0}
+.radar-poly{transform-origin:150px 150px;transform:scale(0);opacity:0;transition:transform .7s cubic-bezier(.2,.8,.2,1),opacity .5s}
+.radar-poly.in{transform:scale(1);opacity:1}
+.d-tier{display:grid;grid-template-columns:96px 1fr 58px;gap:12px;align-items:center;padding:8px 0;border-bottom:1px dashed var(--line)}
+.d-tier:last-child{border-bottom:none}
+.d-tier .t{font-size:13px;color:var(--text)}
+.d-tier .t small{display:block;color:var(--faint);font-size:10.5px;font-family:var(--mono)}
+.d-tier .track{height:7px;background:var(--surface2);border-radius:4px;overflow:hidden}
+.d-tier .track i{display:block;height:100%;width:0;border-radius:4px;transition:width .9s cubic-bezier(.2,.8,.2,1)}
+.d-tier .v{font-family:var(--mono);font-weight:700;text-align:right;font-size:13.5px}
+.d-notes{color:var(--muted);font-size:13.5px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.d-links{display:flex;flex-direction:column;gap:8px;margin-top:6px}
+.d-links a{font-size:13px;font-family:var(--mono)}
+
+/* ---------- tier cards ---------- */
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.tcard{border:1px solid var(--line);background:var(--surface);border-radius:13px;padding:20px;transition:.22s;opacity:0;transform:translateY(18px)}
+.tcard.in{opacity:1;transform:none;transition:opacity .55s ease,transform .55s ease,border-color .22s,box-shadow .22s}
+.tcard:hover{border-color:var(--line2);transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.35)}
+.tcard .code{font-family:var(--mono);font-size:11px;font-weight:700;padding:3px 9px;border-radius:6px;display:inline-block;margin-bottom:12px}
+.tcard h3{font-family:var(--serif);font-size:18px;font-weight:800;margin-bottom:7px}
+.tcard p{color:var(--muted);font-size:13px;margin-bottom:10px}
+.tcard .one{font-size:12px;color:var(--faint);border-top:1px dashed var(--line);padding-top:9px}
+.tcard .one b{color:var(--up);font-weight:600}
+.track-standard{background:rgba(77,163,255,.12);color:var(--info);border:1px solid rgba(77,163,255,.35)}
+.track-hard{background:rgba(246,70,93,.1);color:var(--down);border:1px solid rgba(246,70,93,.35)}
+.track-reits{background:rgba(167,139,250,.1);color:var(--violet);border:1px solid rgba(167,139,250,.35)}
+.glossary{margin-top:22px;border:1px solid var(--line);border-left:3px solid var(--gold);background:linear-gradient(120deg,var(--surface),var(--ink2));border-radius:12px;padding:22px 26px}
+.glossary h3{font-family:var(--serif);font-size:18px;margin-bottom:12px}
+.glossary dl{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 30px}
+.glossary dt{font-family:var(--mono);font-size:13px;color:var(--gold);font-weight:700}
+.glossary dd{color:var(--muted);font-size:13px;margin-bottom:6px}
+.caveat{margin-top:16px;font-size:13px;color:var(--amber);background:rgba(255,176,32,.07);border:1px solid rgba(255,176,32,.3);border-radius:10px;padding:12px 16px}
+
+/* ---------- join ---------- */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:step}
+.step{border:1px solid var(--line);background:var(--surface);border-radius:13px;padding:22px;position:relative;transition:.22s}
+.step:hover{border-color:var(--up);transform:translateY(-3px)}
+.step::before{counter-increment:step;content:"0" counter(step);font-family:var(--mono);font-size:30px;font-weight:700;color:var(--line2);position:absolute;top:16px;right:20px}
+.step h3{font-family:var(--serif);font-size:17.5px;margin-bottom:8px}
+.step p{color:var(--muted);font-size:13px;margin-bottom:12px}
+.step code{display:block;font-family:var(--mono);font-size:11.5px;color:var(--up);background:var(--ink);border:1px solid var(--line);border-radius:8px;padding:10px 12px;overflow-x:auto;white-space:pre}
+.join-cta{margin-top:24px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.join-note{color:var(--muted);font-size:13.5px}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);margin-top:40px;padding:34px 0 46px;background:rgba(14,22,38,.6)}
+.foot-grid{display:flex;gap:30px;flex-wrap:wrap;align-items:flex-start;justify-content:space-between}
+.foot-brand{font-family:var(--serif);font-weight:800;font-size:17px}
+.foot-note{color:var(--faint);font-size:12.5px;max-width:520px;margin-top:8px}
+.foot-links{display:flex;gap:20px;flex-wrap:wrap;font-size:13px}
+.foot-meta{font-family:var(--mono);font-size:11.5px;color:var(--faint);margin-top:18px}
+
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media print{
+  .reveal,.pcard,.tcard{opacity:1!important;transform:none!important}
+  .ticker,nav{position:static}
+  body::before,body::after{display:none}
+}
+
+@media (max-width:980px){
+  .head-grid{grid-template-columns:1fr}
+  .podium{grid-template-columns:1fr 1fr}
+  .tiers{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr}
+  .glossary dl{grid-template-columns:1fr}
+  .nav-links a.hide-m{display:none}
+}
+@media (max-width:640px){
+  .wrap{padding:0 16px}
+  .podium{grid-template-columns:1fr}
+  .tiers{grid-template-columns:1fr}
+  header{padding:40px 0 20px}
+  .p-score .n{font-size:36px}
+  .logo-s{display:none}
+  .logo-t{font-size:15px}
+  .logo svg{width:26px;height:26px}
+  .nav-in{gap:8px;height:54px}
+  .chip-ver{display:none}
+  .nav-links{gap:2px}
+  .nav-links a{padding:6px 7px;font-size:12px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+  .ticker-track{animation:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<div class="ticker" aria-hidden="true"><div class="ticker-track" id="ticker"></div></div>
+
+<nav id="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="#top">
+      <svg width="30" height="30" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#121D33" stroke="#22304E"/><path d="M9 22V14M9 11v-1M16 24V10M16 7v-1M23 20v-8M23 9v-1" stroke="#19C37D" stroke-width="2" stroke-linecap="round"/><rect x="7" y="14" width="4" height="6" rx="1" fill="#19C37D"/><rect x="14" y="10" width="4" height="9" rx="1" fill="#F0B90B"/><rect x="21" y="12" width="4" height="6" rx="1" fill="#F6465D"/></svg>
+      <span><span class="logo-t">AutoFinPDF-Bench</span><div class="logo-s">金融披露 PDF 结构化解析基准</div></span>
+    </a>
+    <div class="nav-links">
+      <span class="chip-ver" id="verChip">v—</span>
+      <a href="#board">排行榜</a>
+      <a href="#tiers" class="hide-m">档位说明</a>
+      <a href="#join" class="hide-m">参评</a>
+      <a id="ghLink" href="#" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</nav>
+
+<header id="top">
+  <div class="wrap head-grid">
+    <div>
+      <div class="kicker">Open Benchmark · Frozen v1.0</div>
+      <h1>谁最能读懂<br><span class="hl">金融披露文件</span>？</h1>
+      <p class="head-sub">47 个冻结实例 · 三市场跨准则 · 626 页招股书与 1511 页招募书 · 法律意见书与无文本层扫描件。
+      把仓库地址发给任何大模型，它就能自己跑完评测，把分数留在这张榜上。</p>
+      <div class="head-cta">
+        <a class="btn primary" id="agentsLink" href="#" target="_blank" rel="noopener">查看参评协议 →</a>
+        <a class="btn ghost" id="repoLink" href="#" target="_blank" rel="noopener">GitHub 仓库</a>
+      </div>
+    </div>
+    <div class="stat-card reveal">
+      <div class="stat-row"><span class="stat-k">冻结实例</span><span class="stat-v">47<small>instances</small></span></div>
+      <div class="stat-row"><span class="stat-k">评测档</span><span class="stat-v y">9<small>T1–T7 + REITs×2</small></span></div>
+      <div class="stat-row"><span class="stat-k">参评模型</span><span class="stat-v g" id="statModels">—</span></div>
+      <div class="stat-row"><span class="stat-k">数据更新</span><span class="stat-v" id="statDate" style="font-size:16px">—</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="podiumSec">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="no">01</span><h2>领先模型</h2><span class="hint">点击卡片查看逐档详情</span></div>
+    <div class="podium" id="podium"></div>
+  </div>
+</section>
+
+<section id="board">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="no">02</span><h2>完整排行榜</h2><span class="hint">点击表头排序 · 点击行看详情</span></div>
+    <div class="toolbar reveal">
+      <div class="search">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#5C6B87" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="搜索模型 / 提交者 / 厂商…" autocomplete="off">
+      </div>
+      <span class="count-note" id="countNote"></span>
+    </div>
+    <div class="table-wrap reveal">
+      <table id="tbl">
+        <thead><tr id="thead"></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <div class="legend reveal">
+      <b>所有列 0–1 分，满分 1，越高越好。</b>Overall = 7 个计数档等权均值（T3 单列展示、T4 定性不入均值）；<span class="partial">†</span> = 缺档。
+      <span class="dot" style="background:var(--up)"></span>≥0.9
+      <span class="dot" style="background:var(--gold)"></span>0.7–0.9
+      <span class="dot" style="background:var(--amber)"></span>0.4–0.7
+      <span class="dot" style="background:var(--down)"></span>&lt;0.4
+      <br>T1–T7 为对人工核验标准答案的准确率类指标；<b>REITs语义 / 超长文档</b>为验证式质量指标（格式规范 / 页码覆盖 / 稀缺指标覆盖），不是对标准答案的准确率。
+      指标口径详见 <a id="scoringLink" href="#" target="_blank" rel="noopener">docs/SCORING.md</a>。
+    </div>
+  </div>
+</section>
+
+<section id="tiers">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="no">03</span><h2>看懂这张表</h2><span class="hint">九档各考什么 · 白话版</span></div>
+    <div class="tiers" id="tierCards"></div>
+    <div class="glossary reveal">
+      <h3>术语一句话</h3>
+      <dl>
+        <div><dt>Overall</dt><dd>7 个计数档的平均分，综合排名依据。</dd></div>
+        <div><dt>F1</dt><dd>抽得准 × 抽得全的调和平均——既不能漏，也不能编。</dd></div>
+        <div><dt>召回 Recall</dt><dd>标准答案里的字段，模型找出来多少比例。</dd></div>
+        <div><dt>幻觉率</dt><dd>输出里"原文根本没有"的字段占比，越低越好（明细指标，不在主表）。</dd></div>
+      </dl>
+      <div class="caveat">⚠ REITs 两档没有逐字段标准答案，分数衡量的是<b>输出质量与覆盖</b>（字段名规范、页码齐全、稀缺指标覆盖），1 分 ≠ 数值全对。这是 v1.0 如实声明的口径折中。</div>
+    </div>
+  </div>
+</section>
+
+<section id="join">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="no">04</span><h2>让你的模型上榜</h2><span class="hint">把仓库地址发给它就行</span></div>
+    <div class="steps">
+      <div class="step reveal"><h3>跑冻结任务</h3><p>有 API 用零依赖 runner；只有聊天界面用逐字任务包。47 实例，prompt 一字不改。</p><code>python scripts/run_eval.py \
+  --base-url … --model … \
+  --out results/&lt;slug&gt;/outputs</code></div>
+      <div class="step reveal"><h3>脚本评分</h3><p>确定性评分器算分，附上你的 GitHub 用户名；校验器重算比对，防手改。</p><code>python scripts/score_all.py \
+  --slug &lt;slug&gt; --name "模型" \
+  --submitter &lt;GitHub用户名&gt;</code></div>
+      <div class="step reveal"><h3>PR 留分</h3><p>CI 自动重算你的输出；合并后分数永久留在排行榜与本页。</p><code>git checkout -b result/&lt;slug&gt;
+git add results/&lt;slug&gt; …
+# 开 PR → CI 绿 → 合并上榜</code></div>
+    </div>
+    <div class="join-cta reveal">
+      <a class="btn primary" id="agentsLink2" href="#" target="_blank" rel="noopener">阅读完整协议 AGENTS.md →</a>
+      <span class="join-note">诚信规则：被测模型只能看到任务输入，不得接触标准答案与评分脚本。</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">AutoFinPDF-Bench</div>
+        <p class="foot-note">语料全部来自官方一手披露（SEC EDGAR / 港交所披露易 / 巨潮资讯 / 交易所 REITs 平台），逐文件 sha256 锁定。
+        代码 Apache-2.0 · GT 标注 CC BY 4.0 · 原文版权归披露主体。</p>
+      </div>
+      <div class="foot-links">
+        <a id="fMethod" href="#" target="_blank" rel="noopener">方法学</a>
+        <a id="fScoring" href="#" target="_blank" rel="noopener">评分口径</a>
+        <a id="fIntegrity" href="#" target="_blank" rel="noopener">诚信政策</a>
+        <a id="fRelease" href="#" target="_blank" rel="noopener">原文 Release</a>
+        <a id="fChangelog" href="#" target="_blank" rel="noopener">Changelog</a>
+      </div>
+    </div>
+    <div class="foot-meta" id="footMeta"></div>
+  </div>
+</footer>
+
+<div class="backdrop" id="backdrop"></div>
+<aside class="drawer" id="drawer" aria-hidden="true"><div class="d-in" id="drawerBody"></div></aside>
+
+<script src="leaderboard-data.js"></script>
+<noscript><style>.reveal,.pcard,.tcard{opacity:1!important;transform:none!important}.p-bar i{height:60%!important}</style></noscript>
+<script>
+(function(){
+"use strict";
+var D = window.BOARD_DATA || {entries:[],tiers:[],benchmark_version:"?",generated_at:"?",repo:"https://github.com/chuiziyao/AutoFinPDF-Bench"};
+var REPO = D.repo;
+var TIERS = D.tiers || [];
+var SK = D.score_keys || {};
+var $ = function(s){return document.querySelector(s)};
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function fmt(v){if(v==null)return "—";if(typeof v!=="number")return String(v);var s=v.toFixed(4).replace(/0+$/,"").replace(/\.$/,"");return v===1?"1.0":s}
+function val(e,key){var t=(e.tracks||{})[key]||{};if(key==="T4")return t.status==="collected"?1:null;var v=t[SK[key]];return typeof v==="number"?v:null}
+function scoreColor(v){if(v==null)return "var(--faint)";if(v>=0.9)return "var(--up)";if(v>=0.7)return "var(--gold)";if(v>=0.4)return "var(--amber)";return "var(--down)"}
+function tierColor(key){var t=TIERS.find(function(x){return x.key===key});if(!t)return "var(--info)";return t.track==="hard"?"var(--down)":t.track==="reits"?(key==="REITs_B"?"var(--magenta)":"var(--violet)"):(key==="T3"?"var(--info)":key==="T4"?"var(--muted)":"var(--cyan)")}
+function avatarHTML(user,size){var init=(user||"?").slice(0,2).toUpperCase();return '<span class="avatar"'+(size?' style="width:'+size+'px;height:'+size+'px"':'')+'><span>'+esc(init)+'</span>'+(user?'<img src="https://avatars.githubusercontent.com/'+esc(user)+'?s=96" alt="" loading="lazy" onerror="this.remove()">':'')+'</span>'}
+function verifHTML(e){return e.verification==="verified"?'<span class="verif ok">✓ verified</span>':'<span class="verif self">self-reported</span>'}
+function verifShort(e){return e.verification==="verified"?'<span class="verif ok" title="维护者已抽查核验">✓ 核验</span>':'<span class="verif self" title="CI 重算通过 · 自报成绩，待维护者抽查">自报</span>'}
+
+/* links */
+var links={ghLink:REPO,repoLink:REPO,agentsLink:REPO+"/blob/main/AGENTS.md",agentsLink2:REPO+"/blob/main/AGENTS.md",
+scoringLink:REPO+"/blob/main/docs/SCORING.md",fMethod:REPO+"/blob/main/docs/METHODOLOGY.md",fScoring:REPO+"/blob/main/docs/SCORING.md",
+fIntegrity:REPO+"/blob/main/docs/INTEGRITY.md",fRelease:REPO+"/releases/tag/v1.0.0",fChangelog:REPO+"/blob/main/CHANGELOG.md"};
+Object.keys(links).forEach(function(id){var el=document.getElementById(id);if(el)el.href=links[id]});
+$("#verChip").textContent="v"+D.benchmark_version;
+$("#statModels").textContent=D.entries.length;
+$("#statDate").textContent=D.generated_at;
+$("#footMeta").textContent="benchmark v"+D.benchmark_version+" · data generated "+D.generated_at+" · page renders offline from leaderboard-data.js";
+
+/* ticker */
+(function(){
+  var items=[];
+  D.entries.forEach(function(e){
+    TIERS.forEach(function(t){
+      if(t.key==="T4")return;
+      var v=val(e,t.key);if(v==null)return;
+      var cls=v>=0.9?"up":v>=0.7?"gold":v>=0.4?"info":"down";
+      var arrow=v>=0.7?"▲":"▼";
+      items.push('<span class="tk"><b>'+esc(e.model.name)+'</b> '+esc(t.label)+' <span class="v '+cls+'">'+fmt(v)+' '+arrow+'</span></span>');
+    });
+  });
+  if(!items.length)items.push('<span class="tk">虚位以待 · 把你的模型送来参评</span>');
+  var half=items.join("");
+  $("#ticker").innerHTML=half+half;
+})();
+
+/* podium */
+(function(){
+  var top=D.entries.slice(0,3);
+  var html=top.map(function(e,i){
+    var m=e.model;
+    var bars=TIERS.map(function(t){
+      var v=val(e,t.key);
+      var isQual=t.key==="T4";
+      var h=isQual?14:(v==null?0:Math.max(6,v*100));
+      var title=isQual?"定性档（不计数值分）":esc(t.label)+" "+fmt(v);
+      return '<span class="p-bar" title="'+title+'"><i data-h="'+h+'" style="background:'+tierColor(t.key)+(isQual?';opacity:.45':'')+'"></i></span>';
+    }).join("");
+    return '<article class="pcard rank'+(i+1)+'" data-slug="'+esc(m.slug)+'" tabindex="0" role="button" aria-label="查看 '+esc(m.name)+' 详情">'
+      +'<div class="p-top"><span class="rank-badge">#'+(i+1)+'</span>'+avatarHTML(m.submitter)
+      +'<div class="p-who"><div class="p-sub">@'+esc(m.submitter||"unknown")+'</div><div class="p-model" title="'+esc(m.name)+'">'+esc(m.name)+'</div></div></div>'
+      +'<div class="p-score"><span class="n" data-count="'+(e.overall==null?0:e.overall)+'">0.0000</span><span class="l">OVERALL'+(e.partial?' †':'')+'</span></div>'
+      +'<div class="p-bars">'+bars+'</div>'
+      +'<div class="p-foot">'+verifHTML(e)+'<span>'+esc(e.submitted_at||"")+'</span><span class="p-more">详情 →</span></div></article>';
+  }).join("");
+  html+='<article class="pcard ghost" id="ghostCard" tabindex="0" role="button"><span class="plus">+</span><b>虚位以待</b><span style="font-size:13px">把仓库地址发给你的模型<br>下一个上榜的就是它</span></article>';
+  $("#podium").innerHTML=html;
+  $("#ghostCard").addEventListener("click",function(){location.hash="#join"});
+  document.querySelectorAll(".pcard[data-slug]").forEach(function(c){
+    c.addEventListener("click",function(){openDrawer(c.dataset.slug)});
+    c.addEventListener("keydown",function(ev){if(ev.key==="Enter")openDrawer(c.dataset.slug)});
+  });
+})();
+
+/* table */
+var COLS=[{k:"rank",label:"#",sub:""},{k:"submitter",label:"提交者",sub:"GitHub"},{k:"model",label:"模型",sub:"name / version"},
+{k:"overall",label:"Overall",sub:"综合"}].concat(TIERS.map(function(t){return {k:t.key,label:t.label,sub:t.code}})).concat([{k:"verification",label:"核验",sub:""},{k:"date",label:"日期",sub:""}]);
+var sort={k:"overall",dir:-1};
+var query="";
+function sortVal(e,k){
+  if(k==="rank")return 0;
+  if(k==="overall")return e.overall==null?-1:e.overall;
+  if(k==="submitter")return (e.model.submitter||"").toLowerCase();
+  if(k==="model")return e.model.name.toLowerCase();
+  if(k==="verification")return e.verification==="verified"?1:0;
+  if(k==="date")return e.submitted_at||"";
+  var v=val(e,k);return v==null?-1:v;
+}
+function renderHead(){
+  $("#thead").innerHTML=COLS.map(function(c){
+    var arr=sort.k===c.k?'<span class="arr">'+(sort.dir<0?"▼":"▲")+'</span>':"";
+    return '<th data-k="'+c.k+'">'+esc(c.label)+arr+(c.sub?'<small>'+esc(c.sub)+'</small>':"")+'</th>';
+  }).join("");
+  document.querySelectorAll("#thead th").forEach(function(th){
+    th.addEventListener("click",function(){
+      var k=th.dataset.k;if(k==="rank")return;
+      if(sort.k===k)sort.dir*=-1;else{sort.k=k;sort.dir=(k==="model"||k==="submitter"||k==="date")?1:-1}
+      renderHead();renderBody();
+    });
+  });
+}
+function renderBody(){
+  var rows=D.entries.filter(function(e){
+    if(!query)return true;
+    var m=e.model;var hay=[m.name,m.slug,m.submitter,m.provider,m.version].join(" ").toLowerCase();
+    return hay.indexOf(query)>=0;
+  });
+  rows.sort(function(a,b){
+    var va=sortVal(a,sort.k),vb=sortVal(b,sort.k);
+    if(va<vb)return -1*sort.dir;if(va>vb)return 1*sort.dir;
+    return (a.model.slug<b.model.slug)?-1:1;
+  });
+  $("#countNote").textContent=rows.length+" / "+D.entries.length+" 个模型";
+  if(!rows.length){$("#tbody").innerHTML='<tr class="empty-row"><td colspan="'+COLS.length+'">没有匹配的模型 —— 换个关键词，或送你的模型来参评</td></tr>';return}
+  $("#tbody").innerHTML=rows.map(function(e,i){
+    var m=e.model;
+    var cells=TIERS.map(function(t){
+      if(t.key==="T4"){var has=(e.tracks||{}).T4&&e.tracks.T4.status==="collected";return '<td>'+(has?'<span class="tag-qual">定性</span>':'<span style="color:var(--faint)">—</span>')+'</td>'}
+      var v=val(e,t.key);
+      return '<td class="num" style="color:'+scoreColor(v)+'">'+fmt(v)+'</td>';
+    }).join("");
+    var ov=e.overall;
+    return '<tr data-slug="'+esc(m.slug)+'" tabindex="0">'
+      +'<td><span class="rk r'+(i+1)+'">'+(i+1)+'</span></td>'
+      +'<td><span class="cell-sub">'+avatarHTML(m.submitter,26)+'<a href="https://github.com/'+esc(m.submitter)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">@'+esc(m.submitter||"unknown")+'</a></span></td>'
+      +'<td><span class="m-name">'+esc(m.name)+'</span>'+(m.version?'<span class="m-ver" title="'+esc(m.version)+'">'+esc(m.version)+'</span>':"")+'</td>'
+      +'<td class="num overall" style="color:'+(ov==null?"var(--faint)":ov>=0.7?"var(--gold)":"var(--up)")+'">'+fmt(ov)+(e.partial?'<span class="partial">†</span>':"")+'<span class="bar"><i style="width:'+(ov==null?0:ov*100)+'%"></i></span></td>'
+      +cells
+      +'<td>'+verifShort(e)+'</td>'
+      +'<td class="num" style="color:var(--muted);font-weight:400">'+esc(e.submitted_at||"—")+'</td></tr>';
+  }).join("");
+  document.querySelectorAll("#tbody tr[data-slug]").forEach(function(tr){
+    tr.addEventListener("click",function(){openDrawer(tr.dataset.slug)});
+    tr.addEventListener("keydown",function(ev){if(ev.key==="Enter")openDrawer(tr.dataset.slug)});
+  });
+}
+$("#q").addEventListener("input",function(){query=this.value.trim().toLowerCase();renderBody()});
+renderHead();renderBody();
+
+/* tier cards */
+(function(){
+  var one={"T1":"每个交付/销量数字都抽对","T2":"科目、期间、数值全对","T3":"6 项跨市场指标全部一致","T4":"人工审阅判优（不计数值分）","T5":"图里每个数都读对","T6":"法律要素齐全、假设/限定/风险不混淆","T7":"关键事实全部认对","REITs_A":"格式全规范 + 页码全覆盖 + 稀缺指标全覆盖","REITs_B":"核心信息齐全且都带对页码"};
+  $("#tierCards").innerHTML=TIERS.map(function(t){
+    return '<div class="tcard"><span class="code track-'+t.track+'">'+esc(t.code)+' · '+esc(t.track)+'</span><h3>'+esc(t.label)+'</h3><p>'+esc(t.desc)+'</p><div class="one"><b>1 分</b> = '+esc(one[t.key]||"满分")+'</div></div>';
+  }).join("");
+})();
+
+/* drawer */
+var RADAR_KEYS=["T1","T2","T3","T5","T6","T7","REITs_A","REITs_B"];
+function radarSVG(e){
+  var cx=150,cy=150,R=108,n=RADAR_KEYS.length;
+  function pt(i,r){var a=-Math.PI/2+i*2*Math.PI/n;return [cx+r*Math.cos(a),cy+r*Math.sin(a)]}
+  var rings=[0.25,0.5,0.75,1].map(function(f){
+    var p=RADAR_KEYS.map(function(_,i){return pt(i,R*f).map(function(x){return x.toFixed(1)}).join(",")}).join(" ");
+    return '<polygon points="'+p+'" fill="none" stroke="#22304E" stroke-width="1"/>';
+  }).join("");
+  var axes=RADAR_KEYS.map(function(k,i){
+    var p=pt(i,R),lp=pt(i,R+24);
+    var t=TIERS.find(function(x){return x.key===k});
+    return '<line x1="'+cx+'" y1="'+cy+'" x2="'+p[0].toFixed(1)+'" y2="'+p[1].toFixed(1)+'" stroke="#22304E" stroke-width="1"/>'
+      +'<text x="'+lp[0].toFixed(1)+'" y="'+lp[1].toFixed(1)+'" fill="#93A0B8" font-size="11" text-anchor="middle" dominant-baseline="middle" font-family="Consolas,monospace">'+esc(t?t.label:k)+'</text>';
+  }).join("");
+  var poly=RADAR_KEYS.map(function(k,i){var v=val(e,k);return pt(i,R*(v==null?0:v)).map(function(x){return x.toFixed(1)}).join(",")}).join(" ");
+  var dots=RADAR_KEYS.map(function(k,i){var v=val(e,k);var p=pt(i,R*(v==null?0:v));return '<circle cx="'+p[0].toFixed(1)+'" cy="'+p[1].toFixed(1)+'" r="3" fill="'+tierColor(k)+'"/>'}).join("");
+  return '<svg width="340" height="300" viewBox="-40 0 380 300">'+rings+axes+'<g class="radar-poly"><polygon points="'+poly+'" fill="rgba(25,195,125,.18)" stroke="#19C37D" stroke-width="2"/>'+dots+'</g></svg>';
+}
+function openDrawer(slug){
+  var e=D.entries.find(function(x){return x.model.slug===slug});if(!e)return;
+  var m=e.model;
+  var tiers=TIERS.map(function(t){
+    var v=val(e,t.key);
+    var isQual=t.key==="T4";
+    var disp=isQual?(((e.tracks||{}).T4&&e.tracks.T4.status==="collected")?"定性":"—"):fmt(v);
+    var w=isQual?8:(v==null?0:v*100);
+    return '<div class="d-tier"><span class="t">'+esc(t.label)+'<small>'+esc(t.code)+'</small></span><span class="track"><i data-w="'+w+'" style="background:'+tierColor(t.key)+(isQual?';opacity:.45':'')+'"></i></span><span class="v" style="color:'+(isQual?"var(--violet)":scoreColor(v))+'">'+disp+'</span></div>';
+  }).join("");
+  $("#drawerBody").innerHTML=
+    '<button class="d-close" id="dClose" aria-label="关闭">✕</button>'
+    +'<div class="d-head">'+avatarHTML(m.submitter,52)+'<div><div class="d-model">'+esc(m.name)+'</div><div class="d-sub">@'+esc(m.submitter||"unknown")+' · '+esc(m.provider||"")+'</div></div></div>'
+    +'<div class="d-meta"><span>v'+esc(D.benchmark_version)+'</span>'+(m.version?'<span title="'+esc(m.version)+'">'+esc(m.version.length>34?m.version.slice(0,34)+"…":m.version)+'</span>':"")+'<span>'+esc(e.submitted_at||"")+'</span>'+verifHTML(e)+(e.partial?'<span style="color:var(--amber)">† 缺档</span>':"")+'</div>'
+    +'<div class="d-overall"><span class="n">'+fmt(e.overall)+'</span><span class="l">OVERALL<br>7 档等权均值</span></div>'
+    +'<div class="d-sec">能力雷达 / Radar</div><div class="radar-box">'+radarSVG(e)+'</div>'
+    +'<div class="d-sec">逐档得分 / Tiers</div>'+tiers
+    +'<div class="d-sec">执行说明 / Notes</div><div class="d-notes">'+esc(e.notes||"（无）")+'</div>'
+    +'<div class="d-sec">证据与输出 / Evidence</div><div class="d-links">'
+    +'<a href="'+REPO+'/tree/main/results/'+esc(m.slug)+'/outputs" target="_blank" rel="noopener">→ 原始输出 outputs/</a>'
+    +'<a href="'+REPO+'/tree/main/results/'+esc(m.slug)+'/evidence" target="_blank" rel="noopener">→ 证据 evidence/</a>'
+    +'<a href="'+REPO+'/blob/main/results/'+esc(m.slug)+'/summary.json" target="_blank" rel="noopener">→ summary.json</a></div>';
+  $("#backdrop").classList.add("open");
+  $("#drawer").classList.add("open");
+  $("#drawer").setAttribute("aria-hidden","false");
+  document.body.style.overflow="hidden";
+  $("#dClose").addEventListener("click",closeDrawer);
+  requestAnimationFrame(function(){requestAnimationFrame(function(){
+    var p=$("#drawer .radar-poly");if(p)p.classList.add("in");
+    document.querySelectorAll("#drawer .d-tier i").forEach(function(i){i.style.width=i.dataset.w+"%"});
+  })});
+}
+function closeDrawer(){
+  $("#backdrop").classList.remove("open");
+  $("#drawer").classList.remove("open");
+  $("#drawer").setAttribute("aria-hidden","true");
+  document.body.style.overflow="";
+}
+$("#backdrop").addEventListener("click",closeDrawer);
+document.addEventListener("keydown",function(e){if(e.key==="Escape")closeDrawer()});
+
+/* reveal + count-up + bars */
+if(!("IntersectionObserver" in window)){
+  document.querySelectorAll(".reveal,.pcard,.tcard").forEach(function(el){el.classList.add("in")});
+  document.querySelectorAll("[data-count]").forEach(function(el){el.textContent=fmt(parseFloat(el.dataset.count||"0"))});
+  document.querySelectorAll(".p-bar i").forEach(function(i){i.style.height=i.dataset.h+"%"});
+}else{
+var io=new IntersectionObserver(function(es){
+  es.forEach(function(en){
+    if(!en.isIntersecting)return;
+    en.target.classList.add("in");
+    en.target.querySelectorAll("[data-count]").forEach(function(el){countUp(el)});
+    en.target.querySelectorAll(".p-bar i").forEach(function(i){i.style.height=i.dataset.h+"%"});
+    io.unobserve(en.target);
+  });
+},{threshold:.15});
+document.querySelectorAll(".reveal,.pcard,.tcard").forEach(function(el){io.observe(el)});
+}
+function countUp(el){
+  var target=parseFloat(el.dataset.count||"0");var t0=null;var dur=1100;
+  function step(ts){if(!t0)t0=ts;var p=Math.min(1,(ts-t0)/dur);p=1-Math.pow(1-p,3);
+    el.textContent=(target*p).toFixed(4);if(p<1)requestAnimationFrame(step);else el.textContent=fmt(target)}
+  requestAnimationFrame(step);
+}
+/* nav shadow */
+window.addEventListener("scroll",function(){$("#nav").classList.toggle("scrolled",window.scrollY>8)},{passive:true});
+/* print/capture safety: never leave content hidden */
+window.addEventListener("beforeprint",function(){
+  document.querySelectorAll(".reveal,.pcard,.tcard").forEach(function(el){el.classList.add("in")});
+});
+/* current-section state in nav */
+(function(){
+  var map={board:'a[href="#board"]',tiers:'a[href="#tiers"]',join:'a[href="#join"]'};
+  var so=new IntersectionObserver(function(es){
+    es.forEach(function(en){
+      if(!en.isIntersecting)return;
+      document.querySelectorAll(".nav-links a").forEach(function(a){a.classList.remove("active")});
+      var a=document.querySelector(map[en.target.id]);if(a)a.classList.add("active");
+    });
+  },{rootMargin:"-30% 0px -60% 0px"});
+  ["board","tiers","join"].forEach(function(id){var el=document.getElementById(id);if(el)so.observe(el)});
+})();
+})();
+</script>
+</body>
+</html>

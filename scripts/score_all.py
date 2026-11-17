@@ -129,13 +129,14 @@ def overall_of(tracks):
     return round(sum(vals) / len(vals), 4), False
 
 
-def build_summary(slug, name, version, provider, date, notes, pred_root, metrics_dir):
+def build_summary(slug, name, version, provider, submitter, date, notes, pred_root, metrics_dir):
     bench = load(os.path.join(ROOT, "benchmark.json"))
     tracks = compute_tracks(pred_root, metrics_dir)
     overall, partial = overall_of(tracks)
     return {
-        "schema_version": "1.0",
-        "model": {"slug": slug, "name": name, "version": version or "", "provider": provider or ""},
+        "schema_version": "1.1",
+        "model": {"slug": slug, "name": name, "version": version or "", "provider": provider or "",
+                  "submitter": submitter or ""},
         "benchmark_version": bench["version"],
         "scorer_hash": scorer_hash(),
         "submitted_at": date or datetime.date.today().isoformat(),
@@ -153,6 +154,7 @@ def main():
     ap.add_argument("--name", required=True, help="display name, e.g. My Model v1")
     ap.add_argument("--version", default="", help="API model id / version string")
     ap.add_argument("--provider", default="")
+    ap.add_argument("--submitter", default="", help="GitHub username of the submitter (shown on the leaderboard)")
     ap.add_argument("--date", default="", help="submission date YYYY-MM-DD (default today)")
     ap.add_argument("--notes", default="")
     ap.add_argument("--pred", default=None, help="outputs root (default results/<slug>/outputs)")
@@ -163,7 +165,7 @@ def main():
     out = args.out or os.path.join(res_dir, "summary.json")
     if not os.path.isdir(pred):
         raise SystemExit("outputs not found: %s" % pred)
-    summary = build_summary(args.slug, args.name, args.version, args.provider,
+    summary = build_summary(args.slug, args.name, args.version, args.provider, args.submitter,
                             args.date, args.notes, pred, os.path.join(res_dir, "metrics"))
     os.makedirs(os.path.dirname(out), exist_ok=True)
     with open(out, "w", encoding="utf-8") as f:

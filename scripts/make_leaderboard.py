@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Generate LEADERBOARD.md + leaderboard.json from results/*/summary.json.
+"""Generate LEADERBOARD.md + leaderboard.json + docs/leaderboard-data.js (public page data).
 
 Usage:
-  python scripts/make_leaderboard.py           # regenerate
-  python scripts/make_leaderboard.py --check   # CI: fail if LEADERBOARD.md is stale
+  python scripts/make_leaderboard.py           # regenerate all three
+  python scripts/make_leaderboard.py --check   # CI: fail if generated files are stale
 """
 import argparse
 import datetime
@@ -13,9 +13,22 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
+REPO_URL = "https://github.com/chuiziyao/AutoFinPDF-Bench"
 
-COLS = [("T1", "f1"), ("T2", "f1"), ("T5", "f1"), ("T3", "rate"),
-        ("T6", "element_f1"), ("T7", "fact_recall"), ("REITs_A", "score"), ("REITs_B", "score")]
+# key, code, plain display label, one-line description, track
+TIERS = [
+    ("T1", "T1", "短篇关键值", "短篇公告交付/销量精确抽取", "standard"),
+    ("T2", "T2", "长报告三表", "年报/招股书三大报表全量抽取", "standard"),
+    ("T3", "T3", "跨市场一致", "美股↔港股同指标归一一致性（由 T2 派生）", "standard"),
+    ("T4", "T4", "深度理解", "事件/上下游/风险判读（定性档，不计数值分）", "standard"),
+    ("T5", "T5", "图表视觉", "图表/方框图视觉抽取", "standard"),
+    ("T6", "T6", "法律意见书", "密集法律要素解读", "hard"),
+    ("T7", "T7", "扫描件OCR", "无文本层扫描件识别", "hard"),
+    ("REITs_A", "A", "REITs语义", "REITs 定期报告运营/财务字段（验证式）", "reits"),
+    ("REITs_B", "B", "超长文档", "1511 页招募书核心信息（验证式）", "reits"),
+]
+SCORE_KEY = {"T1": "f1", "T2": "f1", "T3": "rate", "T5": "f1",
+             "T6": "element_f1", "T7": "fact_recall", "REITs_A": "score", "REITs_B": "score"}
 
 
 def load(p):
@@ -31,6 +44,13 @@ def fmt(v):
     return str(v)
 
 
+def tier_cell(s, key):
+    t = s["tracks"].get(key) or {}
+    if key == "T4":
+        return "定性" if t.get("status") == "collected" else "—"
+    return fmt(t.get(SCORE_KEY.get(key)))
+
+
 def collect():
     rows = []
     rdir = os.path.join(ROOT, "results")
@@ -38,8 +58,7 @@ def collect():
         sp = os.path.join(rdir, slug, "summary.json")
         if not os.path.exists(sp):
             continue
-        s = load(sp)
-        rows.append(s)
+        rows.append(load(sp))
     rows.sort(key=lambda s: (s.get("overall") is None, -(s.get("overall") or 0), s["model"]["slug"]))
     return rows
 
@@ -54,35 +73,59 @@ def render(rows, bench):
     L.append("基准版本 **%s** · 模型数 **%d** · 更新 %s" %
              (bench["version"], len(rows), datetime.date.today().isoformat()))
     L.append("")
-    L.append("评分口径见 [docs/SCORING.md](docs/SCORING.md)；诚信与核验政策见 [docs/INTEGRITY.md](docs/INTEGRITY.md)。")
-    L.append("Overall = mean(T1·F1, T2·F1, T5·F1, T6·要素F1, T7·事实召回, REITs-A, REITs-B)；† = 缺档（partial）。")
-    L.append("所有列均为 0–1 分，满分 1，越高越好。T1–T7 为对人工 GT 的准确率类指标；REITs 为验证式质量指标（口径见 docs/SCORING.md）。")
+    L.append("📊 **公开展示页（可排序/搜索/看详情）**：%s" % (REPO_URL + "/"))
     L.append("")
-    L.append("| # | 模型 | Overall | T1 F1 | T2 F1 | T5 F1 | T3 一致 | T6 F1 | T7 召回 | REITs-A | REITs-B | 核验 | 日期 |")
-    L.append("|---|---|---|---|---|---|---|---|---|---|---|---|---|")
+    L.append("所有列均为 **0–1 分，满分 1，越高越好**；Overall = 7 个计数档等权均值（T3 单列展示、T4 定性不入均值）。")
+    L.append("T1–T7 为对人工核验 GT 的准确率类指标；REITs语义/超长文档为验证式质量指标（口径见 [docs/SCORING.md](docs/SCORING.md)）。† = 缺档（partial）。")
+    L.append("")
+    L.append("| # | 提交者 | 模型 | Overall | T1 短篇 | T2 三表 | T3 一致 | T4 深解 | T5 图表 | T6 法律 | T7 扫描 | REITs语义 | 超长文档 | 核验 | 日期 |")
+    L.append("|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|")
     for i, s in enumerate(rows, 1):
         m = s["model"]
         name = m["name"]
         if m.get("version"):
             name += " (`%s`)" % m["version"]
-        cells = [fmt((s["tracks"].get(t) or {}).get(k)) for t, k in COLS]
+        sub = m.get("submitter") or "—"
+        if sub != "—":
+            sub = "[@%s](https://github.com/%s)" % (sub, sub)
+        cells = [tier_cell(s, k) for k, _, _, _, _ in TIERS]
         mark = "†" if s.get("partial") else ""
         ver = "✅ verified" if s.get("verification") == "verified" else "self-reported"
-        L.append("| %d | %s | **%s**%s | %s | %s | %s |" %
-                 (i, name, fmt(s.get("overall")), mark, " | ".join(cells), ver, s.get("submitted_at", "")))
+        L.append("| %d | %s | %s | **%s**%s | %s | %s | %s |" %
+                 (i, sub, name, fmt(s.get("overall")), mark, " | ".join(cells), ver, s.get("submitted_at", "")))
     L.append("")
     L.append("## 说明 / Notes")
     L.append("")
     for s in rows:
         m = s["model"]
-        L.append("- **%s**：%s" % (m["name"], s.get("notes") or "（无）"))
+        L.append("- **%s**（提交者 @%s）：%s" % (m["name"], m.get("submitter") or "未知", s.get("notes") or "（无）"))
     L.append("")
     L.append("## 如何上榜 / How to enter")
     L.append("")
     L.append("把仓库地址发给你的模型/智能体，按 [AGENTS.md](AGENTS.md) 执行："
-             "跑冻结任务 → `score_all.py` 评分 → `validate_submission.py` 自检 → 提 PR 留下分数。")
+             "跑冻结任务 → `score_all.py --submitter <你的GitHub用户名>` 评分 → `validate_submission.py` 自检 → 提 PR 留下分数。")
     L.append("")
     return "\n".join(L)
+
+
+def write_data_js(rows, bench):
+    data = {
+        "benchmark_version": bench["version"],
+        "generated_at": datetime.date.today().isoformat(),
+        "repo": REPO_URL,
+        "page_url": REPO_URL + "/",
+        "tiers": [{"key": k, "code": c, "label": lb, "desc": d, "track": tr} for k, c, lb, d, tr in TIERS],
+        "score_keys": SCORE_KEY,
+        "entries": rows,
+    }
+    path = os.path.join(ROOT, "docs", "leaderboard-data.js")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
+        f.write("// Auto-generated by scripts/make_leaderboard.py — do not edit by hand.\n")
+        f.write("window.BOARD_DATA = ")
+        json.dump(data, f, ensure_ascii=False, indent=2)
+        f.write(";\n")
+    return path
 
 
 def main():
@@ -98,12 +141,22 @@ def main():
     md_path = os.path.join(ROOT, "LEADERBOARD.md")
     json_path = os.path.join(ROOT, "leaderboard.json")
     if args.check:
-        old = open(md_path, encoding="utf-8").read() if os.path.exists(md_path) else ""
-        # ignore the auto-update date line when checking
         def norm(t):
-            return "\n".join(l for l in t.splitlines() if not l.startswith("基准版本"))
-        if norm(old) != norm(md):
+            return "\n".join(l for l in t.splitlines()
+                             if not l.startswith("基准版本") and not l.startswith("// Auto-generated"))
+        old_md = open(md_path, encoding="utf-8").read() if os.path.exists(md_path) else ""
+        if norm(old_md) != norm(md):
             print("LEADERBOARD.md is stale — run scripts/make_leaderboard.py")
+            sys.exit(1)
+        # data js check: parse existing payload and compare (no writes in --check)
+        data_path = os.path.join(ROOT, "docs", "leaderboard-data.js")
+        if not os.path.exists(data_path):
+            print("docs/leaderboard-data.js missing — run scripts/make_leaderboard.py")
+            sys.exit(1)
+        old_js = open(data_path, encoding="utf-8").read()
+        payload = json.loads(old_js.split("window.BOARD_DATA = ", 1)[1].rstrip().rstrip(";"))
+        if payload["entries"] != rows or payload["benchmark_version"] != bench["version"]:
+            print("docs/leaderboard-data.js is stale — run scripts/make_leaderboard.py")
             sys.exit(1)
         print("leaderboard up to date (%d entries)" % len(rows))
         return
@@ -112,7 +165,8 @@ def main():
     with open(json_path, "w", encoding="utf-8", newline="\n") as f:
         json.dump(board, f, ensure_ascii=False, indent=2)
         f.write("\n")
-    print("LEADERBOARD.md + leaderboard.json written (%d entries)" % len(rows))
+    write_data_js(rows, bench)
+    print("LEADERBOARD.md + leaderboard.json + docs/leaderboard-data.js written (%d entries)" % len(rows))
 
 
 if __name__ == "__main__":

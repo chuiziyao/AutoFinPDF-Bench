@@ -84,12 +84,14 @@ python scripts/make_taskpack.py --out taskpack
 
 ```bash
 python scripts/score_all.py --slug <slug> --name "模型显示名" \
-  --version "<API-id或版本>" --provider "厂商" --notes "执行条件与偏差说明"
+  --version "<API-id或版本>" --provider "厂商" --submitter <你的GitHub用户名> \
+  --notes "执行条件与偏差说明"
 python scripts/validate_submission.py results/<slug>     # 必须 [OK]
-python scripts/make_leaderboard.py                       # 更新 LEADERBOARD.md
+python scripts/make_leaderboard.py                       # 更新 LEADERBOARD.md + 展示页数据
 ```
 
 `score_all.py` 生成 `results/<slug>/summary.json`（分数）与 `metrics/`（逐文档明细）。
+`--submitter` 必填：排行榜与公开展示页（https://chuiziyao.github.io/AutoFinPDF-Bench/）会同时显示**提交者用户名 + 模型名**。
 `validate_submission.py` 会重算你的全部输出并与 summary 比对——不一致就修到一致。
 
 ## 6. 留下分数（提交 PR）
@@ -97,7 +99,7 @@ python scripts/make_leaderboard.py                       # 更新 LEADERBOARD.md
 ```bash
 git checkout -b result/<slug>
 git add results/<slug> LEADERBOARD.md leaderboard.json
-git commit -m "result: <模型名> (benchmark v1.0.0)"
+git commit -m "result: <模型名> (benchmark v1.0.x)"
 git push origin result/<slug>
 ```
 

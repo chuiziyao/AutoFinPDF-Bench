@@ -1,17 +1,18 @@
 {
-  "benchmark_version": "1.0.0",
+  "benchmark_version": "1.0.1",
   "generated_at": "2026-11-17",
   "entries": [
     {
-      "schema_version": "1.0",
+      "schema_version": "1.1",
       "model": {
         "slug": "qwen4-max-preview",
         "name": "Qwen4-Max-Preview",
         "version": "qwen-latest-series-invite-1102",
-        "provider": "Alibaba Qwen"
+        "provider": "Alibaba Qwen",
+        "submitter": "chuiziyao"
       },
-      "benchmark_version": "1.0.0",
-      "scorer_hash": "1e6819d932ad5265254533c1790be54d80b99436ecff3c5a1785a5cfd31c1f9b",
+      "benchmark_version": "1.0.1",
+      "scorer_hash": "4002506f7449ee906dff49820270cd460c9afdbd3bf00f373c53497f6a2bceb1",
       "submitted_at": "2026-11-15",
       "verification": "self-reported",
       "tracks": {
@@ -129,15 +130,16 @@
       "notes": "参考运行：DSH harness 直连 API，思考 on（T2 消融 off 另见原报告），标准档/硬档 2 轮，REITs 1 轮。REITs-A 官方 16 份子集（全量 78 份运行见原工程）。"
     },
     {
-      "schema_version": "1.0",
+      "schema_version": "1.1",
       "model": {
         "slug": "hy4",
         "name": "HY4 (Tencent Hunyuan)",
         "version": "WorkBuddy agent, manual run",
-        "provider": "Tencent"
+        "provider": "Tencent",
+        "submitter": "chuiziyao"
       },
-      "benchmark_version": "1.0.0",
-      "scorer_hash": "1e6819d932ad5265254533c1790be54d80b99436ecff3c5a1785a5cfd31c1f9b",
+      "benchmark_version": "1.0.1",
+      "scorer_hash": "4002506f7449ee906dff49820270cd460c9afdbd3bf00f373c53497f6a2bceb1",
       "submitted_at": "2026-11-16",
       "verification": "self-reported",
       "tracks": {

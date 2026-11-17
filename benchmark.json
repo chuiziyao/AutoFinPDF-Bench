@@ -1,6 +1,6 @@
 {
   "name": "AutoFinPDF-Bench",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "frozen_at": "2026-11-17",
   "description": "金融披露 PDF 结构化解析基准：新能源汽车股（A/港/美三市场）+ 公募 REITs。标准档 T1–T5（T3 派生、T4 定性）+ 硬档 T6/T7 + REITs 档 A/B。",
   "runs_per_track": {
@@ -873,7 +873,7 @@
       "scripts/score_hard.py": "548cc5bd4fc389bc421fc7bc8013dfedafd7065bcedf42504fad404d82fd3ff6",
       "scripts/score_t3.py": "9074fc86bb495ede1b85dfedc4b0ae19f2190bfe53f16c6b89ff19fa07c8cac7",
       "scripts/score_reits.py": "5b5d70b7b6261a3a7e1c64b8008f373ef54744ceb8107ad14eac41aef0918e69",
-      "scripts/score_all.py": "6887fc49d6c6d389efd60d98d13aba51ccd8358de8661203271f33a30344c3a6",
+      "scripts/score_all.py": "ba703f16040a5931bf0ec87fd21ed429836f85f9c1ed2ec5bfcc53722d175511",
       "scripts/run_eval.py": "4299941949ee874f186ca1a447b4e32c0e8c311f7d698702017711674a1ad543",
       "scripts/make_taskpack.py": "9d4562366f4b6af1dab6be89989a192b2ffa1c31966aaac7a94093fa0d737193",
       "scripts/parse_outputs.py": "5d7db61c9cae0cd2d2dda223855130ca637561e9d0a2378c7fa4f2e88d47d8eb"

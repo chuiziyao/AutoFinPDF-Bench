@@ -5,18 +5,19 @@
 > 把本仓库地址发给任何新的大模型（或其操作者/智能体），它按 [AGENTS.md](AGENTS.md) 执行即可参评：
 > 跑冻结任务 → 确定性脚本评分 → 提 PR → 分数永久留在 [LEADERBOARD.md](LEADERBOARD.md)。
 
-## 排行榜（v1.0.0）
+## 排行榜（v1.0.1）
 
-| # | 模型 | Overall | T1 F1 | T2 F1 | T5 F1 | T6 F1 | T7 召回 | REITs-A | REITs-B |
-|---|---|---|---|---|---|---|---|---|---|
-| 1 | Qwen4-Max-Preview | **0.7761** | 1.0 | 0.9939 | 0.9542 | 0.524 | 0.287 | 0.8402 | 0.8334 |
-| 2 | HY4 (Tencent Hunyuan) | **0.7387** | 1.0 | 0.9591 | 0.9412 | 0.451 | 0.24 | 0.7465 | 0.8334 |
+📊 **公开展示页**（可排序 / 搜索 / 逐模型详情雷达图）：**https://chuiziyao.github.io/AutoFinPDF-Bench/**
 
-> 所有列均为 **0–1 归一化分数，满分 1，越高越好**；Overall = 7 档等权均值。
-> T1–T7 是对人工核验 GT 的准确率类指标（F1/召回）；REITs-A/B 是验证式质量指标（格式规范/页码覆盖/稀缺指标覆盖），
-> 不是对 GT 的准确率——口径差异见 [docs/SCORING.md](docs/SCORING.md)。
+| # | 提交者 | 模型 | Overall | T1 短篇 | T2 三表 | T3 一致 | T4 深解 | T5 图表 | T6 法律 | T7 扫描 | REITs语义 | 超长文档 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | @chuiziyao | Qwen4-Max-Preview | **0.7761** | 1.0 | 0.9939 | 1.0 | 定性 | 0.9542 | 0.524 | 0.287 | 0.8402 | 0.8334 |
+| 2 | @chuiziyao | HY4 (Tencent Hunyuan) | **0.7387** | 1.0 | 0.9591 | 1.0 | 定性 | 0.9412 | 0.451 | 0.24 | 0.7465 | 0.8334 |
 
-完整表格（含 T3 跨市场一致性、核验状态、日期）见 [LEADERBOARD.md](LEADERBOARD.md)。
+> 所有列 **0–1 分，满分 1，越高越好**；Overall = 7 个计数档等权均值（T3 单列展示、T4 定性不入均值）。
+> 白话版：T1 短公告抽数 · T2 长报告抽三张财务报表 · T3 美股港股数字对不对得上 · T4 读懂事件与上下游（定性）·
+> T5 看图读数 · T6 读法律意见书 · T7 认扫描件 · REITs语义 基金报告运营指标 · 超长文档 1511 页招募书。
+> F1/召回等指标口径详见 [docs/SCORING.md](docs/SCORING.md)；完整表格（核验状态/日期）见 [LEADERBOARD.md](LEADERBOARD.md)。
 
 ## 为什么做这个基准
 
@@ -53,7 +54,7 @@
 export OPENAI_API_KEY=sk-...
 python scripts/run_eval.py --base-url https://api.provider.com/v1 --model <model-id> \
     --out results/<slug>/outputs
-python scripts/score_all.py --slug <slug> --name "My Model" --provider "Vendor"
+python scripts/score_all.py --slug <slug> --name "My Model" --provider "Vendor" --submitter <你的GitHub用户名>
 python scripts/validate_submission.py results/<slug>
 python scripts/make_leaderboard.py
 # 提 PR，分数上榜
