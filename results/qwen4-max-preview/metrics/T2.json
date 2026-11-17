@@ -1,0 +1,97 @@
+{
+  "aggregate": {
+    "precision": 0.9939,
+    "recall": 0.9939,
+    "f1": 0.9939,
+    "exact_match_rate": 0.9939,
+    "coverage": 1.0,
+    "hallucination_rate": 0.0,
+    "value_error_rate": 0.0061,
+    "documents": 4,
+    "total_gt_fields": 182
+  },
+  "per_document": {
+    "li_hk_ar_fy2025__T2.json": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match_rate": 1.0,
+      "coverage": 1.0,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0,
+      "runs": 2,
+      "gt_fields": 50,
+      "pred_fields": 50,
+      "per_run_f1": [
+        1.0,
+        1.0
+      ],
+      "errors_r1": []
+    },
+    "li_hk_listing_doc_2021__T2.json": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match_rate": 1.0,
+      "coverage": 1.0,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0,
+      "runs": 2,
+      "gt_fields": 44,
+      "pred_fields": 45,
+      "per_run_f1": [
+        1.0,
+        1.0
+      ],
+      "errors_r1": []
+    },
+    "li_us_20f_fy2025__T2.json": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match_rate": 1.0,
+      "coverage": 1.0,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0,
+      "runs": 2,
+      "gt_fields": 47,
+      "pred_fields": 55,
+      "per_run_f1": [
+        1.0,
+        1.0
+      ],
+      "errors_r1": []
+    },
+    "seres_a_annual_2025__T2.json": {
+      "precision": 0.9756,
+      "recall": 0.9756,
+      "f1": 0.9756,
+      "exact_match_rate": 0.9756,
+      "coverage": 1.0,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0244,
+      "runs": 2,
+      "gt_fields": 41,
+      "pred_fields": 49,
+      "per_run_f1": [
+        0.9756,
+        0.9756
+      ],
+      "errors_r1": [
+        {
+          "type": "value_mismatch",
+          "key": [
+            "metric",
+            "vehicle_margin",
+            "FY2025",
+            "CNY"
+          ],
+          "gt": 28.76,
+          "pred": 28.21,
+          "gt_unit": "percent",
+          "pred_unit": "percent"
+        }
+      ]
+    }
+  }
+}

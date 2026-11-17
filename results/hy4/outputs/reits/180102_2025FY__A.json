@@ -1,0 +1,242 @@
+{
+  "fields": [
+    {
+      "name": "不动产项目整体-出租率",
+      "value": 70.30,
+      "unit": "%",
+      "period": "2025A",
+      "page": 13
+    },
+    {
+      "name": "不动产项目整体-出租率",
+      "value": 85.31,
+      "unit": "%",
+      "period": "2024A",
+      "page": 13
+    },
+    {
+      "name": "不动产项目整体-WALT加权剩余租期",
+      "value": 2.15,
+      "unit": "年",
+      "period": "2025A",
+      "page": 13
+    },
+    {
+      "name": "不动产项目整体-WALT加权剩余租期",
+      "value": 0.95,
+      "unit": "年",
+      "period": "2024A",
+      "page": 13
+    },
+    {
+      "name": "不动产项目整体-收缴率",
+      "value": 95.38,
+      "unit": "%",
+      "period": "2025A",
+      "page": 13
+    },
+    {
+      "name": "不动产项目整体-收缴率",
+      "value": 94.88,
+      "unit": "%",
+      "period": "2024A",
+      "page": 13
+    },
+    {
+      "name": "不动产项目整体-出租率",
+      "value": 65.44,
+      "unit": "%",
+      "period": "2025A",
+      "page": 14
+    },
+    {
+      "name": "不动产项目整体-出租率",
+      "value": 81.66,
+      "unit": "%",
+      "period": "2024A",
+      "page": 14
+    },
+    {
+      "name": "不动产项目整体-WALT加权剩余租期",
+      "value": 2.58,
+      "unit": "年",
+      "period": "2025A",
+      "page": 14
+    },
+    {
+      "name": "不动产项目整体-WALT加权剩余租期",
+      "value": 1.01,
+      "unit": "年",
+      "period": "2024A",
+      "page": 14
+    },
+    {
+      "name": "不动产项目整体-收缴率",
+      "value": 94.91,
+      "unit": "%",
+      "period": "2025A",
+      "page": 15
+    },
+    {
+      "name": "不动产项目整体-收缴率",
+      "value": 94.24,
+      "unit": "%",
+      "period": "2024A",
+      "page": 15
+    },
+    {
+      "name": "不动产项目整体-出租率",
+      "value": 74.67,
+      "unit": "%",
+      "period": "2025A",
+      "page": 15
+    },
+    {
+      "name": "不动产项目整体-出租率",
+      "value": 88.59,
+      "unit": "%",
+      "period": "2024A",
+      "page": 15
+    },
+    {
+      "name": "不动产项目整体-WALT加权剩余租期",
+      "value": 1.82,
+      "unit": "年",
+      "period": "2025A",
+      "page": 16
+    },
+    {
+      "name": "不动产项目整体-WALT加权剩余租期",
+      "value": 0.89,
+      "unit": "年",
+      "period": "2024A",
+      "page": 16
+    },
+    {
+      "name": "不动产项目整体-收缴率",
+      "value": 95.76,
+      "unit": "%",
+      "period": "2025A",
+      "page": 16
+    },
+    {
+      "name": "不动产项目整体-收缴率",
+      "value": 95.43,
+      "unit": "%",
+      "period": "2024A",
+      "page": 16
+    },
+    {
+      "name": "华夏合肥高新产园REIT-营业收入",
+      "value": 78525414.02,
+      "unit": "元",
+      "period": "2025A",
+      "page": 8
+    },
+    {
+      "name": "华夏合肥高新产园REIT-营业收入",
+      "value": 91984655.55,
+      "unit": "元",
+      "period": "2024A",
+      "page": 8
+    },
+    {
+      "name": "华夏合肥高新产园REIT-净利润",
+      "value": 16399739.01,
+      "unit": "元",
+      "period": "2025A",
+      "page": 8
+    },
+    {
+      "name": "华夏合肥高新产园REIT-净利润",
+      "value": 22988278.44,
+      "unit": "元",
+      "period": "2024A",
+      "page": 8
+    },
+    {
+      "name": "华夏合肥高新产园REIT-现金流分派率",
+      "value": 5.26,
+      "unit": "%",
+      "period": "2025A",
+      "page": 8
+    },
+    {
+      "name": "华夏合肥高新产园REIT-现金流分派率",
+      "value": 5.60,
+      "unit": "%",
+      "period": "2024A",
+      "page": 8
+    },
+    {
+      "name": "华夏合肥高新产园REIT-现金流分派率（年化）",
+      "value": 5.26,
+      "unit": "%",
+      "period": "2025A",
+      "page": 8
+    },
+    {
+      "name": "华夏合肥高新产园REIT-现金流分派率（年化）",
+      "value": 5.60,
+      "unit": "%",
+      "period": "2024A",
+      "page": 8
+    },
+    {
+      "name": "华夏合肥高新产园REIT-可供分配金额",
+      "value": 59550404.60,
+      "unit": "元",
+      "period": "2025A",
+      "page": 9
+    },
+    {
+      "name": "华夏合肥高新产园REIT-营业收入（项目公司）",
+      "value": 77718109.67,
+      "unit": "元",
+      "period": "2025A",
+      "page": 18
+    },
+    {
+      "name": "华夏合肥高新产园REIT-营业收入（项目公司）",
+      "value": 90231009.77,
+      "unit": "元",
+      "period": "2024A",
+      "page": 18
+    },
+    {
+      "name": "华夏合肥高新产园REIT-EBITDA（项目公司）",
+      "value": 55092658.57,
+      "unit": "元",
+      "period": "2025A",
+      "page": 18
+    },
+    {
+      "name": "华夏合肥高新产园REIT-EBITDA（项目公司）",
+      "value": 62964162.05,
+      "unit": "元",
+      "period": "2024A",
+      "page": 18
+    },
+    {
+      "name": "高新睿成项目-WALT加权剩余租期",
+      "value": 2.58,
+      "unit": "年",
+      "period": "2025A",
+      "page": 15
+    },
+    {
+      "name": "高新君道项目-WALT加权剩余租期",
+      "value": 1.82,
+      "unit": "年",
+      "period": "2025A",
+      "page": 16
+    },
+    {
+      "name": "不动产项目整体-WALT加权剩余租期",
+      "value": 2.15,
+      "unit": "年",
+      "period": "2025A",
+      "page": 23
+    }
+  ]
+}

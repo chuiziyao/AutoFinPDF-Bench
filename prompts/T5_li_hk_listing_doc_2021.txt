@@ -1,0 +1,18 @@
+【任务T5】下方为理想汽车2021港股招股书「行業概覽」页面图像（灼識諮詢CIC行业数据，非公司财务）。
+请仅根据图像，把下列指标按图中数值结构化输出到 key_metrics（statement="metric", currency="CNY"），每条含 item/period/value/unit/page。
+年份与数值对应须依据图像布局判断（文本抽取顺序乱序，勿依赖文本顺序）；图中预测值年份照常输出，period 用 FY2021 等。
+单位严格按清单：thousand=千輛，wan=万辆，count=輛，percent=百分比；数值按图面原样。读不准的放 uncertain，不要编造。只输出 JSON。
+
+字段清单（item | periods | unit | page）：
+nev_sales_bev | FY2016, FY2017, FY2018, FY2019, FY2020, FY2021, FY2022, FY2023, FY2024, FY2025 | thousand | 198
+nev_sales_bev_cagr | FY2016-FY2020, FY2020-FY2025 | percent | 198
+nev_sales_erev | FY2016, FY2017, FY2018, FY2019, FY2020, FY2021, FY2022, FY2023, FY2024, FY2025 | thousand | 198
+nev_sales_phev | FY2016, FY2017, FY2018, FY2019, FY2020, FY2021, FY2022, FY2023, FY2024, FY2025 | thousand | 198
+nev_sales_phev_cagr | FY2016-FY2020, FY2020-FY2025 | percent | 198
+nev_sales_total | FY2016, FY2017, FY2018, FY2019, FY2020, FY2021, FY2022, FY2023, FY2024, FY2025 | thousand | 198
+nev_sales_total_cagr | FY2016-FY2020, FY2020-FY2025 | percent | 198
+nev_avg_price | FY2016, FY2017, FY2018, FY2019, FY2020 | thousand | 206
+nev_avg_price_cagr | FY2016-FY2020 | percent | 206
+erev_sales_china | FY2016, FY2017, FY2019, FY2020, FY2021, FY2022, FY2023, FY2024, FY2025 | count | 208
+erev_sales_china_cagr | FY2016-FY2020, FY2020-FY2025 | percent | 208
+erev_share_of_nev_sales | FY2016, FY2017, FY2018, FY2019, FY2020, FY2021, FY2022, FY2023, FY2024, FY2025 | percent | 208

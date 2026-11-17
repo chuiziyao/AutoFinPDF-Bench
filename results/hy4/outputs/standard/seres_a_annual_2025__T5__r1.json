@@ -1,0 +1,190 @@
+{
+  "meta": {
+    "company": "赛力斯集团股份有限公司",
+    "market": "A",
+    "doc_type": "industry_chart_and_ownership_structure",
+    "fiscal_period": "FY2025",
+    "currency": "CNY",
+    "accounting_standard": "CAS"
+  },
+  "statements": [],
+  "key_metrics": [
+    {
+      "statement": "metric",
+      "item": "premium_fuel_sales",
+      "period": "FY2022",
+      "value": 310,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "premium_fuel_sales",
+      "period": "FY2023",
+      "value": 295,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "premium_fuel_sales",
+      "period": "FY2025",
+      "value": 166,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_penetration",
+      "period": "FY2019",
+      "value": 5,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_penetration",
+      "period": "FY2025",
+      "value": 60,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_sales",
+      "period": "FY2019",
+      "value": 18,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_sales",
+      "period": "FY2020",
+      "value": 34,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_sales",
+      "period": "FY2021",
+      "value": 67,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_sales",
+      "period": "FY2022",
+      "value": 128,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_sales",
+      "period": "FY2023",
+      "value": 181,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_sales",
+      "period": "FY2024",
+      "value": 199,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_sales",
+      "period": "FY2025",
+      "value": 250,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "ownership_pct_xiaokang_to_seres",
+      "period": "FY2025",
+      "value": 22.99,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 75
+    },
+    {
+      "statement": "metric",
+      "item": "ownership_pct_xiaokang_to_yuan",
+      "period": "FY2025",
+      "value": 17.33,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 75
+    },
+    {
+      "statement": "metric",
+      "item": "ownership_pct_yuan_to_seres",
+      "period": "FY2025",
+      "value": 3.79,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 75
+    },
+    {
+      "statement": "metric",
+      "item": "ownership_pct_zhangxinghai_to_xiaokang",
+      "period": "FY2025",
+      "value": 50.0,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 75
+    },
+    {
+      "statement": "metric",
+      "item": "ownership_pct_zhangxinghai_to_yuan",
+      "period": "FY2025",
+      "value": 11.97,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 75
+    }
+  ],
+  "deliveries": [],
+  "events": [],
+  "uncertain": [
+    {
+      "field": "key_metrics.premium_fuel_sales / premium_nev_penetration / premium_nev_sales",
+      "reason": "p11 两幅行业图均无数据标签，数值为按纵轴刻度（销量 0/50/100/150/200/250/300/350 万辆；渗透率 0%-70%）与横轴年份估读，存在约 ±5 万辆 / ±2 个百分点的读数误差，非原文列报数字。"
+    },
+    {
+      "field": "key_metrics.premium_fuel_sales.FY2024",
+      "reason": "图2 灰色线 2024 年约 235 万辆，但字段清单仅要求 FY2022、FY2023、FY2025，故未输出。"
+    },
+    {
+      "field": "key_metrics.ownership_pct_*",
+      "reason": "p0075 方框图中「yuan」对应重庆渝安汽车工业有限公司：张兴海→重庆小康控股有限公司 50%、张兴海→重庆渝安汽车工业有限公司 11.97%、重庆小康控股→重庆渝安 17.33%、重庆小康控股→赛力斯集团 22.99%、重庆渝安→赛力斯集团 3.79%。"
+    },
+    {
+      "field": "key_metrics 单位",
+      "reason": "按任务清单 unit 填报：wan=万辆，percent=百分比；行业口径，非公司交付量。"
+    },
+    {
+      "field": "input",
+      "reason": "T5 输入为 materials/a_share_annual_report_2025_p0011.png、_p0075.png 两张页面图像；以视觉读取并放大核读，p11 按坐标轴估读、p75 读取方框图标注百分比，未使用 PDF 文本或其他来源。"
+    }
+  ]
+}

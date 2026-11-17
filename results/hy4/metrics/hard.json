@@ -1,0 +1,81 @@
+{
+  "legal_byd_private_placement__T6.json": {
+    "element_recall": 0.478,
+    "element_precision": 0.392,
+    "element_f1": 0.431,
+    "conclusion_overlap": 0.493,
+    "runs": 2,
+    "tier": "T6"
+  },
+  "legal_changan_private_placement__T6.json": {
+    "element_recall": 0.322,
+    "element_precision": 0.393,
+    "element_f1": 0.354,
+    "conclusion_overlap": 1.0,
+    "runs": 2,
+    "tier": "T6"
+  },
+  "legal_seres_asset_purchase__T6.json": {
+    "element_recall": 0.636,
+    "element_precision": 0.514,
+    "element_f1": 0.569,
+    "conclusion_overlap": 0.514,
+    "runs": 2,
+    "tier": "T6"
+  },
+  "legal_seres_asset_scanned__T7.json": {
+    "fact_recall": 0.2,
+    "fact_precision": 0.118,
+    "gt_facts": 10.0,
+    "pred_facts": 17.0,
+    "party_recall": 0.8,
+    "date_match": 0.0,
+    "title_match": 1.0,
+    "runs": 2,
+    "tier": "T7"
+  },
+  "legal_seres_main_scanned__T7.json": {
+    "fact_recall": 0.167,
+    "fact_precision": 0.111,
+    "gt_facts": 12.0,
+    "pred_facts": 18.0,
+    "party_recall": 0.667,
+    "date_match": 0.0,
+    "title_match": 1.0,
+    "runs": 2,
+    "tier": "T7"
+  },
+  "scanned_byd_csrc_ipo_approval_2011__T7.json": {
+    "fact_recall": 0.3,
+    "fact_precision": 0.25,
+    "gt_facts": 10.0,
+    "pred_facts": 12.0,
+    "party_recall": 1.0,
+    "date_match": 1.0,
+    "title_match": 1.0,
+    "runs": 2,
+    "tier": "T7"
+  },
+  "scanned_seres_holder_reply_seal_2016__T7.json": {
+    "fact_recall": 0.0,
+    "fact_precision": 0.0,
+    "gt_facts": 5.0,
+    "pred_facts": 5.0,
+    "party_recall": 1.0,
+    "date_match": 1.0,
+    "title_match": 1.0,
+    "runs": 2,
+    "tier": "T7"
+  },
+  "scanned_seres_legal_opinion_sign_2016__T7.json": {
+    "fact_recall": 0.533,
+    "fact_precision": 0.471,
+    "gt_facts": 15.0,
+    "pred_facts": 17.0,
+    "party_recall": 0.6,
+    "date_match": 1.0,
+    "title_match": 1.0,
+    "runs": 2,
+    "tier": "T7"
+  }
+}

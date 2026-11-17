@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "company": "Li Auto Inc.",
+    "market": "US",
+    "doc_type": "delivery_update",
+    "fiscal_period": "2026-10",
+    "currency": "CNY",
+    "accounting_standard": "US_GAAP"
+  },
+  "statements": [],
+  "key_metrics": [],
+  "deliveries": [
+    {
+      "month": "2026-10",
+      "model": "total",
+      "count": 29025,
+      "page": 1
+    }
+  ],
+  "events": [],
+  "uncertain": [
+    {
+      "field": "deliveries.Li MEGA",
+      "reason": "原文为 'delivered over 3,000 units of the new Li MEGA'，属模糊表述（超过3,000），无精确数字，未计入deliveries"
+    },
+    {
+      "field": "meta.currency",
+      "reason": "公告为交付量更新，未披露任何金额，币种按公司报告惯例填CNY，非原文直接给出"
+    }
+  ]
+}

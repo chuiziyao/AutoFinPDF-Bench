@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "doc_id": "li_us_delivery_2026-05",
+    "company_id": "li",
+    "company": "Li Auto Inc.",
+    "market": "US",
+    "doc_type": "delivery_release",
+    "fiscal_period": "2026-05",
+    "currency": "CNY",
+    "accounting_standard": "US_GAAP",
+    "_provenance": {
+      "source_snippet": "[HTM EX-99.1 press release, opening paragraph; no physical page] delivered 33,350 vehicles in May 2026. As of May 31, 2026, Li Auto’s cumulative deliveries reached\n1,702,792",
+      "page": 0,
+      "verified": false,
+      "verifier": null,
+      "verified_date": null
+    }
+  },
+  "statements": [],
+  "key_metrics": [],
+  "deliveries": [
+    {
+      "month": "2026-05",
+      "model": "total",
+      "count": 33350,
+      "page": 0
+    }
+  ],
+  "events": [],
+  "uncertain": []
+}

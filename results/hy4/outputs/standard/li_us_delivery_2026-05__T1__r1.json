@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "company": "Li Auto Inc.",
+    "market": "US",
+    "doc_type": "delivery_update",
+    "fiscal_period": "2026-05",
+    "currency": "CNY",
+    "accounting_standard": "US_GAAP"
+  },
+  "statements": [],
+  "key_metrics": [],
+  "deliveries": [
+    {
+      "month": "2026-05",
+      "model": "total",
+      "count": 33350,
+      "page": 0
+    }
+  ],
+  "events": [],
+  "uncertain": []
+}

@@ -1,0 +1,3 @@
+【任务T6】阅读下方法律意见书全文，结构化抽取：总体法律结论(conclusion)、涉及主体(parties)、已获/待获批准授权(approvals)、律师假设(assumptions)、保留与限定意见(qualifications)、关键条款(key_clauses)、法律风险(risk_flags)、重要定义(definitions)。逐项附原文页码；区分假设/限定/风险三类（勿混淆）；只输出 JSON。
+
+法律意见书全文：

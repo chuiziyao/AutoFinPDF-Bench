@@ -1,0 +1,318 @@
+{
+  "meta": {
+    "doc_id": "seres_a_annual_2025",
+    "company_id": "seres",
+    "company": "赛力斯集团股份有限公司",
+    "market": "A",
+    "doc_type": "annual_report",
+    "fiscal_period": "FY2025",
+    "currency": "CNY",
+    "accounting_standard": "CAS",
+    "_provenance": {
+      "source_snippet": "p11 图1：2019年-2025年中国高端新能源汽车销量（万辆）——左轴0–300（万辆），右轴0%–70%，图例：高端新能源汽车销量合计（红柱）/新能源渗透率（灰线）；图2：2022年-2025年中国高端燃油汽车与高端新能源汽车销量（万辆）——轴0–350，图例：高端燃油汽车（灰线）/高端新能源汽车（红线）。p75『公司与实际控制人之间的产权及控制关系的方框图』（raster图像）。『高端』指成交价25万元以上汽车（p10脚注1）。两图均无数据标签，数值按轴刻度读取。",
+      "page": 11,
+      "verified": false,
+      "verifier": null,
+      "verified_date": null
+    }
+  },
+  "statements": [],
+  "key_metrics": [
+    {
+      "statement": "metric",
+      "item": "premium_nev_sales",
+      "period": "FY2019",
+      "value": 16,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11,
+      "_provenance": {
+        "source_snippet": "图1《2019年-2025年中国高端新能源汽车销量（万辆）》左轴（万辆）2019年红柱；柱高读图≈16.3，与p10正文『销量从16万辆攀升至249万辆』一致",
+        "page": 11,
+        "verified": false,
+        "verifier": null,
+        "verified_date": null
+      }
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_sales",
+      "period": "FY2020",
+      "value": 32,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11,
+      "_provenance": {
+        "source_snippet": "图1左轴（万辆）2020年红柱；无数据标签，柱高像素测量32.3万辆（以p13表3的127/179/197/249校准，残差<0.5万辆），按整数源数据取32；文本层无此值",
+        "page": 11,
+        "verified": false,
+        "verifier": null,
+        "verified_date": null
+      }
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_sales",
+      "period": "FY2021",
+      "value": 66,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11,
+      "_provenance": {
+        "source_snippet": "图1左轴（万辆）2021年红柱；无数据标签，柱高像素测量66.0万辆（校准同上），取66；文本层无此值",
+        "page": 11,
+        "verified": false,
+        "verifier": null,
+        "verified_date": null
+      }
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_sales",
+      "period": "FY2022",
+      "value": 127,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11,
+      "_provenance": {
+        "source_snippet": "图1左轴2022年红柱/图2红线2022年点；读图126.6，与p13表3『2022-2025年高端新能源汽车销量排名』总销量行2022=127一致",
+        "page": 11,
+        "verified": false,
+        "verifier": null,
+        "verified_date": null
+      }
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_sales",
+      "period": "FY2023",
+      "value": 179,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11,
+      "_provenance": {
+        "source_snippet": "图1左轴2023年红柱/图2红线2023年点；读图179.6，与p13表3总销量行2023=179一致",
+        "page": 11,
+        "verified": false,
+        "verifier": null,
+        "verified_date": null
+      }
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_sales",
+      "period": "FY2024",
+      "value": 197,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11,
+      "_provenance": {
+        "source_snippet": "图1左轴2024年红柱/图2红线2024年点；读图197.3，与p13表3总销量行2024=197一致",
+        "page": 11,
+        "verified": false,
+        "verifier": null,
+        "verified_date": null
+      }
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_sales",
+      "period": "FY2025",
+      "value": 249,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11,
+      "_provenance": {
+        "source_snippet": "图1左轴2025年红柱/图2红线2025年点；读图248.6，与p10正文『攀升至249万辆』及p13表3总销量行2025=249一致",
+        "page": 11,
+        "verified": false,
+        "verifier": null,
+        "verified_date": null
+      }
+    },
+    {
+      "statement": "metric",
+      "item": "premium_fuel_sales",
+      "period": "FY2022",
+      "value": 308,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11,
+      "_provenance": {
+        "source_snippet": "图2《2022年-2025年中国高端燃油汽车与高端新能源汽车销量（万辆）》灰线（高端燃油汽车）2022年点；无数据标签，像素测量307.9万辆（以红线127/179/197/249校准），取308；与p11正文『2025年传统高端燃油车销量166万辆，较2022年下降约46%』一致（166/0.54≈307）",
+        "page": 11,
+        "verified": false,
+        "verifier": null,
+        "verified_date": null
+      }
+    },
+    {
+      "statement": "metric",
+      "item": "premium_fuel_sales",
+      "period": "FY2023",
+      "value": 295,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11,
+      "_provenance": {
+        "source_snippet": "图2灰线2023年点；无数据标签，像素测量295.1万辆（校准同上），取295；文本层无此值",
+        "page": 11,
+        "verified": false,
+        "verifier": null,
+        "verified_date": null
+      }
+    },
+    {
+      "statement": "metric",
+      "item": "premium_fuel_sales",
+      "period": "FY2025",
+      "value": 166,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11,
+      "_provenance": {
+        "source_snippet": "图2灰线2025年点；读图166.8，与p11正文『2025年，传统高端燃油车销量166万辆』一致",
+        "page": 11,
+        "verified": false,
+        "verifier": null,
+        "verified_date": null
+      }
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_penetration",
+      "period": "FY2019",
+      "value": 5,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 11,
+      "_provenance": {
+        "source_snippet": "图1右轴（%）灰线（新能源渗透率）2019年点；读图4.9%，与p10正文『高端汽车市场新能源渗透率由5%大幅提升至60%』一致",
+        "page": 11,
+        "verified": false,
+        "verifier": null,
+        "verified_date": null
+      }
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_penetration",
+      "period": "FY2025",
+      "value": 60,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 11,
+      "_provenance": {
+        "source_snippet": "图1右轴（%）灰线2025年点；读图59.8%，与p10正文『提升至60%』一致（249/(249+166)=60.0%）",
+        "page": 11,
+        "verified": false,
+        "verifier": null,
+        "verified_date": null
+      }
+    },
+    {
+      "statement": "metric",
+      "item": "ownership_pct_zhangxinghai_to_xiaokang",
+      "period": "FY2025",
+      "value": 50,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 75,
+      "_provenance": {
+        "source_snippet": "p75『公司与实际控制人之间的产权及控制关系的方框图』（raster图像，文本层无此数值）：张兴海 → 重庆小康控股有限公司 箭头旁标注 50%",
+        "page": 75,
+        "verified": false,
+        "verifier": null,
+        "verified_date": null
+      }
+    },
+    {
+      "statement": "metric",
+      "item": "ownership_pct_zhangxinghai_to_yuan",
+      "period": "FY2025",
+      "value": 11.97,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 75,
+      "_provenance": {
+        "source_snippet": "p75产权及控制关系方框图（raster图像，文本层无此数值）：张兴海 → 重庆渝安汽车工业有限公司 箭头旁标注 11.97%",
+        "page": 75,
+        "verified": false,
+        "verifier": null,
+        "verified_date": null
+      }
+    },
+    {
+      "statement": "metric",
+      "item": "ownership_pct_xiaokang_to_yuan",
+      "period": "FY2025",
+      "value": 17.33,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 75,
+      "_provenance": {
+        "source_snippet": "p75产权及控制关系方框图（raster图像，文本层无此数值）：重庆小康控股有限公司 → 重庆渝安汽车工业有限公司 箭头旁标注 17.33%",
+        "page": 75,
+        "verified": false,
+        "verifier": null,
+        "verified_date": null
+      }
+    },
+    {
+      "statement": "metric",
+      "item": "ownership_pct_xiaokang_to_seres",
+      "period": "FY2025",
+      "value": 22.99,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 75,
+      "_provenance": {
+        "source_snippet": "p75产权及控制关系方框图（raster图像，文本层无此数值）：重庆小康控股有限公司 → 赛力斯集团股份有限公司 箭头旁标注 22.99%；p74方框图同值；注：小康控股所持股份包括担保及信托专户持有的A股股份",
+        "page": 75,
+        "verified": false,
+        "verifier": null,
+        "verified_date": null
+      }
+    },
+    {
+      "statement": "metric",
+      "item": "ownership_pct_yuan_to_seres",
+      "period": "FY2025",
+      "value": 3.79,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 75,
+      "_provenance": {
+        "source_snippet": "p75产权及控制关系方框图（raster图像，文本层无此数值）：重庆渝安汽车工业有限公司 → 赛力斯集团股份有限公司 箭头旁标注 3.79%",
+        "page": 75,
+        "verified": false,
+        "verifier": null,
+        "verified_date": null
+      }
+    }
+  ],
+  "deliveries": [],
+  "events": [],
+  "uncertain": [
+    {
+      "field": "key_metrics.item 词表",
+      "reason": "受控词表(standard/prompts.md)无行业销量/渗透率/持股比例代码；参照 li_hk_listing_doc_2021__T5.json 先例（lead指示用描述性代码），本GT用 statement=metric 与 premium_nev_sales/premium_fuel_sales/premium_nev_penetration/ownership_pct_* 代码，需人工核验确认"
+    },
+    {
+      "field": "premium_nev_sales 口径",
+      "reason": "行业口径：中国成交价25万元以上高端新能源汽车销量（p10脚注1），非赛力斯公司交付量；勿与T2的公司 deliveries_total（FY2025合计销售量516,860辆）混同"
+    },
+    {
+      "field": "图1/图2 无数据标签（读图方法）",
+      "reason": "两图均无数值标签，GT数值按轴刻度像素测量读取：以p13表3的127/179/197/249校准图1（残差<0.5万辆）、以红线同值校准图2；FY2020=32、FY2021=66、premium_fuel_sales FY2022=308、FY2023=295 为读图取整值（测量值32.3/66.0/307.9/295.1），文本层无这些值，人工核验时请对照原图"
+    },
+    {
+      "field": "key_metrics.premium_fuel_sales FY2024 (p11 图2)",
+      "reason": "灰线2024年点像素测量233.6万辆，233/234不确定（±0.5万辆），不入GT"
+    },
+    {
+      "field": "key_metrics.premium_nev_penetration FY2020–FY2024 (p11 图1)",
+      "reason": "右轴读图估值约9/17/29/38/46%（±1pp；渗透率为派生比值，可能以非整数绘制，如2022=127/435=29.2%），仅端点FY2019=5%、FY2025=60%有p10正文佐证并入GT，中间年份不入GT"
+    }
+  ]
+}

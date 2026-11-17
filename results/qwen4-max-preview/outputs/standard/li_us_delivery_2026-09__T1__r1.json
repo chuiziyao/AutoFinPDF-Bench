@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "company": "Li Auto Inc.",
+    "market": "US",
+    "doc_type": "月度交付更新公告（Delivery Update Press Release, EX-99.1）",
+    "fiscal_period": "2026-09",
+    "currency": "CNY",
+    "accounting_standard": "US_GAAP"
+  },
+  "statements": [],
+  "key_metrics": [],
+  "deliveries": [
+    {
+      "month": "2026-09",
+      "model": "total",
+      "count": 31817,
+      "page": 1
+    }
+  ],
+  "events": [],
+  "uncertain": [
+    {
+      "field": "meta.currency",
+      "reason": "公告为交付量更新，未披露任何金额或记账币种；CNY 为公司惯用报告币种，非本材料明示"
+    },
+    {
+      "field": "meta.accounting_standard",
+      "reason": "公告未说明会计准则，US_GAAP 依据其美股上市身份推断，材料中无直接依据"
+    },
+    {
+      "field": "deliveries.L6",
+      "reason": "“over 10,000 units of the new Li L6”为模糊表述（超过），按规则不计入 deliveries"
+    },
+    {
+      "field": "deliveries.cumulative",
+      "reason": "累计交付 1,833,651 辆属累计数据，按任务要求不输出"
+    }
+  ]
+}

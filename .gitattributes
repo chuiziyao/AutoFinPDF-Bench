@@ -1,0 +1,6 @@
+# Normalize ALL text files to LF in the repo AND on checkout (every platform).
+# This keeps benchmark.json sha256 locks stable across Windows/Linux/macOS.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.woff2 binary

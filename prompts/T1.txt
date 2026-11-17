@@ -1,0 +1,1 @@
+【任务T1】阅读下方公告全文，只抽取月度交付/销量 deliveries。statements 和 key_metrics 必须留空数组 []。累计交付量、门店数、充电桩数等其他信息一律不输出。meta 按公告填写。deliveries.model 用规范代码：理想汽车用 total；赛力斯用 NEV/Seres/Other/Total（分别对应 新能源汽车/赛力斯汽车/其他车型/合计），count 取销量本月数。仅抽取精确数字，'超过/约'等模糊表述不入 deliveries。只输出 JSON。

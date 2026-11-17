@@ -1,0 +1,39 @@
+name: validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Benchmark integrity (frozen hashes)
+        run: python scripts/freeze_benchmark.py --check
+
+      - name: Scorer selftest + reference regression
+        run: python scripts/selftest.py
+
+      - name: Re-score every submission
+        run: python scripts/validate_submission.py --all
+
+      - name: Leaderboard consistency
+        run: python scripts/make_leaderboard.py --check
+
+      - name: Frozen files untouched (result PRs)
+        if: github.event_name == 'pull_request'
+        run: |
+          git fetch origin "${{ github.base_ref }}" --depth=1
+          CHANGED=$(git diff --name-only "origin/${{ github.base_ref }}" HEAD)
+          echo "$CHANGED"
+          if echo "$CHANGED" | grep -Ev '^(results/|LEADERBOARD\.md|leaderboard\.json)' | grep -q .; then
+            echo "::error::Non-result files changed in a submission PR. Benchmark changes require a version bump (see CONTRIBUTING.md)."
+            exit 1
+          fi

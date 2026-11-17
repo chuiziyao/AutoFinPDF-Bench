@@ -1,0 +1,139 @@
+{
+  "consistent": 6,
+  "total": 6,
+  "rate": 1.0,
+  "rows": [
+    {
+      "item": "revenue",
+      "doc_a": {
+        "statement": "income_statement",
+        "item": "revenue",
+        "period": "FY2025",
+        "value": 112312511,
+        "unit": "thousand",
+        "currency": "CNY",
+        "page": 0
+      },
+      "doc_b": {
+        "statement": "income_statement",
+        "item": "revenue",
+        "period": "FY2025",
+        "value": 112312511,
+        "unit": "thousand",
+        "currency": "CNY",
+        "page": 78
+      },
+      "consistent": true
+    },
+    {
+      "item": "gross_profit",
+      "doc_a": {
+        "statement": "income_statement",
+        "item": "gross_profit",
+        "period": "FY2025",
+        "value": 20985058,
+        "unit": "thousand",
+        "currency": "CNY",
+        "page": 0
+      },
+      "doc_b": {
+        "statement": "income_statement",
+        "item": "gross_profit",
+        "period": "FY2025",
+        "value": 20985058,
+        "unit": "thousand",
+        "currency": "CNY",
+        "page": 78
+      },
+      "consistent": true
+    },
+    {
+      "item": "net_income",
+      "doc_a": {
+        "statement": "income_statement",
+        "item": "net_income",
+        "period": "FY2025",
+        "value": 1139428,
+        "unit": "thousand",
+        "currency": "CNY",
+        "page": 0
+      },
+      "doc_b": {
+        "statement": "income_statement",
+        "item": "net_income",
+        "period": "FY2025",
+        "value": 1139428,
+        "unit": "thousand",
+        "currency": "CNY",
+        "page": 79
+      },
+      "consistent": true
+    },
+    {
+      "item": "total_assets",
+      "doc_a": {
+        "statement": "balance_sheet",
+        "item": "total_assets",
+        "period": "FY2025",
+        "value": 154295818,
+        "unit": "thousand",
+        "currency": "CNY",
+        "page": 0
+      },
+      "doc_b": {
+        "statement": "balance_sheet",
+        "item": "total_assets",
+        "period": "FY2025",
+        "value": 154295818,
+        "unit": "thousand",
+        "currency": "CNY",
+        "page": 76
+      },
+      "consistent": true
+    },
+    {
+      "item": "cash_and_equivalents",
+      "doc_a": {
+        "statement": "balance_sheet",
+        "item": "cash_and_equivalents",
+        "period": "FY2025",
+        "value": 56691765,
+        "unit": "thousand",
+        "currency": "CNY",
+        "page": 0
+      },
+      "doc_b": {
+        "statement": "balance_sheet",
+        "item": "cash_and_equivalents",
+        "period": "FY2025",
+        "value": 56691765,
+        "unit": "thousand",
+        "currency": "CNY",
+        "page": 76
+      },
+      "consistent": true
+    },
+    {
+      "item": "deliveries_total",
+      "doc_a": {
+        "statement": "metric",
+        "item": "deliveries_total",
+        "period": "FY2025",
+        "value": 406343,
+        "unit": "count",
+        "currency": "CNY",
+        "page": 0
+      },
+      "doc_b": {
+        "statement": "metric",
+        "item": "deliveries_total",
+        "period": "FY2025",
+        "value": 406343,
+        "unit": "count",
+        "currency": "CNY",
+        "page": 6
+      },
+      "consistent": true
+    }
+  ]
+}

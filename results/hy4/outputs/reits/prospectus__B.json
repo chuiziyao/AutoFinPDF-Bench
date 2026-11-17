@@ -1,0 +1,348 @@
+{
+  "basic": {
+    "raise_size": {
+      "value": 10.55,
+      "unit": "亿元",
+      "page_no": 406
+    },
+    "fund_term": {
+      "value": 40,
+      "unit": "年",
+      "page_no": 26
+    },
+    "offering_price": {
+      "value": null,
+      "unit": "元",
+      "page_no": null
+    },
+    "total_shares": {
+      "value": null,
+      "unit": "亿份",
+      "page_no": null
+    },
+    "original_owner": {
+      "value": "创业中心和招商中心",
+      "unit": null,
+      "page_no": 344
+    },
+    "strategic_ratio": {
+      "value": "20%",
+      "unit": "%",
+      "page_no": 134
+    }
+  },
+  "assets": [
+    {
+      "name": {
+        "value": "翔安加速器一期",
+        "unit": null,
+        "page_no": 38
+      },
+      "location": {
+        "value": "厦门市翔安区",
+        "unit": null,
+        "page_no": 197
+      },
+      "appraisal_value": {
+        "value": 8950,
+        "unit": "万元",
+        "page_no": 165
+      },
+      "land_tenure": {
+        "value": "2060/6/25",
+        "unit": null,
+        "page_no": 163
+      }
+    },
+    {
+      "name": {
+        "value": "翔安加速器二期",
+        "unit": null,
+        "page_no": 38
+      },
+      "location": {
+        "value": "厦门市翔安区",
+        "unit": null,
+        "page_no": 197
+      },
+      "appraisal_value": {
+        "value": 12210,
+        "unit": "万元",
+        "page_no": 165
+      },
+      "land_tenure": {
+        "value": "2063/1/28",
+        "unit": null,
+        "page_no": 163
+      }
+    },
+    {
+      "name": {
+        "value": "翔安研发楼",
+        "unit": null,
+        "page_no": 38
+      },
+      "location": {
+        "value": "厦门市翔安区",
+        "unit": null,
+        "page_no": 197
+      },
+      "appraisal_value": {
+        "value": 4750,
+        "unit": "万元",
+        "page_no": 165
+      },
+      "land_tenure": {
+        "value": "2056/3/30",
+        "unit": null,
+        "page_no": 163
+      }
+    },
+    {
+      "name": {
+        "value": "同安孵化基地一期",
+        "unit": null,
+        "page_no": 38
+      },
+      "location": {
+        "value": "厦门市同安区",
+        "unit": null,
+        "page_no": 197
+      },
+      "appraisal_value": {
+        "value": 10740,
+        "unit": "万元",
+        "page_no": 165
+      },
+      "land_tenure": {
+        "value": "2064/7/2",
+        "unit": null,
+        "page_no": 163
+      }
+    },
+    {
+      "name": {
+        "value": "同安孵化基地二期",
+        "unit": null,
+        "page_no": 38
+      },
+      "location": {
+        "value": "厦门市同安区",
+        "unit": null,
+        "page_no": 197
+      },
+      "appraisal_value": {
+        "value": 14570,
+        "unit": "万元",
+        "page_no": 165
+      },
+      "land_tenure": {
+        "value": "2064/11/19",
+        "unit": null,
+        "page_no": 163
+      }
+    },
+    {
+      "name": {
+        "value": "同安孵化基地三期",
+        "unit": null,
+        "page_no": 38
+      },
+      "location": {
+        "value": "厦门市同安区",
+        "unit": null,
+        "page_no": 197
+      },
+      "appraisal_value": {
+        "value": 3080,
+        "unit": "万元",
+        "page_no": 165
+      },
+      "land_tenure": {
+        "value": "2064/11/19",
+        "unit": null,
+        "page_no": 163
+      }
+    },
+    {
+      "name": {
+        "value": "东部孵化园",
+        "unit": null,
+        "page_no": 9
+      },
+      "location": {
+        "value": "厦门市翔安区",
+        "unit": null,
+        "page_no": 197
+      },
+      "appraisal_value": {
+        "value": 19240,
+        "unit": "万元",
+        "page_no": 165
+      },
+      "land_tenure": {
+        "value": "2056/12/27",
+        "unit": null,
+        "page_no": 163
+      }
+    },
+    {
+      "name": {
+        "value": "火炬芯创大厦",
+        "unit": null,
+        "page_no": 39
+      },
+      "location": {
+        "value": "厦门市集美区",
+        "unit": null,
+        "page_no": 197
+      },
+      "appraisal_value": {
+        "value": 18010,
+        "unit": "万元",
+        "page_no": 165
+      },
+      "land_tenure": {
+        "value": "2057/5/25",
+        "unit": null,
+        "page_no": 163
+      }
+    },
+    {
+      "name": {
+        "value": "望海路14 号",
+        "unit": null,
+        "page_no": 39
+      },
+      "location": {
+        "value": "厦门市思明区",
+        "unit": null,
+        "page_no": 197
+      },
+      "appraisal_value": {
+        "value": 3750,
+        "unit": "万元",
+        "page_no": 165
+      },
+      "land_tenure": {
+        "value": "2056/3/9",
+        "unit": null,
+        "page_no": 163
+      }
+    },
+    {
+      "name": {
+        "value": "观日路22 号",
+        "unit": null,
+        "page_no": 39
+      },
+      "location": {
+        "value": "厦门市思明区",
+        "unit": null,
+        "page_no": 197
+      },
+      "appraisal_value": {
+        "value": 10240,
+        "unit": "万元",
+        "page_no": 165
+      },
+      "land_tenure": {
+        "value": "2056/3/9",
+        "unit": null,
+        "page_no": 163
+      }
+    }
+  ],
+  "extras": [
+    {
+      "key": "估值合计",
+      "value": "105,540万元（截至2025年6月30日）",
+      "page_no": 165
+    },
+    {
+      "key": "建筑面积合计",
+      "value": "481,301.55平方米",
+      "page_no": 163
+    },
+    {
+      "key": "整体出租率",
+      "value": "91.29%（截至2025年6月30日）",
+      "page_no": 163
+    },
+    {
+      "key": "土地使用权到期分布",
+      "value": "2056年至2064年",
+      "page_no": 1335
+    },
+    {
+      "key": "上市交易场所",
+      "value": "深圳证券交易所",
+      "page_no": 1315
+    },
+    {
+      "key": "认购价格确定方式",
+      "value": "通过向网下投资者询价的方式确定",
+      "page_no": 132
+    },
+    {
+      "key": "基金份额总额占位符",
+      "value": "中国证监会准予本基金募集的基金份额总额为【】亿份",
+      "page_no": 132
+    },
+    {
+      "key": "战配比例完整表述",
+      "value": "原始权益人或其同一控制下的关联方参与本基金份额战略配售的比例合计不得低于本次基金份额发售数量的20%",
+      "page_no": 134
+    },
+    {
+      "key": "原始权益人全称（创业中心）",
+      "value": "厦门高新技术创业中心有限公司",
+      "page_no": 699
+    },
+    {
+      "key": "原始权益人全称（招商中心）",
+      "value": "厦门火炬高新区招商服务中心有限公司",
+      "page_no": 699
+    },
+    {
+      "key": "估价报告编号",
+      "value": "JLL-SH[2025]房估字第0194号",
+      "page_no": 1431
+    },
+    {
+      "key": "评估方法与估价时点",
+      "value": "收益法（权重100%），估价时点2025年6月30日",
+      "page_no": 165
+    },
+    {
+      "key": "净回收资金",
+      "value": "4.44亿元",
+      "page_no": 406
+    },
+    {
+      "key": "原始权益人及相关方拟认购基金金额",
+      "value": "5.38亿元",
+      "page_no": 406
+    },
+    {
+      "key": "历史到期续签率（2024年示例）",
+      "value": "翔安加速器一期100%、翔安加速器二期92%、翔安研发楼89%、同安孵化基地一期94%",
+      "page_no": 1305
+    },
+    {
+      "key": "基金募集期",
+      "value": "原则上不超过5个交易日，最长不得超过3个月",
+      "page_no": 132
+    },
+    {
+      "key": "收益法折现率（主要项目）",
+      "value": "7.25%",
+      "page_no": 165
+    },
+    {
+      "key": "原始权益人战配认购金额占发售比例说明",
+      "value": "拟认购基金份额占本次基金份额发售比例不低于20%，最终比例以发售公告为准",
+      "page_no": 408
+    }
+  ]
+}

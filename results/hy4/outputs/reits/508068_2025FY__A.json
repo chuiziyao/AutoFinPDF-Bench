@@ -1,0 +1,95 @@
+{
+  "fields": [
+    {
+      "name": "不动产项目整体-出租率",
+      "value": 94.45,
+      "unit": "%",
+      "period": "2025A",
+      "page": 16
+    },
+    {
+      "name": "不动产项目整体-出租率",
+      "value": 94.39,
+      "unit": "%",
+      "period": "2024A",
+      "page": 16
+    },
+    {
+      "name": "不动产项目整体-WALT加权剩余租期",
+      "value": 1.47,
+      "unit": "年",
+      "period": "2025A",
+      "page": 16
+    },
+    {
+      "name": "不动产项目整体-WALT加权剩余租期",
+      "value": 1.86,
+      "unit": "年",
+      "period": "2024A",
+      "page": 16
+    },
+    {
+      "name": "华夏北京保障房REIT-营业收入",
+      "value": 104846651.43,
+      "unit": "元",
+      "period": "2025A",
+      "page": 10
+    },
+    {
+      "name": "华夏北京保障房REIT-营业收入",
+      "value": 72272332.04,
+      "unit": "元",
+      "period": "2024A",
+      "page": 10
+    },
+    {
+      "name": "华夏北京保障房REIT-净利润",
+      "value": 45376170.55,
+      "unit": "元",
+      "period": "2025A",
+      "page": 10
+    },
+    {
+      "name": "华夏北京保障房REIT-净利润",
+      "value": 33527211.17,
+      "unit": "元",
+      "period": "2024A",
+      "page": 10
+    },
+    {
+      "name": "华夏北京保障房REIT-可供分配金额",
+      "value": 74823864.79,
+      "unit": "元",
+      "period": "2025A",
+      "page": 11
+    },
+    {
+      "name": "华夏北京保障房REIT-营业收入（项目公司）",
+      "value": 103682155.02,
+      "unit": "元",
+      "period": "2025A",
+      "page": 25
+    },
+    {
+      "name": "华夏北京保障房REIT-营业收入（项目公司）",
+      "value": 71395028.13,
+      "unit": "元",
+      "period": "2024A",
+      "page": 25
+    },
+    {
+      "name": "华夏北京保障房REIT-EBITDA（项目公司）",
+      "value": 83591397.78,
+      "unit": "元",
+      "period": "2025A",
+      "page": 25
+    },
+    {
+      "name": "华夏北京保障房REIT-EBITDA（项目公司）",
+      "value": 59089347.07,
+      "unit": "元",
+      "period": "2024A",
+      "page": 25
+    }
+  ]
+}

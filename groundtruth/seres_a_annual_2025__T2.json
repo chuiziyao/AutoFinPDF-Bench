@@ -1,0 +1,440 @@
+{
+  "meta": {
+    "doc_id": "seres_a_annual_2025",
+    "company_id": "seres",
+    "company": "赛力斯集团股份有限公司（601127）",
+    "market": "A",
+    "doc_type": "annual_report",
+    "fiscal_period": "FY2025",
+    "currency": "CNY",
+    "accounting_standard": "CAS",
+    "_provenance": {
+      "source_snippet": "合并资产负债表 2025年12月31日 编制单位：赛力斯集团股份有限公司 单位：元 币种：人民币 项目 附注 2025年12月31日 2024年12月31日 / 货币资金 87,286,711,951.55 45,955,437,989.80 / 交易性金融资产 258,040,217.29 4,048,748,397.65 ... 合并利润表 2025年1—12月 单位：元 币种：人民币 2025年度 2024年度 / 一、营业总收入 165,053,636,639.13 145,175,822,053.79 其中：营业收入 165,053,636,639.13 145,175,822,053.79 / 其中：营业成本 116,953,831,365.74 107,209,697,670.22 ... 合并现金流量表 2025年1—12月 单位：元 币种：人民币 / 经营活动产生的现金流量净额 28,913,743,329.24 22,515,265,144.17",
+      "page": 80,
+      "verified": false,
+      "verifier": null,
+      "verified_date": null
+    },
+    "_notes": [
+      "页码为PDF物理页（===== PAGE n =====，与页脚'80/224'一致）：合并资产负债表p80-82，合并利润表p84-86，合并现金流量表p87-88（三大净额及购建长期资产现金行均在p88）；revenue_yoy见p7主要会计数据（13.69%，p18变动分析表同值）；vehicle_margin见p19主营业务分产品'新能源汽车'毛利率28.76%；deliveries_total见p20产销量分析表'合计'销售量516,860辆。",
+      "单位：各报表表头'单位：元 币种：人民币'→unit=yuan,currency=CNY，value按原文含两位小数，不缩放；EPS'元/股'→yuan_per_share；百分比→percent；销量→count。",
+      "符号约定：按原文列报符号。CAS利润表营业成本以正数列报（计算时减项）→cost_of_revenue为正；现金流量表投资活动净额'(5,032,543,021.48)'等括号=负；'购建固定资产、无形资产和其他长期资产支付的现金'以正数列报→capex为正。与美股/港股报表（括号成本=负）符号方向不同，系各自原文列报方式，评分按各自GT匹配。",
+      "科目映射：cash_and_equivalents←'货币资金'（含受限保证金，见uncertain说明）；short_term_investments←'交易性金融资产'；accounts_payable←'应付账款'（'应付票据'38,695,991,578.11/41,144,620,028.31单独列报，未合并入本科目）；total_equity←'所有者权益（或股东权益）合计'（含少数股东权益；归母权益40,918,132,577.88/12,264,245,429.40）；net_income←'净利润'（含少数股东损益）；net_income_attributable←'归属于母公司股东的净利润'。",
+      "deliveries_total口径：取年报产销量分析表'合计'销售量（新能源汽车+其他，与月度产销快报'合计'一致）；新能源汽车单独口径472,269辆（FY2024：426,885辆）见p19/p25/p26。",
+      "FY2024比较数均取本报表'2024年度/2024年12月31日'列（经重述列报），未使用2024年年报原文。"
+    ]
+  },
+  "statements": [
+    {
+      "statement": "income_statement",
+      "item": "revenue",
+      "period": "FY2025",
+      "value": 165053636639.13,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 84
+    },
+    {
+      "statement": "income_statement",
+      "item": "revenue",
+      "period": "FY2024",
+      "value": 145175822053.79,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 84
+    },
+    {
+      "statement": "income_statement",
+      "item": "cost_of_revenue",
+      "period": "FY2025",
+      "value": 116953831365.74,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 84
+    },
+    {
+      "statement": "income_statement",
+      "item": "cost_of_revenue",
+      "period": "FY2024",
+      "value": 107209697670.22,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 84
+    },
+    {
+      "statement": "income_statement",
+      "item": "operating_income",
+      "period": "FY2025",
+      "value": 7517935744.56,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 85
+    },
+    {
+      "statement": "income_statement",
+      "item": "operating_income",
+      "period": "FY2024",
+      "value": 4942184755.17,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 85
+    },
+    {
+      "statement": "income_statement",
+      "item": "net_income",
+      "period": "FY2025",
+      "value": 6146739812.9,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 85
+    },
+    {
+      "statement": "income_statement",
+      "item": "net_income",
+      "period": "FY2024",
+      "value": 4740116433.25,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 85
+    },
+    {
+      "statement": "income_statement",
+      "item": "net_income_attributable",
+      "period": "FY2025",
+      "value": 5956787449.91,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 85
+    },
+    {
+      "statement": "income_statement",
+      "item": "net_income_attributable",
+      "period": "FY2024",
+      "value": 5945945362.82,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 85
+    },
+    {
+      "statement": "income_statement",
+      "item": "eps_basic",
+      "period": "FY2025",
+      "value": 3.68,
+      "unit": "yuan_per_share",
+      "currency": "CNY",
+      "page": 86
+    },
+    {
+      "statement": "income_statement",
+      "item": "eps_basic",
+      "period": "FY2024",
+      "value": 3.94,
+      "unit": "yuan_per_share",
+      "currency": "CNY",
+      "page": 86
+    },
+    {
+      "statement": "income_statement",
+      "item": "eps_diluted",
+      "period": "FY2025",
+      "value": 3.67,
+      "unit": "yuan_per_share",
+      "currency": "CNY",
+      "page": 86
+    },
+    {
+      "statement": "income_statement",
+      "item": "eps_diluted",
+      "period": "FY2024",
+      "value": 3.94,
+      "unit": "yuan_per_share",
+      "currency": "CNY",
+      "page": 86
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "total_assets",
+      "period": "FY2025",
+      "value": 143905863420.75,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 81
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "total_assets",
+      "period": "FY2024",
+      "value": 94363958922.89,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 81
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "total_liabilities",
+      "period": "FY2025",
+      "value": 102047535793.91,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 81
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "total_liabilities",
+      "period": "FY2024",
+      "value": 82458401238.54,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 81
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "total_equity",
+      "period": "FY2025",
+      "value": 41858327626.84,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 82
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "total_equity",
+      "period": "FY2024",
+      "value": 11905557684.35,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 82
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "cash_and_equivalents",
+      "period": "FY2025",
+      "value": 87286711951.55,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 80
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "cash_and_equivalents",
+      "period": "FY2024",
+      "value": 45955437989.8,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 80
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "short_term_investments",
+      "period": "FY2025",
+      "value": 258040217.29,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 80
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "short_term_investments",
+      "period": "FY2024",
+      "value": 4048748397.65,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 80
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "inventory",
+      "period": "FY2025",
+      "value": 2446801030.87,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 80
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "inventory",
+      "period": "FY2024",
+      "value": 2552448609.01,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 80
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "accounts_receivable",
+      "period": "FY2025",
+      "value": 1735698480.44,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 80
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "accounts_receivable",
+      "period": "FY2024",
+      "value": 2361932209.18,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 80
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "accounts_payable",
+      "period": "FY2025",
+      "value": 40902951695.5,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 81
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "accounts_payable",
+      "period": "FY2024",
+      "value": 27306788121.64,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 81
+    },
+    {
+      "statement": "cash_flow",
+      "item": "operating_cash_flow",
+      "period": "FY2025",
+      "value": 28913743329.24,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 88
+    },
+    {
+      "statement": "cash_flow",
+      "item": "operating_cash_flow",
+      "period": "FY2024",
+      "value": 22515265144.17,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 88
+    },
+    {
+      "statement": "cash_flow",
+      "item": "investing_cash_flow",
+      "period": "FY2025",
+      "value": -5032543021.48,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 88
+    },
+    {
+      "statement": "cash_flow",
+      "item": "investing_cash_flow",
+      "period": "FY2024",
+      "value": -16509335238.09,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 88
+    },
+    {
+      "statement": "cash_flow",
+      "item": "financing_cash_flow",
+      "period": "FY2025",
+      "value": 18276630420.41,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 88
+    },
+    {
+      "statement": "cash_flow",
+      "item": "financing_cash_flow",
+      "period": "FY2024",
+      "value": -4166685115.44,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 88
+    },
+    {
+      "statement": "cash_flow",
+      "item": "capex",
+      "period": "FY2025",
+      "value": 4169913626.1,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 88
+    },
+    {
+      "statement": "cash_flow",
+      "item": "capex",
+      "period": "FY2024",
+      "value": 7143933895.59,
+      "unit": "yuan",
+      "currency": "CNY",
+      "page": 88
+    }
+  ],
+  "key_metrics": [
+    {
+      "statement": "metric",
+      "item": "revenue_yoy",
+      "period": "FY2025",
+      "value": 13.69,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 7
+    },
+    {
+      "statement": "metric",
+      "item": "vehicle_margin",
+      "period": "FY2025",
+      "value": 28.76,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 19
+    },
+    {
+      "statement": "metric",
+      "item": "deliveries_total",
+      "period": "FY2025",
+      "value": 516860,
+      "unit": "count",
+      "currency": "CNY",
+      "page": 20
+    }
+  ],
+  "deliveries": [],
+  "events": [],
+  "uncertain": [
+    {
+      "field": "income_statement.gross_profit (FY2025/FY2024)",
+      "reason": "CAS合并利润表不单列毛利，全文亦未披露毛利金额；可由营业收入-营业成本算得：FY2025=165,053,636,639.13-116,953,831,365.74=48,099,805,273.39元，FY2024=145,175,822,053.79-107,209,697,670.22=37,966,124,383.57元。按'只填原文明示数字'原则未入GT。"
+    },
+    {
+      "field": "income_statement.operating_expenses (FY2025/FY2024)",
+      "reason": "CAS利润表无单一'营业费用'行（销售/管理/研发/财务费用分列，另有'营业总成本'含营业成本与税金及附加，口径不符）。期间费用合计可算得：FY2025=销售24,194,263,481.94+管理4,786,889,602.91+研发7,954,319,736.55+财务(419,778,171.98)=36,515,694,649.42元；FY2024=28,022,107,192.50元。口径待定，未入GT。"
+    },
+    {
+      "field": "key_metrics.gross_margin (FY2025/FY2024)",
+      "reason": "未直接披露综合毛利率；可计算≈29.14%/26.15%。原文仅披露分部毛利率（p19）：汽车行业28.21%、新能源汽车28.76%、传统燃油车2.64%、其他10.19%。"
+    },
+    {
+      "field": "key_metrics.vehicle_margin (FY2024)",
+      "reason": "FY2025新能源汽车毛利率28.76%已入GT（p19）；FY2024未直接披露，仅'毛利率比上年增加2.55个百分点'→可推26.21%，未入GT。"
+    },
+    {
+      "field": "key_metrics.operating_margin (FY2025/FY2024)",
+      "reason": "未直接披露营业利润率；可计算：FY2025=7,517,935,744.56/165,053,636,639.13≈4.55%，FY2024=4,942,184,755.17/145,175,822,053.79≈3.40%。"
+    },
+    {
+      "field": "key_metrics.net_margin (FY2025/FY2024)",
+      "reason": "未直接披露净利率；可计算（净利润口径）≈3.72%/3.27%；（归母口径）≈3.61%/4.10%。"
+    },
+    {
+      "field": "key_metrics.deliveries_total (FY2024)",
+      "reason": "2024年合计销量未直接披露；p25整车产销量表列示新能源汽车去年累计426,885辆、其他70,123辆，可加总=497,008辆，未入GT。另口径说明：GT取'合计'销量（FY2025=516,860辆，p20产销量分析表），与月度产销快报'合计'口径一致；公司头条口径为新能源汽车销量472,269辆（p19/p25），如评测以NEV为准请lead改判。"
+    },
+    {
+      "field": "key_metrics.revenue_yoy (FY2024)",
+      "reason": "本报告未披露2024年同比增速（p7主要会计数据表列有2023年营业收入35,841,957,866.81元，可推≈+305.05%），未入GT。"
+    },
+    {
+      "field": "key_metrics.cash_and_short_term_investments (FY2025/FY2024)",
+      "reason": "无合并口径现金储备披露；货币资金+交易性金融资产可算得：FY2025=87,286,711,951.55+258,040,217.29=87,544,752,168.84元，FY2024=45,955,437,989.80+4,048,748,397.65=50,004,186,387.45元。注意货币资金含大额受限保证金（附注：2025年末受限货币资金约389亿元，主要为银行承兑汇票保证金），现金流量表期末现金及现金等价物余额为48,363,264,815.25元。"
+    }
+  ]
+}

@@ -1,0 +1,677 @@
+{
+  "meta": {
+    "company": "理想汽车",
+    "market": "HK",
+    "doc_type": "招股書-行業概覽（灼識諮詢行業數據）",
+    "fiscal_period": "FY2016-FY2025",
+    "currency": "CNY",
+    "accounting_standard": ""
+  },
+  "statements": [],
+  "key_metrics": [
+    {
+      "statement": "metric",
+      "item": "nev_sales_bev",
+      "period": "FY2016",
+      "value": 221,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_bev",
+      "period": "FY2017",
+      "value": 458,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_bev",
+      "period": "FY2018",
+      "value": 768,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_bev",
+      "period": "FY2019",
+      "value": 898,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_bev",
+      "period": "FY2020",
+      "value": 974,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_bev",
+      "period": "FY2021",
+      "value": 1621,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_bev",
+      "period": "FY2022",
+      "value": 2320,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_bev",
+      "period": "FY2023",
+      "value": 3057,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_bev",
+      "period": "FY2024",
+      "value": 3845,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_bev",
+      "period": "FY2025",
+      "value": 4684,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_bev_cagr",
+      "period": "FY2016-FY2020",
+      "value": 44.9,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_bev_cagr",
+      "period": "FY2020-FY2025",
+      "value": 36.9,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_erev",
+      "period": "FY2016",
+      "value": 0,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_erev",
+      "period": "FY2017",
+      "value": 0,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_erev",
+      "period": "FY2018",
+      "value": 0,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_erev",
+      "period": "FY2019",
+      "value": 1,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_erev",
+      "period": "FY2020",
+      "value": 33,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_erev",
+      "period": "FY2021",
+      "value": 71,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_erev",
+      "period": "FY2022",
+      "value": 124,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_erev",
+      "period": "FY2023",
+      "value": 199,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_erev",
+      "period": "FY2024",
+      "value": 293,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_erev",
+      "period": "FY2025",
+      "value": 404,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_phev",
+      "period": "FY2016",
+      "value": 77,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_phev",
+      "period": "FY2017",
+      "value": 110,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_phev",
+      "period": "FY2018",
+      "value": 269,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_phev",
+      "period": "FY2020",
+      "value": 193,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_phev",
+      "period": "FY2021",
+      "value": 285,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_phev",
+      "period": "FY2022",
+      "value": 352,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_phev",
+      "period": "FY2023",
+      "value": 405,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_phev",
+      "period": "FY2024",
+      "value": 439,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_phev",
+      "period": "FY2025",
+      "value": 455,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_phev_cagr",
+      "period": "FY2016-FY2020",
+      "value": 25.7,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_phev_cagr",
+      "period": "FY2020-FY2025",
+      "value": 18.7,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_total",
+      "period": "FY2016",
+      "value": 298,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_total",
+      "period": "FY2017",
+      "value": 569,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_total",
+      "period": "FY2018",
+      "value": 1037,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_total",
+      "period": "FY2019",
+      "value": 1101,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_total",
+      "period": "FY2020",
+      "value": 1201,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_total",
+      "period": "FY2021",
+      "value": 1977,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_total",
+      "period": "FY2022",
+      "value": 2795,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_total",
+      "period": "FY2023",
+      "value": 3661,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_total",
+      "period": "FY2024",
+      "value": 4577,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_total",
+      "period": "FY2025",
+      "value": 5543,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_total_cagr",
+      "period": "FY2016-FY2020",
+      "value": 41.7,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_sales_total_cagr",
+      "period": "FY2020-FY2025",
+      "value": 35.8,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 198
+    },
+    {
+      "statement": "metric",
+      "item": "nev_avg_price",
+      "period": "FY2016",
+      "value": 203.4,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 206
+    },
+    {
+      "statement": "metric",
+      "item": "nev_avg_price",
+      "period": "FY2017",
+      "value": 165.4,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 206
+    },
+    {
+      "statement": "metric",
+      "item": "nev_avg_price",
+      "period": "FY2018",
+      "value": 174.7,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 206
+    },
+    {
+      "statement": "metric",
+      "item": "nev_avg_price",
+      "period": "FY2019",
+      "value": 197.2,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 206
+    },
+    {
+      "statement": "metric",
+      "item": "nev_avg_price",
+      "period": "FY2020",
+      "value": 209.6,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 206
+    },
+    {
+      "statement": "metric",
+      "item": "nev_avg_price_cagr",
+      "period": "FY2016-FY2020",
+      "value": 0.7,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 206
+    },
+    {
+      "statement": "metric",
+      "item": "erev_sales_china",
+      "period": "FY2016",
+      "value": 14,
+      "unit": "count",
+      "currency": "CNY",
+      "page": 208
+    },
+    {
+      "statement": "metric",
+      "item": "erev_sales_china",
+      "period": "FY2017",
+      "value": 81,
+      "unit": "count",
+      "currency": "CNY",
+      "page": 208
+    },
+    {
+      "statement": "metric",
+      "item": "erev_sales_china",
+      "period": "FY2019",
+      "value": 1287,
+      "unit": "count",
+      "currency": "CNY",
+      "page": 208
+    },
+    {
+      "statement": "metric",
+      "item": "erev_sales_china",
+      "period": "FY2020",
+      "value": 33356,
+      "unit": "count",
+      "currency": "CNY",
+      "page": 208
+    },
+    {
+      "statement": "metric",
+      "item": "erev_sales_china",
+      "period": "FY2021",
+      "value": 71170,
+      "unit": "count",
+      "currency": "CNY",
+      "page": 208
+    },
+    {
+      "statement": "metric",
+      "item": "erev_sales_china",
+      "period": "FY2022",
+      "value": 123525,
+      "unit": "count",
+      "currency": "CNY",
+      "page": 208
+    },
+    {
+      "statement": "metric",
+      "item": "erev_sales_china",
+      "period": "FY2023",
+      "value": 199315,
+      "unit": "count",
+      "currency": "CNY",
+      "page": 208
+    },
+    {
+      "statement": "metric",
+      "item": "erev_sales_china",
+      "period": "FY2024",
+      "value": 292935,
+      "unit": "count",
+      "currency": "CNY",
+      "page": 208
+    },
+    {
+      "statement": "metric",
+      "item": "erev_sales_china",
+      "period": "FY2025",
+      "value": 403803,
+      "unit": "count",
+      "currency": "CNY",
+      "page": 208
+    },
+    {
+      "statement": "metric",
+      "item": "erev_sales_china_cagr",
+      "period": "FY2016-FY2020",
+      "value": 598.7,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 208
+    },
+    {
+      "statement": "metric",
+      "item": "erev_sales_china_cagr",
+      "period": "FY2020-FY2025",
+      "value": 64.7,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 208
+    },
+    {
+      "statement": "metric",
+      "item": "erev_share_of_nev_sales",
+      "period": "FY2016",
+      "value": 0.0,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 208
+    },
+    {
+      "statement": "metric",
+      "item": "erev_share_of_nev_sales",
+      "period": "FY2017",
+      "value": 0.0,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 208
+    },
+    {
+      "statement": "metric",
+      "item": "erev_share_of_nev_sales",
+      "period": "FY2018",
+      "value": 0.0,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 208
+    },
+    {
+      "statement": "metric",
+      "item": "erev_share_of_nev_sales",
+      "period": "FY2019",
+      "value": 0.1,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 208
+    },
+    {
+      "statement": "metric",
+      "item": "erev_share_of_nev_sales",
+      "period": "FY2020",
+      "value": 2.8,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 208
+    },
+    {
+      "statement": "metric",
+      "item": "erev_share_of_nev_sales",
+      "period": "FY2021",
+      "value": 3.6,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 208
+    },
+    {
+      "statement": "metric",
+      "item": "erev_share_of_nev_sales",
+      "period": "FY2022",
+      "value": 4.4,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 208
+    },
+    {
+      "statement": "metric",
+      "item": "erev_share_of_nev_sales",
+      "period": "FY2023",
+      "value": 5.4,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 208
+    },
+    {
+      "statement": "metric",
+      "item": "erev_share_of_nev_sales",
+      "period": "FY2024",
+      "value": 6.4,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 208
+    },
+    {
+      "statement": "metric",
+      "item": "erev_share_of_nev_sales",
+      "period": "FY2025",
+      "value": 7.3,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 208
+    }
+  ],
+  "deliveries": [],
+  "events": [],
+  "uncertain": [
+    {
+      "field": "key_metrics.nev_sales_phev.FY2019",
+      "reason": "圖中2019年插電式混合動力汽車柱段標籤被遮擋/模糊，疑似201或202（按總計1,101減898減1推算為202），無法確認故不輸出"
+    },
+    {
+      "field": "meta.accounting_standard",
+      "reason": "所提供頁面為行業概覽（灼識諮詢行業數據），未披露會計準則"
+    },
+    {
+      "field": "meta.fiscal_period",
+      "reason": "行業圖表涵蓋FY2016-FY2025（含預測），非公司財務報告期"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.validate_tmp/
+
+# Optional original downloads (fetch_corpus.py)
+corpus_original/
+
+# Manual task packs (regenerable)
+taskpack/
+
+# Dry-run message dumps
+dry_run/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

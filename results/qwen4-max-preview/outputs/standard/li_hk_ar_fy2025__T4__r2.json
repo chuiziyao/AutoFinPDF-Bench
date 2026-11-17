@@ -1,0 +1,709 @@
+{
+  "meta": {
+    "company": "理想汽车",
+    "market": "HK",
+    "doc_type": "年度报告（2025年度报告，港交所2015/纳斯达克LI）",
+    "fiscal_period": "FY2025",
+    "currency": "CNY",
+    "accounting_standard": "US_GAAP"
+  },
+  "statements": [
+    {
+      "statement": "income_statement",
+      "item": "revenue",
+      "period": "FY2025",
+      "value": 112312511,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 78
+    },
+    {
+      "statement": "income_statement",
+      "item": "revenue",
+      "period": "FY2024",
+      "value": 144459946,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 78
+    },
+    {
+      "statement": "income_statement",
+      "item": "cost_of_revenue",
+      "period": "FY2025",
+      "value": 91327453,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 78
+    },
+    {
+      "statement": "income_statement",
+      "item": "cost_of_revenue",
+      "period": "FY2024",
+      "value": 114803808,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 78
+    },
+    {
+      "statement": "income_statement",
+      "item": "gross_profit",
+      "period": "FY2025",
+      "value": 20985058,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 78
+    },
+    {
+      "statement": "income_statement",
+      "item": "gross_profit",
+      "period": "FY2024",
+      "value": 29656138,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 78
+    },
+    {
+      "statement": "income_statement",
+      "item": "operating_expenses",
+      "period": "FY2025",
+      "value": 21506175,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 78
+    },
+    {
+      "statement": "income_statement",
+      "item": "operating_expenses",
+      "period": "FY2024",
+      "value": 22637024,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 78
+    },
+    {
+      "statement": "income_statement",
+      "item": "operating_income",
+      "period": "FY2025",
+      "value": -521117,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 78
+    },
+    {
+      "statement": "income_statement",
+      "item": "operating_income",
+      "period": "FY2024",
+      "value": 7019114,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 78
+    },
+    {
+      "statement": "income_statement",
+      "item": "net_income",
+      "period": "FY2025",
+      "value": 1139428,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 79
+    },
+    {
+      "statement": "income_statement",
+      "item": "net_income",
+      "period": "FY2024",
+      "value": 8045250,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 79
+    },
+    {
+      "statement": "income_statement",
+      "item": "net_income_attributable",
+      "period": "FY2025",
+      "value": 1124438,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 79
+    },
+    {
+      "statement": "income_statement",
+      "item": "net_income_attributable",
+      "period": "FY2024",
+      "value": 8032350,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 79
+    },
+    {
+      "statement": "income_statement",
+      "item": "eps_basic",
+      "period": "FY2025",
+      "value": 0.56,
+      "unit": "yuan_per_share",
+      "currency": "CNY",
+      "page": 79
+    },
+    {
+      "statement": "income_statement",
+      "item": "eps_diluted",
+      "period": "FY2025",
+      "value": 0.54,
+      "unit": "yuan_per_share",
+      "currency": "CNY",
+      "page": 79
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "total_assets",
+      "period": "FY2025",
+      "value": 154295818,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 76
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "total_liabilities",
+      "period": "FY2025",
+      "value": 81156075,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 77
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "total_equity",
+      "period": "FY2025",
+      "value": 73139743,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 77
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "cash_and_equivalents",
+      "period": "FY2025",
+      "value": 56691765,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 76
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "short_term_investments",
+      "period": "FY2025",
+      "value": 44331407,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 76
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "inventory",
+      "period": "FY2025",
+      "value": 8752439,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 76
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "accounts_receivable",
+      "period": "FY2025",
+      "value": 119823,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 76
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "accounts_payable",
+      "period": "FY2025",
+      "value": 40579219,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 76
+    },
+    {
+      "statement": "cash_flow",
+      "item": "operating_cash_flow",
+      "period": "FY2025",
+      "value": -8611397,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 81
+    },
+    {
+      "statement": "cash_flow",
+      "item": "operating_cash_flow",
+      "period": "FY2024",
+      "value": 15933160,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 81
+    },
+    {
+      "statement": "cash_flow",
+      "item": "investing_cash_flow",
+      "period": "FY2025",
+      "value": -703125,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 81
+    },
+    {
+      "statement": "cash_flow",
+      "item": "financing_cash_flow",
+      "period": "FY2025",
+      "value": 767402,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 82
+    },
+    {
+      "statement": "cash_flow",
+      "item": "capex",
+      "period": "FY2025",
+      "value": 4205517,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 81
+    }
+  ],
+  "key_metrics": [
+    {
+      "statement": "metric",
+      "item": "gross_margin",
+      "period": "FY2025",
+      "value": 18.7,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "gross_margin",
+      "period": "FY2024",
+      "value": 20.5,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "vehicle_margin",
+      "period": "FY2025",
+      "value": 17.9,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "vehicle_margin",
+      "period": "FY2024",
+      "value": 19.8,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "revenue_yoy",
+      "period": "FY2025",
+      "value": -22.3,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 4
+    },
+    {
+      "statement": "metric",
+      "item": "deliveries_total",
+      "period": "FY2025",
+      "value": 406343,
+      "unit": "count",
+      "currency": "CNY",
+      "page": 6
+    },
+    {
+      "statement": "metric",
+      "item": "deliveries_total",
+      "period": "Q1 2026",
+      "value": 95142,
+      "unit": "count",
+      "currency": "CNY",
+      "page": 9
+    },
+    {
+      "statement": "metric",
+      "item": "cash_and_short_term_investments",
+      "period": "FY2025",
+      "value": 1012,
+      "unit": "yi",
+      "currency": "CNY",
+      "page": 12
+    },
+    {
+      "statement": "metric",
+      "item": "cash_and_short_term_investments",
+      "period": "FY2024",
+      "value": 1128,
+      "unit": "yi",
+      "currency": "CNY",
+      "page": 12
+    }
+  ],
+  "deliveries": [],
+  "events": [
+    {
+      "date": "2025-H1",
+      "type": "产品发布",
+      "summary": "发布理想MEGA Ultra智能焕新版、理想L系列智能焕新版及理想MEGA Home家庭特别版；MEGA成为2025年人民币50万元及以上中国MPV市场与纯电市场双料冠军",
+      "page": 6
+    },
+    {
+      "date": "2025-08",
+      "type": "新车上市交付",
+      "summary": "六座纯电SUV理想i8标配版售价人民币33.98万元，基于高压纯电平台、5C超充电池，于2025年8月开启交付",
+      "page": 6
+    },
+    {
+      "date": "2025-09",
+      "type": "新车上市交付",
+      "summary": "五座纯电SUV理想i6标配版售价人民币24.98万元，于2025年9月开启交付；i8与i6累计总订单于2025年底突破10万台",
+      "page": 6
+    },
+    {
+      "date": "2025-09",
+      "type": "技术推送",
+      "summary": "自研VLA司机大模型正式向理想AD Max车型全量推送；2025年新增智能辅助驾驶里程30.7亿公里，辅助驾驶用户活跃率99.5%，主动安全累计避免超1,200万件潜在事故",
+      "page": 7
+    },
+    {
+      "date": "2025-04",
+      "type": "技术开源",
+      "summary": "自研智能汽车操作系统「理想星环OS」自2025年4月起逐步开源，获汽车产业链上下游认可",
+      "page": 8
+    },
+    {
+      "date": "2025-09",
+      "type": "生态合作",
+      "summary": "包括长城汽车、英飞凌在内的16家覆盖智能汽车产业链核心环节的合作伙伴签署《星环OS社区章程》，星环OS迈入联合共建阶段",
+      "page": 8
+    },
+    {
+      "date": "2025-12",
+      "type": "新品类发布",
+      "summary": "发布AI眼镜Livis，起售价人民币1,999元，标配蔡司镜片、镜架36克，搭载自研Livis OS与「理想同学」智能体，超过75%用户每天佩戴",
+      "page": 7
+    },
+    {
+      "date": "2025",
+      "type": "海外扩张",
+      "summary": "正式进入乌兹别克斯坦、哈萨克斯坦、阿塞拜疆和埃及市场，销售理想L9/L7/L6增程产品；已在德国、美国设立研发中心，完成中亚—高加索—非洲核心市场布局",
+      "page": 8
+    },
+    {
+      "date": "2025",
+      "type": "自研芯片进展",
+      "summary": "5纳米制程智驾芯片马赫100完成流片并搭载样车进行道路测试，计划2026年部署上车",
+      "page": 8
+    },
+    {
+      "date": "2025-06",
+      "type": "补能网络",
+      "summary": "上线全国首座穿梭式超充站；全年新增2,180座超充站、12,551根充电桩，年末累计3,907座站、21,651根桩，4C/5C桩占比接近70%",
+      "page": 9
+    },
+    {
+      "date": "2025-07",
+      "type": "ESG评级",
+      "summary": "连续第三年获得MSCI ESG最高评级「AAA」",
+      "page": 9
+    },
+    {
+      "date": "2025-11",
+      "type": "产品召回",
+      "summary": "对11,411辆2024款理想MEGA启动自愿性召回，除产品质保外另行确认召回预估成本；年末应计质保金余额升至人民币71.459亿元（2024年：51.598亿元）",
+      "page": 101
+    },
+    {
+      "date": "2025-11",
+      "type": "第三方评测",
+      "summary": "理想i8在中国汽车工程研究院C-AHI测评中获总分年度第一；2025年12月理想i6获新能源车型历史最高分",
+      "page": 6
+    },
+    {
+      "date": "2026-01/2026-03",
+      "type": "安全评测",
+      "summary": "C-IASI公布结果，理想i8与i6在车内乘员、车外行人、车辆辅助安全及新能源汽车专项测试均获最高评级，耐撞性与维修经济性获「G」评级",
+      "page": 9
+    },
+    {
+      "date": "2026-Q1",
+      "type": "经营更新",
+      "summary": "2026年第一季度交付95,142辆；截至2026年3月31日于160个城市拥有517家零售中心（2025年末为159城548家），超充站4,057座、充电桩22,439根",
+      "page": 9
+    },
+    {
+      "date": "2026-03-24",
+      "type": "股份回购授权",
+      "summary": "董事会批准股份购回计划，可于批准日起至2027年3月31日购回价值不超过10亿美元的A类普通股及/或美国存托股份",
+      "page": 69
+    },
+    {
+      "date": "2026-03",
+      "type": "回购执行",
+      "summary": "于联交所回购2,928,100股A类普通股（总代价201.90百万港元），于纳斯达克回购698,938份ADS（总代价12.35百万美元）；截至最后实际可行日期持有库存股4,325,976股",
+      "page": 69
+    },
+    {
+      "date": "2024-05",
+      "type": "证券集体诉讼",
+      "summary": "公司及部分管理层与董事在美国纽约东区地方法院两宗推定证券集体诉讼（Banurs、Chaudary）中被列为被告，指控向SEC提交的业务前景陈述存在虚假陈述与遗漏，违反1934年证券交易法10(b)、20(a)及10b-5",
+      "page": 71
+    },
+    {
+      "date": "2025-07-21",
+      "type": "诉讼进展",
+      "summary": "公司与各被告提出驳回第二份经修订诉状的动议，诉辩程序于2025年10月9日完成，法院尚未裁定；诉讼仍处初步阶段，截至2025年12月31日未计提相关或有损失负债",
+      "page": 141
+    },
+    {
+      "date": "2025-06-15",
+      "type": "股权激励",
+      "summary": "向执行董事马东辉授予200,000份受限制股份单位，归属期少于12个月，薪酬委员会认为该安排适当且符合2019年计划目的",
+      "page": 44
+    },
+    {
+      "date": "2025-12-15",
+      "type": "股权激励",
+      "summary": "根据2019年计划向员工授出10,789,040份受限制股份单位，全年共授出12,764,940份RSU；报告期股份支付薪酬费用降至人民币12.578亿元（2024年：26.309亿元）",
+      "page": 62
+    },
+    {
+      "date": "2026-05-01",
+      "type": "债务回售权",
+      "summary": "2028年可转换票据（本金8.625亿美元、年息0.25%）持有人可要求公司以本金100%加应计利息现金回购；该债务已于2025年末由长期借款重分类为短期借款人民币59.824亿元",
+      "page": 120
+    },
+    {
+      "date": "2025",
+      "type": "会计估计变更",
+      "summary": "因特定车型停产或升级调整模夹检具预估产量，按前瞻性基准入账，2025年折旧费用增加人民币851,457千元",
+      "page": 97
+    },
+    {
+      "date": "2024",
+      "type": "高管激励达成",
+      "summary": "因连续12个月车辆交付总量超过50万辆，CEO奖励首批18,092,900股业绩条件达成并全额确认薪酬费用89,741千美元；第二至六批业绩条件被认为不太可能实现，448,704千美元未确认",
+      "page": 130
+    },
+    {
+      "date": "FY2025",
+      "type": "业绩披露",
+      "summary": "全年交付406,343辆、累计交付1,540,215辆；收入人民币1,123亿元同比-22.3%，经营亏损5.211亿元（2024年经营利润70.19亿元），净利润11.394亿元同比-85.8%，非GAAP净利润23.97亿元",
+      "page": 4
+    },
+    {
+      "date": "FY2025",
+      "type": "分红决策",
+      "summary": "董事会建议不就截至2025年12月31日止年度宣派年度股利；截至2025年末可供分派储备人民币630亿元",
+      "page": 29
+    },
+    {
+      "date": "2026-04-10",
+      "type": "治理与审计",
+      "summary": "董事会批准并授权发布2025年度报告及合并财务报表；罗兵咸永道出具无保留意见审计报告，关键审计事项为应计产品保修费用",
+      "page": 71
+    }
+  ],
+  "relationships": [
+    {
+      "type": "partner",
+      "counterparty": "长城汽车",
+      "description": "2025年9月与理想等16家产业链企业共同签署《星环OS社区章程》，成为理想星环OS开源社区的联合共建方",
+      "page": 8
+    },
+    {
+      "type": "partner",
+      "counterparty": "英飞凌（Infineon）",
+      "description": "星环OS社区章程签署方之一，覆盖智能汽车产业链核心环节（芯片/半导体），推动操作系统生态协同",
+      "page": 8
+    },
+    {
+      "type": "partner",
+      "counterparty": "蔡司（ZEISS）",
+      "description": "理想AI眼镜Livis标配蔡司高品质镜片，为跨界硬件产品的镜片供应/品牌合作方",
+      "page": 7
+    },
+    {
+      "type": "partner",
+      "counterparty": "肯德基（KFC Agent）",
+      "description": "智能空间基座模型MindGPT 3.1接入肯德基Agent，扩展「理想同学」车载生活/外卖下单服务生态",
+      "page": 7
+    },
+    {
+      "type": "supplier",
+      "counterparty": "美团",
+      "description": "公司主要股东兼关联方（王兴任非执行董事，Inspired Elite Investments Limited持股14.46%）；2025年本集团向其购买服务人民币70,301千元（2024年：81,120千元），年末应付14,781千元",
+      "page": 142
+    },
+    {
+      "type": "supplier",
+      "counterparty": "佛山车谊家新能源科技有限公司",
+      "description": "联属公司/关联方，2025年本集团向其采购商品人民币22,885千元（2024年：2,300千元），年末应付11,838千元",
+      "page": 142
+    },
+    {
+      "type": "customer",
+      "counterparty": "个人车辆购买者（终端零售客户）",
+      "description": "客户基础广泛、无客户集中风险，2025年前五大客户合计仅占收入总额约1.7%；董事及5%以上股东未于前五大客户中持有权益",
+      "page": 27
+    },
+    {
+      "type": "supplier",
+      "counterparty": "前五大供应商（未具名）",
+      "description": "2025年前五大供应商占采购量约24.8%，董事、其紧密联系人及5%以上股东未于其中持有权益；招股章程另披露部分零部件为单一来源供应",
+      "page": 27
+    },
+    {
+      "type": "customer",
+      "counterparty": "银行及保险公司（汽车金融/保险佣金对手方）",
+      "description": "本集团促成客户使用银行与保险公司的汽车金融产品及服务并赚取佣金服务费；应收账款主要为应收保险公司及银行的佣金服务费",
+      "page": 96
+    },
+    {
+      "type": "partner",
+      "counterparty": "招商银行股份有限公司",
+      "description": "公司主要往来银行，提供存款与融资等银行服务；集团有抵押银行借款以生产厂房及土地使用权作担保",
+      "page": 3
+    },
+    {
+      "type": "partner",
+      "counterparty": "罗兵咸永道会计师事务所（PwC）",
+      "description": "公司审计师（注册公众利益实体核数师），2025年审计费用人民币13,000千元、税费215千元、其他费用9千元；就持续关连交易出具无保留意见函件",
+      "page": 53
+    },
+    {
+      "type": "partner",
+      "counterparty": "Deutsche Bank Trust Company Americas / Deutsche Bank Aktiengesellschaft",
+      "description": "2028年可转换票据契约（2021年4月12日订立）受托人及付款代理；德银通过该附属公司担任公司美国存托凭证计划受托人",
+      "page": 28
+    },
+    {
+      "type": "partner",
+      "counterparty": "支付宝、微信支付等第三方支付服务提供商",
+      "description": "本集团向客户收款依赖少数第三方支付处理服务提供方（金融机构、信用卡公司及移动支付平台），存在支付通道依赖",
+      "page": 111
+    },
+    {
+      "type": "partner",
+      "counterparty": "供应链融资合作银行（未具名）",
+      "description": "银行为本集团供应商提供供应链融资渠道，供应商可将票据折让转让予银行；2025年末该计划未偿还金额人民币484,607千元（2024年：零）",
+      "page": 121
+    },
+    {
+      "type": "partner",
+      "counterparty": "汉坤律师事务所",
+      "description": "公司中国法律顾问，就VIE合约安排、ICP许可与外商投资监管等出具法律意见",
+      "page": 162
+    }
+  ],
+  "risks": [
+    {
+      "topic": "市场竞争与盈利能力可持续性",
+      "summary": "中国汽车市场竞争激烈、行业格局加速重构；2025年收入同比-22.3%、经营由盈转亏5.21亿元、净利润同比-85.8%，公司提示过去有净亏损且可能无法维持盈利能力",
+      "page": 16
+    },
+    {
+      "topic": "毛利率下行与产品组合",
+      "summary": "毛利率由20.5%降至18.7%，车辆毛利率由19.8%降至17.9%，主要因不同产品组合；纯电新车型上量阶段的成本与定价压力可能持续压制整车毛利",
+      "page": 11
+    },
+    {
+      "topic": "供应链集中与单一来源依赖",
+      "summary": "第三方供应商可能中断原材料或零部件供应，部分零部件为单一来源供应商；前五大供应商占采购量约24.8%；全球电池组供应短缺可能扰乱运营",
+      "page": 16
+    },
+    {
+      "topic": "产品质量、召回与质保估计",
+      "summary": "车辆可能存在缺陷并被迫召回；2025年11月自愿召回11,411辆2024款MEGA并确认召回成本，年末应计质保金71.459亿元；审计师将应计产品保修费用列为关键审计事项，模型复杂、假设主观、估计高度不确定",
+      "page": 73
+    },
+    {
+      "topic": "经营现金流与营运资本反转",
+      "summary": "2025年经营活动现金净流出人民币86.11亿元（2024年净流入159.33亿元），主因应付账款及应付票据减少130.17亿元及存货增加；现金状况由1,128亿元降至1,012亿元（-10.3%）",
+      "page": 81
+    },
+    {
+      "topic": "债务与可转债回售流动性",
+      "summary": "2025年末借款合计人民币95亿元；8.625亿美元2028年票据持有人可于2026年5月1日要求现金回购，已重分类为短期借款，短期借款由2.81亿元升至62.18亿元，需关注回售与再融资安排",
+      "page": 120
+    },
+    {
+      "topic": "VIE合约安排与外商投资监管",
+      "summary": "增值电信、测绘、广播电视制作等受限业务通过北京车和家、心电信息等VIE开展；合约安排可能被认定违规、执行受限或被要求重组，名义股东利益冲突、股权质押执行及税务审查均构成风险；VIE总资产约63亿元占集团4.1%",
+      "page": 18
+    },
+    {
+      "topic": "中概股审计监管与退市风险（HFCAA）",
+      "summary": "PCAOB过去无法对位于中国内地及香港的注册会计师事务所进行检查或全面调查，《外国公司问责法》未来可能禁止公司ADS在美国交易，退市或退市威胁将重大不利影响投资价值",
+      "page": 17
+    },
+    {
+      "topic": "政策与补贴依赖",
+      "summary": "有利于新能源汽车或国产汽车的中国政府政策变化可能产生重大不利影响；2025年确认政府补贴人民币16.10亿元，是税前利润的重要支撑，补贴退坡将直接冲击盈利",
+      "page": 16
+    },
+    {
+      "topic": "国际贸易与海外扩张风险",
+      "summary": "国际贸易局势紧张、国际政治紧张升温；国际扩展面临法律、监管、政治与经济风险，中亚/中东/欧洲/东南亚扩张的销服与合规体系建设存在不确定性",
+      "page": 17
+    },
+    {
+      "topic": "汇率与外汇管制",
+      "summary": "支出主要以人民币计价但持有美元/人民币交叉头寸，2025年人民币兑美元升值约2.2%；受中国政府外汇管控的现金及投资2025年末达795.54亿元，跨境调拨与汇兑损益波动风险显著",
+      "page": 112
+    },
+    {
+      "topic": "证券集体诉讼与或有损失",
+      "summary": "美国纽约东区法院证券集体诉讼尚处初步阶段，驳回动议未裁定，公司无法估计可能损失或范围，截至2025年末未计提负债；不利结果可能重大影响业务、财务、现金流与声誉",
+      "page": 141
+    },
+    {
+      "topic": "关键人员与治理集中度",
+      "summary": "业务高度依赖高管与关键员工；李想兼任董事长与CEO（偏离企业管治守则C.2.1），通过不同投票权持有约68.62%投票权（保留事项除外），其利益未必与全体股东一致",
+      "page": 25
+    },
+    {
+      "topic": "税务优惠与递延税资产可实现性",
+      "summary": "高新技术企业/国家鼓励的重点软件企业资格需逐年审批，2025年相关附属公司适用12.5%而非0%税率；递延所得税资产减值准备由3.815亿元增至8.768亿元（本年增加4.953亿元），净经营亏损结转98.32亿元于2026—2035年陆续到期",
+      "page": 137
+    },
+    {
+      "topic": "资本开支承诺与存货/采购承诺",
+      "summary": "2025年末资本承诺人民币63.20亿元、采购债务73.04亿元（主要原材料采购）；本年存货减值1.513亿元、存货购买承诺损失0.917亿元，模夹检具产量估计变更额外增加折旧8.515亿元，反映车型迭代带来的资产与存货减值压力",
+      "page": 141
+    }
+  ],
+  "notes": "2025年是理想从增程红利期切入纯电+AI重投入期的转折年：交付406,343辆、收入1,123亿元同比-22.3%，车辆毛利率由19.8%降至17.9%（产品组合变化），经营端由盈转亏5.21亿元，11.4亿元净利润主要由19.2亿元利息与投资收益及16.1亿元政府补贴支撑，盈利质量明显弱化；研发113亿元（占收入10.1%、AI约占一半）刚性投入叠加模夹检具产量估计变更带来的8.51亿元额外折旧，短期经营杠杆难以修复。更值得关注的是现金转化：经营现金流由+159亿元转为-86亿元，主因应付账款及应付票据净减少130亿元（供应链账期收缩）与存货增加，现金状况降至1,012亿元；同时8.625亿美元2028年票据因2026年5月回售权重分类为短期借款，需跟踪回售兑付与再融资安排。产品侧i8/i6累计订单破10万、MEGA召回11,411辆与质保金升至71.5亿元，说明纯电转型的质量成本与口碑修复仍在进行；2026Q1交付95,142辆、零售中心由548家收缩至517家，战略转向提质增效与海外（中亚/中东/欧洲/东南亚）扩张，10亿美元回购授权及3月已执行约2.02亿港元+1,235万美元回购提供估值托底信号。核心跟踪变量为纯电车型月销与整车毛利、AI投入的费用节奏、海外放量兑现，以及VIE/HFCAA、证券集体诉讼与单一来源供应链等尾部风险；估值锚正从盈利增长切换为产品周期与AI叙事，需以现金流与毛利率拐点作为验证。",
+  "uncertain": [
+    {
+      "field": "deliveries",
+      "reason": "年报仅披露2025年全年交付406,343辆及2026年第一季度95,142辆，未提供分月（YYYY-MM）交付数据，无法按月填充deliveries"
+    },
+    {
+      "field": "relationships.counterparty",
+      "reason": "前五大客户、前五大供应商、单一来源零部件供应商及供应链融资银行均未在年报中具名，仅能按类别描述"
+    },
+    {
+      "field": "key_metrics.operating_margin/net_margin",
+      "reason": "年报未直接披露经营利润率与净利率，按禁止编造原则不自行计算填列"
+    },
+    {
+      "field": "events.date",
+      "reason": "部分事件（海外进入四国市场、马赫100流片、星环OS开源起始等）原文仅给出年度或半年度区间，无法精确到日"
+    }
+  ]
+}

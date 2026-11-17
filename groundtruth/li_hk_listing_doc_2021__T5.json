@@ -1,0 +1,1210 @@
+{
+ "meta": {
+  "doc_id": "li_hk_listing_doc_2021",
+  "company_id": "li",
+  "company": "Li Auto Inc.",
+  "market": "HK",
+  "doc_type": "listing_doc",
+  "fiscal_period": "2021-IPO",
+  "currency": "CNY",
+  "accounting_standard": "US_GAAP",
+  "_provenance": {
+   "source_snippet": "行業概覽章節灼識諮詢行業圖表（本招股書行業顧問為灼識諮詢CIC，非Frost & Sullivan）：p198《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》軸（千輛）；p206《中國新能源汽車的平均價格趨勢（2016年（實際）至2020年（實際）》軸（人民幣千元）；p208《增程式電動汽車中國銷量（2016年（實際）至2025年（預測））》軸（輛）。FY2021–FY2025為圖中預測（預測）值；CAGR期間以FY2016-FY2020/FY2020-FY2025表示。",
+   "page": 198,
+   "verified": false,
+   "verifier": null,
+   "verified_date": null
+  }
+ },
+ "statements": [],
+ "key_metrics": [
+  {
+   "statement": "metric",
+   "item": "nev_sales_total",
+   "period": "FY2016",
+   "value": 298,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2016年合計柱頂標籤298",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_total",
+   "period": "FY2017",
+   "value": 569,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2017年合計柱頂標籤569",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_total",
+   "period": "FY2018",
+   "value": 1037,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2018年合計柱頂標籤1037",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_total",
+   "period": "FY2019",
+   "value": 1101,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2019年合計柱頂標籤1101",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_total",
+   "period": "FY2020",
+   "value": 1201,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2020年合計柱頂標籤1201",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_total",
+   "period": "FY2021",
+   "value": 1977,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2021年合計柱頂標籤1977",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_total",
+   "period": "FY2022",
+   "value": 2795,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2022年合計柱頂標籤2795",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_total",
+   "period": "FY2023",
+   "value": 3661,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2023年合計柱頂標籤3661",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_total",
+   "period": "FY2024",
+   "value": 4577,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2024年合計柱頂標籤4577",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_total",
+   "period": "FY2025",
+   "value": 5543,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2025年合計柱頂標籤5543",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_bev",
+   "period": "FY2016",
+   "value": 221,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2016年純電動汽車分段標籤221",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_bev",
+   "period": "FY2017",
+   "value": 458,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2017年純電動汽車分段標籤458",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_bev",
+   "period": "FY2018",
+   "value": 768,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2018年純電動汽車分段標籤768",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_bev",
+   "period": "FY2019",
+   "value": 898,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2019年純電動汽車分段標籤898",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_bev",
+   "period": "FY2020",
+   "value": 974,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2020年純電動汽車分段標籤974",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_bev",
+   "period": "FY2021",
+   "value": 1621,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2021年純電動汽車分段標籤1621",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_bev",
+   "period": "FY2022",
+   "value": 2320,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2022年純電動汽車分段標籤2320",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_bev",
+   "period": "FY2023",
+   "value": 3057,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2023年純電動汽車分段標籤3057",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_bev",
+   "period": "FY2024",
+   "value": 3845,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2024年純電動汽車分段標籤3845",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_bev",
+   "period": "FY2025",
+   "value": 4684,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2025年純電動汽車分段標籤4684",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_phev",
+   "period": "FY2016",
+   "value": 77,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2016年插電式混合動力汽車分段標籤77",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_phev",
+   "period": "FY2017",
+   "value": 110,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2017年插電式混合動力汽車分段標籤110",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_phev",
+   "period": "FY2018",
+   "value": 269,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2018年插電式混合動力汽車分段標籤269",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_phev",
+   "period": "FY2019",
+   "value": 201,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2019年插電式混合動力汽車分段標籤201",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_phev",
+   "period": "FY2020",
+   "value": 193,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2020年插電式混合動力汽車分段標籤193",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_phev",
+   "period": "FY2021",
+   "value": 285,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2021年插電式混合動力汽車分段標籤285",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_phev",
+   "period": "FY2022",
+   "value": 352,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2022年插電式混合動力汽車分段標籤352",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_phev",
+   "period": "FY2023",
+   "value": 405,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2023年插電式混合動力汽車分段標籤405",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_phev",
+   "period": "FY2024",
+   "value": 439,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2024年插電式混合動力汽車分段標籤439",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_phev",
+   "period": "FY2025",
+   "value": 455,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2025年插電式混合動力汽車分段標籤455",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_erev",
+   "period": "FY2016",
+   "value": 0,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2016年增程式電動汽車分段標籤0",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_erev",
+   "period": "FY2017",
+   "value": 0,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2017年增程式電動汽車分段標籤0",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_erev",
+   "period": "FY2018",
+   "value": 0,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2018年增程式電動汽車分段標籤0",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_erev",
+   "period": "FY2019",
+   "value": 1,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2019年增程式電動汽車分段標籤1",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_erev",
+   "period": "FY2020",
+   "value": 33,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2020年增程式電動汽車分段標籤33",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_erev",
+   "period": "FY2021",
+   "value": 71,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2021年增程式電動汽車分段標籤71",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_erev",
+   "period": "FY2022",
+   "value": 124,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2022年增程式電動汽車分段標籤124",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_erev",
+   "period": "FY2023",
+   "value": 199,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2023年增程式電動汽車分段標籤199",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_erev",
+   "period": "FY2024",
+   "value": 293,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2024年增程式電動汽車分段標籤293",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_erev",
+   "period": "FY2025",
+   "value": 404,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；2025年增程式電動汽車分段標籤404",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_total_cagr",
+   "period": "FY2016-FY2020",
+   "value": 41.7,
+   "unit": "percent",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；右側年複合增長率表合計行「2016年（實際）至2020年（實際）」41.7%",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_total_cagr",
+   "period": "FY2020-FY2025",
+   "value": 35.8,
+   "unit": "percent",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；右側年複合增長率表合計行「2020年（實際）至2025年（預測）」35.8%",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_bev_cagr",
+   "period": "FY2016-FY2020",
+   "value": 44.9,
+   "unit": "percent",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；右側年複合增長率表純電動汽車行「2016年（實際）至2020年（實際）」44.9%",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_bev_cagr",
+   "period": "FY2020-FY2025",
+   "value": 36.9,
+   "unit": "percent",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；右側年複合增長率表純電動汽車行「2020年（實際）至2025年（預測）」36.9%",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_phev_cagr",
+   "period": "FY2016-FY2020",
+   "value": 25.7,
+   "unit": "percent",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；右側年複合增長率表插電式混合動力汽車行「2016年（實際）至2020年（實際）」25.7%",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_sales_phev_cagr",
+   "period": "FY2020-FY2025",
+   "value": 18.7,
+   "unit": "percent",
+   "currency": "CNY",
+   "page": 198,
+   "_provenance": {
+    "source_snippet": "图《按能源類型劃分的中國新能源汽車銷量（2016年（實際）至2025年（預測））》，軸（千輛），資料來源：乘聯會、灼識諮詢；右側年複合增長率表插電式混合動力汽車行「2020年（實際）至2025年（預測）」18.7%",
+    "page": 198,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_avg_price",
+   "period": "FY2016",
+   "value": 203.4,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 206,
+   "_provenance": {
+    "source_snippet": "图《中國新能源汽車的平均價格趨勢（2016年（實際）至2020年（實際））》，軸（人民幣千元），資料來源：乘聯會、灼識諮詢；2016年數據點標籤203.4",
+    "page": 206,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_avg_price",
+   "period": "FY2017",
+   "value": 165.4,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 206,
+   "_provenance": {
+    "source_snippet": "图《中國新能源汽車的平均價格趨勢（2016年（實際）至2020年（實際））》，軸（人民幣千元），資料來源：乘聯會、灼識諮詢；2017年數據點標籤165.4",
+    "page": 206,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_avg_price",
+   "period": "FY2018",
+   "value": 174.7,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 206,
+   "_provenance": {
+    "source_snippet": "图《中國新能源汽車的平均價格趨勢（2016年（實際）至2020年（實際））》，軸（人民幣千元），資料來源：乘聯會、灼識諮詢；2018年數據點標籤174.7",
+    "page": 206,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_avg_price",
+   "period": "FY2019",
+   "value": 197.2,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 206,
+   "_provenance": {
+    "source_snippet": "图《中國新能源汽車的平均價格趨勢（2016年（實際）至2020年（實際））》，軸（人民幣千元），資料來源：乘聯會、灼識諮詢；2019年數據點標籤197.2",
+    "page": 206,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_avg_price",
+   "period": "FY2020",
+   "value": 209.6,
+   "unit": "thousand",
+   "currency": "CNY",
+   "page": 206,
+   "_provenance": {
+    "source_snippet": "图《中國新能源汽車的平均價格趨勢（2016年（實際）至2020年（實際））》，軸（人民幣千元），資料來源：乘聯會、灼識諮詢；2020年數據點標籤209.6",
+    "page": 206,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "nev_avg_price_cagr",
+   "period": "FY2016-FY2020",
+   "value": 0.7,
+   "unit": "percent",
+   "currency": "CNY",
+   "page": 206,
+   "_provenance": {
+    "source_snippet": "图《中國新能源汽車的平均價格趨勢（2016年（實際）至2020年（實際））》，軸（人民幣千元），資料來源：乘聯會、灼識諮詢；圖上「年複合增長率（2016年（實際）至2020年（實際））：0.7%」",
+    "page": 206,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "erev_sales_china",
+   "period": "FY2016",
+   "value": 14,
+   "unit": "count",
+   "currency": "CNY",
+   "page": 208,
+   "_provenance": {
+    "source_snippet": "图《增程式電動汽車中國銷量（2016年（實際）至2025年（預測））》，軸（輛），資料來源：灼識諮詢；2016年柱頂標籤14",
+    "page": 208,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "erev_sales_china",
+   "period": "FY2017",
+   "value": 81,
+   "unit": "count",
+   "currency": "CNY",
+   "page": 208,
+   "_provenance": {
+    "source_snippet": "图《增程式電動汽車中國銷量（2016年（實際）至2025年（預測））》，軸（輛），資料來源：灼識諮詢；2017年柱頂標籤81",
+    "page": 208,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "erev_sales_china",
+   "period": "FY2019",
+   "value": 1287,
+   "unit": "count",
+   "currency": "CNY",
+   "page": 208,
+   "_provenance": {
+    "source_snippet": "图《增程式電動汽車中國銷量（2016年（實際）至2025年（預測））》，軸（輛），資料來源：灼識諮詢；2019年柱頂標籤1,287",
+    "page": 208,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "erev_sales_china",
+   "period": "FY2020",
+   "value": 33356,
+   "unit": "count",
+   "currency": "CNY",
+   "page": 208,
+   "_provenance": {
+    "source_snippet": "图《增程式電動汽車中國銷量（2016年（實際）至2025年（預測））》，軸（輛），資料來源：灼識諮詢；2020年柱頂標籤33,356",
+    "page": 208,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "erev_sales_china",
+   "period": "FY2021",
+   "value": 71170,
+   "unit": "count",
+   "currency": "CNY",
+   "page": 208,
+   "_provenance": {
+    "source_snippet": "图《增程式電動汽車中國銷量（2016年（實際）至2025年（預測））》，軸（輛），資料來源：灼識諮詢；2021年柱頂標籤71,170",
+    "page": 208,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "erev_sales_china",
+   "period": "FY2022",
+   "value": 123525,
+   "unit": "count",
+   "currency": "CNY",
+   "page": 208,
+   "_provenance": {
+    "source_snippet": "图《增程式電動汽車中國銷量（2016年（實際）至2025年（預測））》，軸（輛），資料來源：灼識諮詢；2022年柱頂標籤123,525",
+    "page": 208,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "erev_sales_china",
+   "period": "FY2023",
+   "value": 199315,
+   "unit": "count",
+   "currency": "CNY",
+   "page": 208,
+   "_provenance": {
+    "source_snippet": "图《增程式電動汽車中國銷量（2016年（實際）至2025年（預測））》，軸（輛），資料來源：灼識諮詢；2023年柱頂標籤199,315",
+    "page": 208,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "erev_sales_china",
+   "period": "FY2024",
+   "value": 292935,
+   "unit": "count",
+   "currency": "CNY",
+   "page": 208,
+   "_provenance": {
+    "source_snippet": "图《增程式電動汽車中國銷量（2016年（實際）至2025年（預測））》，軸（輛），資料來源：灼識諮詢；2024年柱頂標籤292,935",
+    "page": 208,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "erev_sales_china",
+   "period": "FY2025",
+   "value": 403803,
+   "unit": "count",
+   "currency": "CNY",
+   "page": 208,
+   "_provenance": {
+    "source_snippet": "图《增程式電動汽車中國銷量（2016年（實際）至2025年（預測））》，軸（輛），資料來源：灼識諮詢；2025年柱頂標籤403,803",
+    "page": 208,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "erev_share_of_nev_sales",
+   "period": "FY2016",
+   "value": 0.0,
+   "unit": "percent",
+   "currency": "CNY",
+   "page": 208,
+   "_provenance": {
+    "source_snippet": "图《增程式電動汽車中國銷量（2016年（實際）至2025年（預測））》，軸（輛），資料來源：灼識諮詢；圖底「增程式電動汽車佔新能源汽車總銷量的百分比」行2016年0.0%",
+    "page": 208,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "erev_share_of_nev_sales",
+   "period": "FY2017",
+   "value": 0.0,
+   "unit": "percent",
+   "currency": "CNY",
+   "page": 208,
+   "_provenance": {
+    "source_snippet": "图《增程式電動汽車中國銷量（2016年（實際）至2025年（預測））》，軸（輛），資料來源：灼識諮詢；圖底「增程式電動汽車佔新能源汽車總銷量的百分比」行2017年0.0%",
+    "page": 208,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "erev_share_of_nev_sales",
+   "period": "FY2018",
+   "value": 0.0,
+   "unit": "percent",
+   "currency": "CNY",
+   "page": 208,
+   "_provenance": {
+    "source_snippet": "图《增程式電動汽車中國銷量（2016年（實際）至2025年（預測））》，軸（輛），資料來源：灼識諮詢；圖底「增程式電動汽車佔新能源汽車總銷量的百分比」行2018年0.0%",
+    "page": 208,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "erev_share_of_nev_sales",
+   "period": "FY2019",
+   "value": 0.1,
+   "unit": "percent",
+   "currency": "CNY",
+   "page": 208,
+   "_provenance": {
+    "source_snippet": "图《增程式電動汽車中國銷量（2016年（實際）至2025年（預測））》，軸（輛），資料來源：灼識諮詢；圖底「增程式電動汽車佔新能源汽車總銷量的百分比」行2019年0.1%",
+    "page": 208,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "erev_share_of_nev_sales",
+   "period": "FY2020",
+   "value": 2.8,
+   "unit": "percent",
+   "currency": "CNY",
+   "page": 208,
+   "_provenance": {
+    "source_snippet": "图《增程式電動汽車中國銷量（2016年（實際）至2025年（預測））》，軸（輛），資料來源：灼識諮詢；圖底「增程式電動汽車佔新能源汽車總銷量的百分比」行2020年2.8%",
+    "page": 208,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "erev_share_of_nev_sales",
+   "period": "FY2021",
+   "value": 3.6,
+   "unit": "percent",
+   "currency": "CNY",
+   "page": 208,
+   "_provenance": {
+    "source_snippet": "图《增程式電動汽車中國銷量（2016年（實際）至2025年（預測））》，軸（輛），資料來源：灼識諮詢；圖底「增程式電動汽車佔新能源汽車總銷量的百分比」行2021年3.6%",
+    "page": 208,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "erev_share_of_nev_sales",
+   "period": "FY2022",
+   "value": 4.4,
+   "unit": "percent",
+   "currency": "CNY",
+   "page": 208,
+   "_provenance": {
+    "source_snippet": "图《增程式電動汽車中國銷量（2016年（實際）至2025年（預測））》，軸（輛），資料來源：灼識諮詢；圖底「增程式電動汽車佔新能源汽車總銷量的百分比」行2022年4.4%",
+    "page": 208,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "erev_share_of_nev_sales",
+   "period": "FY2023",
+   "value": 5.4,
+   "unit": "percent",
+   "currency": "CNY",
+   "page": 208,
+   "_provenance": {
+    "source_snippet": "图《增程式電動汽車中國銷量（2016年（實際）至2025年（預測））》，軸（輛），資料來源：灼識諮詢；圖底「增程式電動汽車佔新能源汽車總銷量的百分比」行2023年5.4%",
+    "page": 208,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "erev_share_of_nev_sales",
+   "period": "FY2024",
+   "value": 6.4,
+   "unit": "percent",
+   "currency": "CNY",
+   "page": 208,
+   "_provenance": {
+    "source_snippet": "图《增程式電動汽車中國銷量（2016年（實際）至2025年（預測））》，軸（輛），資料來源：灼識諮詢；圖底「增程式電動汽車佔新能源汽車總銷量的百分比」行2024年6.4%",
+    "page": 208,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "erev_share_of_nev_sales",
+   "period": "FY2025",
+   "value": 7.3,
+   "unit": "percent",
+   "currency": "CNY",
+   "page": 208,
+   "_provenance": {
+    "source_snippet": "图《增程式電動汽車中國銷量（2016年（實際）至2025年（預測））》，軸（輛），資料來源：灼識諮詢；圖底「增程式電動汽車佔新能源汽車總銷量的百分比」行2025年7.3%",
+    "page": 208,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "erev_sales_china_cagr",
+   "period": "FY2016-FY2020",
+   "value": 598.7,
+   "unit": "percent",
+   "currency": "CNY",
+   "page": 208,
+   "_provenance": {
+    "source_snippet": "图《增程式電動汽車中國銷量（2016年（實際）至2025年（預測））》，軸（輛），資料來源：灼識諮詢；「2016年至2020年年複合增長率598.7%」",
+    "page": 208,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  },
+  {
+   "statement": "metric",
+   "item": "erev_sales_china_cagr",
+   "period": "FY2020-FY2025",
+   "value": 64.7,
+   "unit": "percent",
+   "currency": "CNY",
+   "page": 208,
+   "_provenance": {
+    "source_snippet": "图《增程式電動汽車中國銷量（2016年（實際）至2025年（預測））》，軸（輛），資料來源：灼識諮詢；「2020年至2025年（預測）年複合增長率64.7%」",
+    "page": 208,
+    "verified": false,
+    "verifier": null,
+    "verified_date": null
+   }
+  }
+ ],
+ "deliveries": [],
+ "events": [],
+ "uncertain": [
+  {
+   "field": "key_metrics.erev_sales_china FY2018 (p208)",
+   "reason": "圖中2018年柱標籤為「—」（無具體數值），文本抽取亦無該年銷量值，不入GT"
+  },
+  {
+   "field": "key_metrics.item 詞表",
+   "reason": "受控詞表(standard/prompts.md)無行業銷量/均價/CAGR/份額代碼，本GT按lead指示用statement=metric與描述性代碼nev_sales_*/nev_avg_price*/erev_*，需人工核驗確認"
+  },
+  {
+   "field": "p198 堆疊柱分段標籤",
+   "reason": "分段標籤為四捨五入整數，部分年份分段和與合計標籤差±1千輛（如2017：458+110+0=568，合計標籤569）；2016–2018增程分段標籤0與p208的14/81/—輛按千輛精度一致；均按圖面原樣轉錄"
+  },
+  {
+   "field": "視覺-only判定",
+   "reason": "本招股書圖表均為矢量文本（行業概覽各頁get_images()=0），數值標籤可被pymupdf抽取但年份/類型對應完全亂序、p208的2018為「—」，正確結構化轉錄必須依賴頁面圖像；無純 raster 圖表頁"
+  }
+ ]
+}

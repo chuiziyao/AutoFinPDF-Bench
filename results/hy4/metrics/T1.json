@@ -1,0 +1,253 @@
+{
+  "aggregate": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "exact_match_rate": 1.0,
+    "coverage": 1.0,
+    "hallucination_rate": 0.0,
+    "value_error_rate": 0.0,
+    "documents": 14,
+    "total_gt_fields": 32
+  },
+  "per_document": {
+    "li_us_delivery_2026-03__T1.json": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match_rate": 1.0,
+      "coverage": 1.0,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0,
+      "runs": 2,
+      "gt_fields": 1,
+      "pred_fields": 1,
+      "per_run_f1": [
+        1.0,
+        1.0
+      ],
+      "errors_r1": []
+    },
+    "li_us_delivery_2026-04__T1.json": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match_rate": 1.0,
+      "coverage": 1.0,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0,
+      "runs": 2,
+      "gt_fields": 1,
+      "pred_fields": 1,
+      "per_run_f1": [
+        1.0,
+        1.0
+      ],
+      "errors_r1": []
+    },
+    "li_us_delivery_2026-05__T1.json": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match_rate": 1.0,
+      "coverage": 1.0,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0,
+      "runs": 2,
+      "gt_fields": 1,
+      "pred_fields": 1,
+      "per_run_f1": [
+        1.0,
+        1.0
+      ],
+      "errors_r1": []
+    },
+    "li_us_delivery_2026-06__T1.json": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match_rate": 1.0,
+      "coverage": 1.0,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0,
+      "runs": 2,
+      "gt_fields": 1,
+      "pred_fields": 1,
+      "per_run_f1": [
+        1.0,
+        1.0
+      ],
+      "errors_r1": []
+    },
+    "li_us_delivery_2026-07__T1.json": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match_rate": 1.0,
+      "coverage": 1.0,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0,
+      "runs": 2,
+      "gt_fields": 1,
+      "pred_fields": 1,
+      "per_run_f1": [
+        1.0,
+        1.0
+      ],
+      "errors_r1": []
+    },
+    "li_us_delivery_2026-08__T1.json": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match_rate": 1.0,
+      "coverage": 1.0,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0,
+      "runs": 2,
+      "gt_fields": 1,
+      "pred_fields": 1,
+      "per_run_f1": [
+        1.0,
+        1.0
+      ],
+      "errors_r1": []
+    },
+    "li_us_delivery_2026-09__T1.json": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match_rate": 1.0,
+      "coverage": 1.0,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0,
+      "runs": 2,
+      "gt_fields": 1,
+      "pred_fields": 1,
+      "per_run_f1": [
+        1.0,
+        1.0
+      ],
+      "errors_r1": []
+    },
+    "li_us_delivery_2026-10__T1.json": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match_rate": 1.0,
+      "coverage": 1.0,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0,
+      "runs": 2,
+      "gt_fields": 1,
+      "pred_fields": 1,
+      "per_run_f1": [
+        1.0,
+        1.0
+      ],
+      "errors_r1": []
+    },
+    "seres_a_prod_sales_2026-05__T1.json": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match_rate": 1.0,
+      "coverage": 1.0,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0,
+      "runs": 2,
+      "gt_fields": 4,
+      "pred_fields": 4,
+      "per_run_f1": [
+        1.0,
+        1.0
+      ],
+      "errors_r1": []
+    },
+    "seres_a_prod_sales_2026-06__T1.json": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match_rate": 1.0,
+      "coverage": 1.0,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0,
+      "runs": 2,
+      "gt_fields": 4,
+      "pred_fields": 4,
+      "per_run_f1": [
+        1.0,
+        1.0
+      ],
+      "errors_r1": []
+    },
+    "seres_a_prod_sales_2026-07__T1.json": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match_rate": 1.0,
+      "coverage": 1.0,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0,
+      "runs": 2,
+      "gt_fields": 4,
+      "pred_fields": 4,
+      "per_run_f1": [
+        1.0,
+        1.0
+      ],
+      "errors_r1": []
+    },
+    "seres_a_prod_sales_2026-08__T1.json": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match_rate": 1.0,
+      "coverage": 1.0,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0,
+      "runs": 2,
+      "gt_fields": 4,
+      "pred_fields": 4,
+      "per_run_f1": [
+        1.0,
+        1.0
+      ],
+      "errors_r1": []
+    },
+    "seres_a_prod_sales_2026-09__T1.json": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match_rate": 1.0,
+      "coverage": 1.0,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0,
+      "runs": 2,
+      "gt_fields": 4,
+      "pred_fields": 4,
+      "per_run_f1": [
+        1.0,
+        1.0
+      ],
+      "errors_r1": []
+    },
+    "seres_a_prod_sales_2026-10__T1.json": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match_rate": 1.0,
+      "coverage": 1.0,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0,
+      "runs": 2,
+      "gt_fields": 4,
+      "pred_fields": 4,
+      "per_run_f1": [
+        1.0,
+        1.0
+      ],
+      "errors_r1": []
+    }
+  }
+}

@@ -1,0 +1,1 @@
+【任务T4】阅读年报全文，输出 JSON：{"events":[{"date","type","summary","page"}],"relationships":[{"type"(supplier/customer/partner),"counterparty","description","page"}],"risks":[{"topic","summary","page"}],"notes":"一段研究判读"}。关系与风险必须附页码。只输出 JSON。

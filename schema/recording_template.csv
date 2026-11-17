@@ -1,0 +1,3 @@
+task_id,doc_id,model_name,model_version,tool,input_mode,thinking_mode,temperature,run_index,start_time,end_time,latency_s,prompt_tokens,completion_tokens,total_tokens,output_file,screenshot_path,deviation_note
+T1,li_delivery_2025_10,HY4,,其它工具,text_paste,,unknown,1,,,,,,,runs/hy4/li_delivery_2025_10__T1__r1.json,,
+T2,li_20f_fy2025,HY4,,其它工具,pdf_native,,unknown,1,,,,,,,runs/hy4/li_20f_fy2025__T2__r1.json,,

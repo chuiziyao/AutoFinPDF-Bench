@@ -1,0 +1,258 @@
+{
+  "benchmark_version": "1.0.0",
+  "generated_at": "2026-11-17",
+  "entries": [
+    {
+      "schema_version": "1.0",
+      "model": {
+        "slug": "qwen4-max-preview",
+        "name": "Qwen4-Max-Preview",
+        "version": "qwen-latest-series-invite-1102",
+        "provider": "Alibaba Qwen"
+      },
+      "benchmark_version": "1.0.0",
+      "scorer_hash": "1e6819d932ad5265254533c1790be54d80b99436ecff3c5a1785a5cfd31c1f9b",
+      "submitted_at": "2026-11-15",
+      "verification": "self-reported",
+      "tracks": {
+        "T1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match_rate": 1.0,
+          "coverage": 1.0,
+          "hallucination_rate": 0.0,
+          "value_error_rate": 0.0,
+          "documents": 14,
+          "total_gt_fields": 32
+        },
+        "T2": {
+          "precision": 0.9939,
+          "recall": 0.9939,
+          "f1": 0.9939,
+          "exact_match_rate": 0.9939,
+          "coverage": 1.0,
+          "hallucination_rate": 0.0,
+          "value_error_rate": 0.0061,
+          "documents": 4,
+          "total_gt_fields": 182
+        },
+        "T5": {
+          "precision": 0.9559,
+          "recall": 0.9525,
+          "f1": 0.9542,
+          "exact_match_rate": 0.7873,
+          "coverage": 0.9966,
+          "hallucination_rate": 0.0,
+          "value_error_rate": 0.0441,
+          "documents": 2,
+          "total_gt_fields": 90
+        },
+        "T3": {
+          "consistent": 6,
+          "total": 6,
+          "rate": 1.0
+        },
+        "T4": {
+          "status": "collected",
+          "output_files": 4,
+          "note": "qualitative deep-understanding tier; reviewed by maintainers, not numerically scored"
+        },
+        "T6": {
+          "element_f1": 0.524,
+          "element_recall": 0.588,
+          "element_precision": 0.483,
+          "conclusion_overlap": 0.811,
+          "documents": 3
+        },
+        "T7": {
+          "fact_recall": 0.287,
+          "fact_precision": 0.275,
+          "party_recall": 1.0,
+          "documents": 5
+        },
+        "REITs_A": {
+          "docs": 16,
+          "docs_missing": [],
+          "fields": 751,
+          "fields_per_doc": {
+            "508021_2024FY": 65,
+            "180102_2025FY": 42,
+            "180202_2025FY": 38,
+            "508007_2025FY": 33,
+            "180301_2025FY": 70,
+            "180501_2025FY": 61,
+            "180601_2025FY": 44,
+            "180605_2025FY": 23,
+            "180607_2025FY": 35,
+            "180701_2025FY": 20,
+            "508028_2025FY": 50,
+            "508056_2025FY": 81,
+            "508060_2025FY": 31,
+            "508068_2025FY": 67,
+            "508087_2025FY": 35,
+            "508096_2026Q2": 56
+          },
+          "name_compliance": 1.0,
+          "page_rate": 0.9374,
+          "priority_counts": {
+            "WALT": 62,
+            "续租率": 20,
+            "剩余收费年限": 4,
+            "出租率": 64,
+            "租金单价": 69,
+            "收缴率": 54
+          },
+          "priority_doc_coverage": {
+            "WALT": 0.625,
+            "续租率": 0.6875,
+            "剩余收费年限": 0.25,
+            "出租率": 0.6875,
+            "租金单价": 0.5625,
+            "收缴率": 0.6875
+          },
+          "priority_doc_coverage_avg": 0.5833,
+          "score": 0.8402
+        },
+        "REITs_B": {
+          "basic_completeness": 0.6667,
+          "basic_filled": 4,
+          "assets": 45,
+          "extras": 223,
+          "entries_with_value": 374,
+          "page_rate": 1.0,
+          "score": 0.8334
+        }
+      },
+      "overall": 0.7761,
+      "partial": false,
+      "notes": "参考运行：DSH harness 直连 API，思考 on（T2 消融 off 另见原报告），标准档/硬档 2 轮，REITs 1 轮。REITs-A 官方 16 份子集（全量 78 份运行见原工程）。"
+    },
+    {
+      "schema_version": "1.0",
+      "model": {
+        "slug": "hy4",
+        "name": "HY4 (Tencent Hunyuan)",
+        "version": "WorkBuddy agent, manual run",
+        "provider": "Tencent"
+      },
+      "benchmark_version": "1.0.0",
+      "scorer_hash": "1e6819d932ad5265254533c1790be54d80b99436ecff3c5a1785a5cfd31c1f9b",
+      "submitted_at": "2026-11-16",
+      "verification": "self-reported",
+      "tracks": {
+        "T1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match_rate": 1.0,
+          "coverage": 1.0,
+          "hallucination_rate": 0.0,
+          "value_error_rate": 0.0,
+          "documents": 14,
+          "total_gt_fields": 32
+        },
+        "T2": {
+          "precision": 0.9868,
+          "recall": 0.9371,
+          "f1": 0.9591,
+          "exact_match_rate": 0.9264,
+          "coverage": 0.9489,
+          "hallucination_rate": 0.0,
+          "value_error_rate": 0.0118,
+          "documents": 4,
+          "total_gt_fields": 182
+        },
+        "T5": {
+          "precision": 0.9412,
+          "recall": 0.9412,
+          "f1": 0.9412,
+          "exact_match_rate": 0.7647,
+          "coverage": 1.0,
+          "hallucination_rate": 0.0,
+          "value_error_rate": 0.0588,
+          "documents": 2,
+          "total_gt_fields": 90
+        },
+        "T3": {
+          "consistent": 6,
+          "total": 6,
+          "rate": 1.0
+        },
+        "T4": {
+          "status": "collected",
+          "output_files": 4,
+          "note": "qualitative deep-understanding tier; reviewed by maintainers, not numerically scored"
+        },
+        "T6": {
+          "element_f1": 0.451,
+          "element_recall": 0.479,
+          "element_precision": 0.433,
+          "conclusion_overlap": 0.669,
+          "documents": 3
+        },
+        "T7": {
+          "fact_recall": 0.24,
+          "fact_precision": 0.19,
+          "party_recall": 0.813,
+          "documents": 5
+        },
+        "REITs_A": {
+          "docs": 16,
+          "docs_missing": [],
+          "fields": 303,
+          "fields_per_doc": {
+            "508021_2024FY": 21,
+            "180102_2025FY": 34,
+            "180202_2025FY": 22,
+            "508007_2025FY": 20,
+            "180301_2025FY": 43,
+            "180501_2025FY": 51,
+            "180601_2025FY": 16,
+            "180605_2025FY": 3,
+            "180607_2025FY": 5,
+            "180701_2025FY": 5,
+            "508028_2025FY": 18,
+            "508056_2025FY": 35,
+            "508060_2025FY": 5,
+            "508068_2025FY": 13,
+            "508087_2025FY": 1,
+            "508096_2026Q2": 11
+          },
+          "name_compliance": 1.0,
+          "page_rate": 1.0,
+          "priority_counts": {
+            "WALT": 56,
+            "续租率": 0,
+            "剩余收费年限": 1,
+            "出租率": 32,
+            "租金单价": 30,
+            "收缴率": 36
+          },
+          "priority_doc_coverage": {
+            "WALT": 0.5,
+            "续租率": 0.0,
+            "剩余收费年限": 0.0625,
+            "出租率": 0.3125,
+            "租金单价": 0.25,
+            "收缴率": 0.3125
+          },
+          "priority_doc_coverage_avg": 0.2396,
+          "score": 0.7465
+        },
+        "REITs_B": {
+          "basic_completeness": 0.6667,
+          "basic_filled": 4,
+          "assets": 10,
+          "extras": 18,
+          "entries_with_value": 62,
+          "page_rate": 1.0,
+          "score": 0.8334
+        }
+      },
+      "overall": 0.7387,
+      "partial": false,
+      "notes": "基线横评：WorkBuddy 智能体手动执行，同任务/同输入/同 prompt/同评分脚本；环境偏差见 evidence/recording.csv 与 HY4评测文档.md。"
+    }
+  ]
+}

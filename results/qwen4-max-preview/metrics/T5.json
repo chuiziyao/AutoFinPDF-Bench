@@ -1,0 +1,86 @@
+{
+  "aggregate": {
+    "precision": 0.9559,
+    "recall": 0.9525,
+    "f1": 0.9542,
+    "exact_match_rate": 0.7873,
+    "coverage": 0.9966,
+    "hallucination_rate": 0.0,
+    "value_error_rate": 0.0441,
+    "documents": 2,
+    "total_gt_fields": 90
+  },
+  "per_document": {
+    "li_hk_listing_doc_2021__T5.json": {
+      "precision": 1.0,
+      "recall": 0.9931,
+      "f1": 0.9966,
+      "exact_match_rate": 0.9863,
+      "coverage": 0.9931,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0,
+      "runs": 2,
+      "gt_fields": 73,
+      "pred_fields": 72,
+      "per_run_f1": [
+        0.9931,
+        1.0
+      ],
+      "errors_r1": [
+        {
+          "type": "missing",
+          "key": [
+            "metric",
+            "nev_sales_phev",
+            "FY2019",
+            "CNY"
+          ]
+        }
+      ]
+    },
+    "seres_a_annual_2025__T5.json": {
+      "precision": 0.9118,
+      "recall": 0.9118,
+      "f1": 0.9118,
+      "exact_match_rate": 0.5882,
+      "coverage": 1.0,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0882,
+      "runs": 2,
+      "gt_fields": 17,
+      "pred_fields": 17,
+      "per_run_f1": [
+        0.8824,
+        0.9412
+      ],
+      "errors_r1": [
+        {
+          "type": "value_mismatch",
+          "key": [
+            "metric",
+            "premium_nev_sales",
+            "FY2019",
+            "CNY"
+          ],
+          "gt": 16,
+          "pred": 18,
+          "gt_unit": "wan",
+          "pred_unit": "wan"
+        },
+        {
+          "type": "value_mismatch",
+          "key": [
+            "metric",
+            "premium_nev_sales",
+            "FY2020",
+            "CNY"
+          ],
+          "gt": 32,
+          "pred": 33,
+          "gt_unit": "wan",
+          "pred_unit": "wan"
+        }
+      ]
+    }
+  }
+}

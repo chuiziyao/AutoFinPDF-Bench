@@ -1,0 +1,561 @@
+{
+  "meta": {
+    "company": "Li Auto Inc.",
+    "market": "US",
+    "doc_type": "20-F",
+    "fiscal_period": "FY2025",
+    "currency": "CNY",
+    "accounting_standard": "US_GAAP"
+  },
+  "statements": [
+    {
+      "statement": "income_statement",
+      "item": "revenue",
+      "period": "FY2025",
+      "value": 112312511,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "income_statement",
+      "item": "revenue",
+      "period": "FY2024",
+      "value": 144459946,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "income_statement",
+      "item": "cost_of_revenue",
+      "period": "FY2025",
+      "value": -91327453,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "income_statement",
+      "item": "cost_of_revenue",
+      "period": "FY2024",
+      "value": -114803808,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "income_statement",
+      "item": "gross_profit",
+      "period": "FY2025",
+      "value": 20985058,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "income_statement",
+      "item": "gross_profit",
+      "period": "FY2024",
+      "value": 29656138,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "income_statement",
+      "item": "operating_expenses",
+      "period": "FY2025",
+      "value": -21506175,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "income_statement",
+      "item": "operating_expenses",
+      "period": "FY2024",
+      "value": -22637024,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "income_statement",
+      "item": "operating_income",
+      "period": "FY2025",
+      "value": -521117,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "income_statement",
+      "item": "operating_income",
+      "period": "FY2024",
+      "value": 7019114,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "income_statement",
+      "item": "net_income",
+      "period": "FY2025",
+      "value": 1139428,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "income_statement",
+      "item": "net_income",
+      "period": "FY2024",
+      "value": 8045250,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "income_statement",
+      "item": "net_income_attributable",
+      "period": "FY2025",
+      "value": 1124438,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "income_statement",
+      "item": "net_income_attributable",
+      "period": "FY2024",
+      "value": 8032350,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "income_statement",
+      "item": "eps_basic",
+      "period": "FY2025",
+      "value": 0.56,
+      "unit": "yuan_per_share",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "income_statement",
+      "item": "eps_basic",
+      "period": "FY2024",
+      "value": 4.03,
+      "unit": "yuan_per_share",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "income_statement",
+      "item": "eps_diluted",
+      "period": "FY2025",
+      "value": 0.54,
+      "unit": "yuan_per_share",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "income_statement",
+      "item": "eps_diluted",
+      "period": "FY2024",
+      "value": 3.79,
+      "unit": "yuan_per_share",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "total_assets",
+      "period": "FY2025",
+      "value": 154295818,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 15
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "total_assets",
+      "period": "FY2024",
+      "value": 162349078,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 15
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "total_liabilities",
+      "period": "FY2025",
+      "value": 81156075,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 15
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "total_liabilities",
+      "period": "FY2024",
+      "value": 91028696,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 15
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "total_equity",
+      "period": "FY2025",
+      "value": 73139743,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 15
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "total_equity",
+      "period": "FY2024",
+      "value": 71320382,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 15
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "cash_and_equivalents",
+      "period": "FY2025",
+      "value": 56691765,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 15
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "cash_and_equivalents",
+      "period": "FY2024",
+      "value": 65901123,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 15
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "short_term_investments",
+      "period": "FY2025",
+      "value": 44331407,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 15
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "short_term_investments",
+      "period": "FY2024",
+      "value": 46904548,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 15
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "inventory",
+      "period": "FY2025",
+      "value": 8752439,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "inventory",
+      "period": "FY2024",
+      "value": 8185604,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 12
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "accounts_receivable",
+      "period": "FY2025",
+      "value": 119823,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "accounts_receivable",
+      "period": "FY2024",
+      "value": 135112,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 12
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "accounts_payable",
+      "period": "FY2025",
+      "value": 40579219,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "accounts_payable",
+      "period": "FY2024",
+      "value": 53596194,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 12
+    },
+    {
+      "statement": "cash_flow",
+      "item": "operating_cash_flow",
+      "period": "FY2025",
+      "value": -8611397,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 15
+    },
+    {
+      "statement": "cash_flow",
+      "item": "operating_cash_flow",
+      "period": "FY2024",
+      "value": 15933160,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 15
+    },
+    {
+      "statement": "cash_flow",
+      "item": "investing_cash_flow",
+      "period": "FY2025",
+      "value": -703125,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 15
+    },
+    {
+      "statement": "cash_flow",
+      "item": "investing_cash_flow",
+      "period": "FY2024",
+      "value": -41137169,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 15
+    },
+    {
+      "statement": "cash_flow",
+      "item": "financing_cash_flow",
+      "period": "FY2025",
+      "value": 767402,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 15
+    },
+    {
+      "statement": "cash_flow",
+      "item": "financing_cash_flow",
+      "period": "FY2024",
+      "value": -415648,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 15
+    },
+    {
+      "statement": "cash_flow",
+      "item": "capex",
+      "period": "FY2025",
+      "value": -4205517,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 0
+    },
+    {
+      "statement": "cash_flow",
+      "item": "capex",
+      "period": "FY2024",
+      "value": -7730022,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 0
+    }
+  ],
+  "key_metrics": [
+    {
+      "statement": "metric",
+      "item": "gross_margin",
+      "period": "FY2025",
+      "value": 18.7,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "metric",
+      "item": "gross_margin",
+      "period": "FY2024",
+      "value": 20.5,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "metric",
+      "item": "operating_margin",
+      "period": "FY2025",
+      "value": -0.5,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 121
+    },
+    {
+      "statement": "metric",
+      "item": "operating_margin",
+      "period": "FY2024",
+      "value": 4.9,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 121
+    },
+    {
+      "statement": "metric",
+      "item": "net_margin",
+      "period": "FY2025",
+      "value": 1.0,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "metric",
+      "item": "net_margin",
+      "period": "FY2024",
+      "value": 5.6,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "metric",
+      "item": "vehicle_margin",
+      "period": "FY2025",
+      "value": 17.9,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "metric",
+      "item": "vehicle_margin",
+      "period": "FY2024",
+      "value": 19.8,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "metric",
+      "item": "deliveries_total",
+      "period": "FY2025",
+      "value": 406343,
+      "unit": "count",
+      "currency": "CNY",
+      "page": 75
+    },
+    {
+      "statement": "metric",
+      "item": "deliveries_total",
+      "period": "FY2024",
+      "value": 500508,
+      "unit": "count",
+      "currency": "CNY",
+      "page": 120
+    },
+    {
+      "statement": "metric",
+      "item": "revenue_yoy",
+      "period": "FY2025",
+      "value": -22.3,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 14
+    },
+    {
+      "statement": "metric",
+      "item": "cash_and_short_term_investments",
+      "period": "FY2025",
+      "value": 101.2,
+      "unit": "billion",
+      "currency": "CNY",
+      "page": 123
+    }
+  ],
+  "deliveries": [],
+  "events": [
+    {
+      "date": "2025-03",
+      "type": "technology",
+      "summary": "正式开源自研智能汽车操作系统Li Halo OS，成为全球首家开源自有整车操作系统的车企",
+      "page": 78
+    },
+    {
+      "date": "2025-11",
+      "type": "recall",
+      "summary": "自愿召回11,411辆2024款Li MEGA（硬件相关安全风险），并于2025年确认召回预计成本",
+      "page": 117
+    },
+    {
+      "date": "2025-12",
+      "type": "milestone",
+      "summary": "累计交付突破150万辆，截至2025年12月31日累计交付1,540,215辆",
+      "page": 74
+    },
+    {
+      "date": "2025-12",
+      "type": "product_launch",
+      "summary": "发布首款自研多模态AI可穿戴设备理想AI眼镜Livis，可与车机系统联动",
+      "page": 79
+    },
+    {
+      "date": "2024-05",
+      "type": "litigation",
+      "summary": "公司及部分董事高管在美国纽约东区联邦法院被提起两起证券集体诉讼（Banurs、Chaudary），2024年12月30日合并审理，2025年7月21日提交驳回动议，裁决尚未作出",
+      "page": 140
+    },
+    {
+      "date": "2026-03-24",
+      "type": "share_repurchase",
+      "summary": "董事会批准最高10亿美元的A类普通股及/或ADS回购计划，期限至2027年3月31日",
+      "page": 161
+    }
+  ],
+  "uncertain": [
+    {
+      "field": "deliveries",
+      "reason": "年报未披露分月度交付数据，无法按YYYY-MM填写；仅披露2025年全年交付406,343辆、2024年500,508辆（已计入key_metrics.deliveries_total）"
+    },
+    {
+      "field": "key_metrics.cash_and_short_term_investments (FY2024)",
+      "reason": "公司仅在2025年流动性讨论中披露现金储备口径合计RMB101.2 billion（含现金及等价物、受限资金、定期存款及短期投资、长期定期存款与金融工具），未披露2024年末同口径合计数"
+    },
+    {
+      "field": "key_metrics.gross_margin / net_margin / vehicle_margin / revenue_yoy",
+      "reason": "原文未直接列示这些比率，数值系依据已披露的合并收入、车辆销售收入及成本、净利润计算并四舍五入至一位小数（营业利润率4.9%/-0.5%为原文直接披露）"
+    },
+    {
+      "field": "statements.capex.page",
+      "reason": "资本开支精确金额（购置物业厂房设备、无形资产及土地使用权）仅见于财务报表F-10页，页码非整数，按HTM规则填0；正文第125页披露为RMB7.7 billion(2024)与RMB4.2 billion(2025)"
+    },
+    {
+      "field": "events.recall.date",
+      "reason": "风险因素章节（第19页）称2024款Li MEGA召回发生于2025年第三季度，而附注2(p)（第117/F-27页）称2025年11月，原文时间口径不一致，此处采用附注口径"
+    }
+  ]
+}

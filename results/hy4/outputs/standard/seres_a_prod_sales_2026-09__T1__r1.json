@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "company": "赛力斯集团股份有限公司",
+    "market": "A",
+    "doc_type": "production_sales_flash",
+    "fiscal_period": "2026-09",
+    "currency": "CNY",
+    "accounting_standard": "CAS"
+  },
+  "statements": [],
+  "key_metrics": [],
+  "deliveries": [
+    {
+      "month": "2026-09",
+      "model": "NEV",
+      "count": 29271,
+      "page": 1
+    },
+    {
+      "month": "2026-09",
+      "model": "Seres",
+      "count": 25370,
+      "page": 1
+    },
+    {
+      "month": "2026-09",
+      "model": "Other",
+      "count": 2947,
+      "page": 1
+    },
+    {
+      "month": "2026-09",
+      "model": "Total",
+      "count": 32218,
+      "page": 1
+    }
+  ],
+  "events": [],
+  "uncertain": []
+}

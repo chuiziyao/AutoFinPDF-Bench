@@ -1,0 +1,882 @@
+{
+  "name": "AutoFinPDF-Bench",
+  "version": "1.0.0",
+  "frozen_at": "2026-11-17",
+  "description": "金融披露 PDF 结构化解析基准：新能源汽车股（A/港/美三市场）+ 公募 REITs。标准档 T1–T5（T3 派生、T4 定性）+ 硬档 T6/T7 + REITs 档 A/B。",
+  "runs_per_track": {
+    "standard": 2,
+    "hard": 2,
+    "reits": 1
+  },
+  "reits_B_chunk_pages": 120,
+  "tolerances": {
+    "financial_rel": 0.005,
+    "percent_pp": 0.1,
+    "count_abs": 0.5,
+    "chart_rel": 0.03,
+    "chart_percent_pp": 1.5,
+    "cost_items_abs": [
+      "cost_of_revenue",
+      "operating_expenses",
+      "capex"
+    ],
+    "t6_element_jaccard_threshold": 0.3,
+    "t7_item_jaccard_threshold": 0.3,
+    "t7_value_rel": 0.005,
+    "t7_value_abs_floor": 0.5
+  },
+  "formulas": {
+    "overall": "mean(T1.f1, T2.f1, T5.f1, T6.element_f1, T7.fact_recall, REITs_A.score, REITs_B.score) over available tiers; missing tier => partial",
+    "REITs_A.score": "mean(name_compliance, page_rate, priority_doc_coverage_avg)",
+    "REITs_B.score": "mean(basic_completeness, page_rate)",
+    "T3": "fraction of 6 controlled items whose normalized FY2025 values agree between li_us_20f_fy2025:T2 and li_hk_ar_fy2025:T2 (r1)"
+  },
+  "instances": [
+    {
+      "doc_id": "li_us_delivery_2026-03",
+      "task_id": "T1",
+      "track": "standard",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 2,
+      "prompt": "prompts/T1.txt",
+      "system": "prompts/system_standard.txt",
+      "inputs": [
+        "data/text/delivery_2026-03.txt"
+      ],
+      "groundtruth": "groundtruth/li_us_delivery_2026-03__T1.json"
+    },
+    {
+      "doc_id": "li_us_delivery_2026-04",
+      "task_id": "T1",
+      "track": "standard",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 2,
+      "prompt": "prompts/T1.txt",
+      "system": "prompts/system_standard.txt",
+      "inputs": [
+        "data/text/delivery_2026-04.txt"
+      ],
+      "groundtruth": "groundtruth/li_us_delivery_2026-04__T1.json"
+    },
+    {
+      "doc_id": "li_us_delivery_2026-05",
+      "task_id": "T1",
+      "track": "standard",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 2,
+      "prompt": "prompts/T1.txt",
+      "system": "prompts/system_standard.txt",
+      "inputs": [
+        "data/text/delivery_2026-05.txt"
+      ],
+      "groundtruth": "groundtruth/li_us_delivery_2026-05__T1.json"
+    },
+    {
+      "doc_id": "li_us_delivery_2026-06",
+      "task_id": "T1",
+      "track": "standard",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 2,
+      "prompt": "prompts/T1.txt",
+      "system": "prompts/system_standard.txt",
+      "inputs": [
+        "data/text/delivery_2026-06.txt"
+      ],
+      "groundtruth": "groundtruth/li_us_delivery_2026-06__T1.json"
+    },
+    {
+      "doc_id": "li_us_delivery_2026-07",
+      "task_id": "T1",
+      "track": "standard",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 2,
+      "prompt": "prompts/T1.txt",
+      "system": "prompts/system_standard.txt",
+      "inputs": [
+        "data/text/delivery_2026-07.txt"
+      ],
+      "groundtruth": "groundtruth/li_us_delivery_2026-07__T1.json"
+    },
+    {
+      "doc_id": "li_us_delivery_2026-08",
+      "task_id": "T1",
+      "track": "standard",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 2,
+      "prompt": "prompts/T1.txt",
+      "system": "prompts/system_standard.txt",
+      "inputs": [
+        "data/text/delivery_2026-08.txt"
+      ],
+      "groundtruth": "groundtruth/li_us_delivery_2026-08__T1.json"
+    },
+    {
+      "doc_id": "li_us_delivery_2026-09",
+      "task_id": "T1",
+      "track": "standard",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 2,
+      "prompt": "prompts/T1.txt",
+      "system": "prompts/system_standard.txt",
+      "inputs": [
+        "data/text/delivery_2026-09.txt"
+      ],
+      "groundtruth": "groundtruth/li_us_delivery_2026-09__T1.json"
+    },
+    {
+      "doc_id": "li_us_delivery_2026-10",
+      "task_id": "T1",
+      "track": "standard",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 2,
+      "prompt": "prompts/T1.txt",
+      "system": "prompts/system_standard.txt",
+      "inputs": [
+        "data/text/delivery_2026-10.txt"
+      ],
+      "groundtruth": "groundtruth/li_us_delivery_2026-10__T1.json"
+    },
+    {
+      "doc_id": "seres_a_prod_sales_2026-05",
+      "task_id": "T1",
+      "track": "standard",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 2,
+      "prompt": "prompts/T1.txt",
+      "system": "prompts/system_standard.txt",
+      "inputs": [
+        "data/text/production_sales_flash_2026-05.txt"
+      ],
+      "groundtruth": "groundtruth/seres_a_prod_sales_2026-05__T1.json"
+    },
+    {
+      "doc_id": "seres_a_prod_sales_2026-06",
+      "task_id": "T1",
+      "track": "standard",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 2,
+      "prompt": "prompts/T1.txt",
+      "system": "prompts/system_standard.txt",
+      "inputs": [
+        "data/text/production_sales_flash_2026-06.txt"
+      ],
+      "groundtruth": "groundtruth/seres_a_prod_sales_2026-06__T1.json"
+    },
+    {
+      "doc_id": "seres_a_prod_sales_2026-07",
+      "task_id": "T1",
+      "track": "standard",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 2,
+      "prompt": "prompts/T1.txt",
+      "system": "prompts/system_standard.txt",
+      "inputs": [
+        "data/text/production_sales_flash_2026-07.txt"
+      ],
+      "groundtruth": "groundtruth/seres_a_prod_sales_2026-07__T1.json"
+    },
+    {
+      "doc_id": "seres_a_prod_sales_2026-08",
+      "task_id": "T1",
+      "track": "standard",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 2,
+      "prompt": "prompts/T1.txt",
+      "system": "prompts/system_standard.txt",
+      "inputs": [
+        "data/text/production_sales_flash_2026-08.txt"
+      ],
+      "groundtruth": "groundtruth/seres_a_prod_sales_2026-08__T1.json"
+    },
+    {
+      "doc_id": "seres_a_prod_sales_2026-09",
+      "task_id": "T1",
+      "track": "standard",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 2,
+      "prompt": "prompts/T1.txt",
+      "system": "prompts/system_standard.txt",
+      "inputs": [
+        "data/text/production_sales_flash_2026-09.txt"
+      ],
+      "groundtruth": "groundtruth/seres_a_prod_sales_2026-09__T1.json"
+    },
+    {
+      "doc_id": "seres_a_prod_sales_2026-10",
+      "task_id": "T1",
+      "track": "standard",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 2,
+      "prompt": "prompts/T1.txt",
+      "system": "prompts/system_standard.txt",
+      "inputs": [
+        "data/text/production_sales_flash_2026-10.txt"
+      ],
+      "groundtruth": "groundtruth/seres_a_prod_sales_2026-10__T1.json"
+    },
+    {
+      "doc_id": "li_us_20f_fy2025",
+      "task_id": "T2",
+      "track": "standard",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 2,
+      "prompt": "prompts/T2.txt",
+      "system": "prompts/system_standard.txt",
+      "inputs": [
+        "data/text/us_20f_fy2025.txt"
+      ],
+      "groundtruth": "groundtruth/li_us_20f_fy2025__T2.json"
+    },
+    {
+      "doc_id": "li_hk_ar_fy2025",
+      "task_id": "T2",
+      "track": "standard",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 2,
+      "prompt": "prompts/T2.txt",
+      "system": "prompts/system_standard.txt",
+      "inputs": [
+        "data/text/hk_annual_report_fy2025_zh.txt"
+      ],
+      "groundtruth": "groundtruth/li_hk_ar_fy2025__T2.json"
+    },
+    {
+      "doc_id": "seres_a_annual_2025",
+      "task_id": "T2",
+      "track": "standard",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 2,
+      "prompt": "prompts/T2.txt",
+      "system": "prompts/system_standard.txt",
+      "inputs": [
+        "data/text/a_share_annual_report_2025.txt"
+      ],
+      "groundtruth": "groundtruth/seres_a_annual_2025__T2.json"
+    },
+    {
+      "doc_id": "li_hk_listing_doc_2021",
+      "task_id": "T2",
+      "track": "standard",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 2,
+      "prompt": "prompts/T2.txt",
+      "system": "prompts/system_standard.txt",
+      "inputs": [
+        "data/text/hk_listing_doc_2021_global_offering_zh.txt"
+      ],
+      "groundtruth": "groundtruth/li_hk_listing_doc_2021__T2.json"
+    },
+    {
+      "doc_id": "seres_a_annual_2025",
+      "task_id": "T4",
+      "track": "standard",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 2,
+      "prompt": "prompts/T4.txt",
+      "system": "prompts/system_standard.txt",
+      "inputs": [
+        "data/text/a_share_annual_report_2025.txt"
+      ],
+      "groundtruth": null
+    },
+    {
+      "doc_id": "li_hk_ar_fy2025",
+      "task_id": "T4",
+      "track": "standard",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 2,
+      "prompt": "prompts/T4.txt",
+      "system": "prompts/system_standard.txt",
+      "inputs": [
+        "data/text/hk_annual_report_fy2025_zh.txt"
+      ],
+      "groundtruth": null
+    },
+    {
+      "doc_id": "li_hk_listing_doc_2021",
+      "task_id": "T5",
+      "track": "standard",
+      "input_mode": "image",
+      "pages": [
+        198,
+        206,
+        208
+      ],
+      "runs": 2,
+      "prompt": "prompts/T5_li_hk_listing_doc_2021.txt",
+      "system": "prompts/system_standard.txt",
+      "inputs": [
+        "data/pages/hk_listing_doc_2021_global_offering_zh/p0198.png",
+        "data/pages/hk_listing_doc_2021_global_offering_zh/p0206.png",
+        "data/pages/hk_listing_doc_2021_global_offering_zh/p0208.png"
+      ],
+      "groundtruth": "groundtruth/li_hk_listing_doc_2021__T5.json"
+    },
+    {
+      "doc_id": "seres_a_annual_2025",
+      "task_id": "T5",
+      "track": "standard",
+      "input_mode": "image",
+      "pages": [
+        11,
+        75
+      ],
+      "runs": 2,
+      "prompt": "prompts/T5_seres_a_annual_2025.txt",
+      "system": "prompts/system_standard.txt",
+      "inputs": [
+        "data/pages/a_share_annual_report_2025/p0011.png",
+        "data/pages/a_share_annual_report_2025/p0075.png"
+      ],
+      "groundtruth": "groundtruth/seres_a_annual_2025__T5.json"
+    },
+    {
+      "doc_id": "legal_seres_asset_purchase",
+      "task_id": "T6",
+      "track": "hard",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 2,
+      "prompt": "prompts/T6.txt",
+      "system": "prompts/system_T6.txt",
+      "inputs": [
+        "data/text/legal_seres_asset_purchase.txt"
+      ],
+      "groundtruth": "groundtruth/hard/legal_seres_asset_purchase__T6.json"
+    },
+    {
+      "doc_id": "legal_byd_private_placement",
+      "task_id": "T6",
+      "track": "hard",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 2,
+      "prompt": "prompts/T6.txt",
+      "system": "prompts/system_T6.txt",
+      "inputs": [
+        "data/text/legal_byd_private_placement.txt"
+      ],
+      "groundtruth": "groundtruth/hard/legal_byd_private_placement__T6.json"
+    },
+    {
+      "doc_id": "legal_changan_private_placement",
+      "task_id": "T6",
+      "track": "hard",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 2,
+      "prompt": "prompts/T6.txt",
+      "system": "prompts/system_T6.txt",
+      "inputs": [
+        "data/text/legal_changan_private_placement.txt"
+      ],
+      "groundtruth": "groundtruth/hard/legal_changan_private_placement__T6.json"
+    },
+    {
+      "doc_id": "legal_seres_main_scanned",
+      "task_id": "T7",
+      "track": "hard",
+      "input_mode": "image",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        54,
+        55
+      ],
+      "runs": 2,
+      "prompt": "prompts/T7.txt",
+      "system": "prompts/system_T7.txt",
+      "inputs": [
+        "data/pages/legal_seres_main_scanned/p0001.png",
+        "data/pages/legal_seres_main_scanned/p0002.png",
+        "data/pages/legal_seres_main_scanned/p0003.png",
+        "data/pages/legal_seres_main_scanned/p0004.png",
+        "data/pages/legal_seres_main_scanned/p0054.png",
+        "data/pages/legal_seres_main_scanned/p0055.png"
+      ],
+      "groundtruth": "groundtruth/hard/legal_seres_main_scanned__T7.json"
+    },
+    {
+      "doc_id": "legal_seres_asset_scanned",
+      "task_id": "T7",
+      "track": "hard",
+      "input_mode": "image",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        194,
+        195
+      ],
+      "runs": 2,
+      "prompt": "prompts/T7.txt",
+      "system": "prompts/system_T7.txt",
+      "inputs": [
+        "data/pages/legal_seres_asset_scanned/p0001.png",
+        "data/pages/legal_seres_asset_scanned/p0002.png",
+        "data/pages/legal_seres_asset_scanned/p0003.png",
+        "data/pages/legal_seres_asset_scanned/p0004.png",
+        "data/pages/legal_seres_asset_scanned/p0194.png",
+        "data/pages/legal_seres_asset_scanned/p0195.png"
+      ],
+      "groundtruth": "groundtruth/hard/legal_seres_asset_scanned__T7.json"
+    },
+    {
+      "doc_id": "scanned_byd_csrc_ipo_approval_2011",
+      "task_id": "T7",
+      "track": "hard",
+      "input_mode": "image",
+      "pages": [
+        1,
+        2
+      ],
+      "runs": 2,
+      "prompt": "prompts/T7.txt",
+      "system": "prompts/system_T7.txt",
+      "inputs": [
+        "data/pages/scanned_byd_csrc_ipo_approval_2011/p0001.png",
+        "data/pages/scanned_byd_csrc_ipo_approval_2011/p0002.png"
+      ],
+      "groundtruth": "groundtruth/hard/scanned_byd_csrc_ipo_approval_2011__T7.json"
+    },
+    {
+      "doc_id": "scanned_seres_holder_reply_seal_2016",
+      "task_id": "T7",
+      "track": "hard",
+      "input_mode": "image",
+      "pages": [
+        1
+      ],
+      "runs": 2,
+      "prompt": "prompts/T7.txt",
+      "system": "prompts/system_T7.txt",
+      "inputs": [
+        "data/pages/scanned_seres_holder_reply_seal_2016/p0001.png"
+      ],
+      "groundtruth": "groundtruth/hard/scanned_seres_holder_reply_seal_2016__T7.json"
+    },
+    {
+      "doc_id": "scanned_seres_legal_opinion_sign_2016",
+      "task_id": "T7",
+      "track": "hard",
+      "input_mode": "image",
+      "pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "runs": 2,
+      "prompt": "prompts/T7.txt",
+      "system": "prompts/system_T7.txt",
+      "inputs": [
+        "data/pages/scanned_seres_legal_opinion_sign_2016/p0001.png",
+        "data/pages/scanned_seres_legal_opinion_sign_2016/p0002.png",
+        "data/pages/scanned_seres_legal_opinion_sign_2016/p0003.png",
+        "data/pages/scanned_seres_legal_opinion_sign_2016/p0004.png"
+      ],
+      "groundtruth": "groundtruth/hard/scanned_seres_legal_opinion_sign_2016__T7.json"
+    },
+    {
+      "doc_id": "508021_2024FY",
+      "task_id": "A",
+      "track": "reits",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 1,
+      "prompt": "prompts/reits_A.txt",
+      "system": "prompts/system_reits_A.txt",
+      "inputs": [
+        "data/reits/508021_2024FY.txt"
+      ],
+      "groundtruth": null
+    },
+    {
+      "doc_id": "180102_2025FY",
+      "task_id": "A",
+      "track": "reits",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 1,
+      "prompt": "prompts/reits_A.txt",
+      "system": "prompts/system_reits_A.txt",
+      "inputs": [
+        "data/reits/180102_2025FY.txt"
+      ],
+      "groundtruth": null
+    },
+    {
+      "doc_id": "180202_2025FY",
+      "task_id": "A",
+      "track": "reits",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 1,
+      "prompt": "prompts/reits_A.txt",
+      "system": "prompts/system_reits_A.txt",
+      "inputs": [
+        "data/reits/180202_2025FY.txt"
+      ],
+      "groundtruth": null
+    },
+    {
+      "doc_id": "508007_2025FY",
+      "task_id": "A",
+      "track": "reits",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 1,
+      "prompt": "prompts/reits_A.txt",
+      "system": "prompts/system_reits_A.txt",
+      "inputs": [
+        "data/reits/508007_2025FY.txt"
+      ],
+      "groundtruth": null
+    },
+    {
+      "doc_id": "180301_2025FY",
+      "task_id": "A",
+      "track": "reits",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 1,
+      "prompt": "prompts/reits_A.txt",
+      "system": "prompts/system_reits_A.txt",
+      "inputs": [
+        "data/reits/180301_2025FY.txt"
+      ],
+      "groundtruth": null
+    },
+    {
+      "doc_id": "180501_2025FY",
+      "task_id": "A",
+      "track": "reits",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 1,
+      "prompt": "prompts/reits_A.txt",
+      "system": "prompts/system_reits_A.txt",
+      "inputs": [
+        "data/reits/180501_2025FY.txt"
+      ],
+      "groundtruth": null
+    },
+    {
+      "doc_id": "180601_2025FY",
+      "task_id": "A",
+      "track": "reits",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 1,
+      "prompt": "prompts/reits_A.txt",
+      "system": "prompts/system_reits_A.txt",
+      "inputs": [
+        "data/reits/180601_2025FY.txt"
+      ],
+      "groundtruth": null
+    },
+    {
+      "doc_id": "180605_2025FY",
+      "task_id": "A",
+      "track": "reits",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 1,
+      "prompt": "prompts/reits_A.txt",
+      "system": "prompts/system_reits_A.txt",
+      "inputs": [
+        "data/reits/180605_2025FY.txt"
+      ],
+      "groundtruth": null
+    },
+    {
+      "doc_id": "180607_2025FY",
+      "task_id": "A",
+      "track": "reits",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 1,
+      "prompt": "prompts/reits_A.txt",
+      "system": "prompts/system_reits_A.txt",
+      "inputs": [
+        "data/reits/180607_2025FY.txt"
+      ],
+      "groundtruth": null
+    },
+    {
+      "doc_id": "180701_2025FY",
+      "task_id": "A",
+      "track": "reits",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 1,
+      "prompt": "prompts/reits_A.txt",
+      "system": "prompts/system_reits_A.txt",
+      "inputs": [
+        "data/reits/180701_2025FY.txt"
+      ],
+      "groundtruth": null
+    },
+    {
+      "doc_id": "508028_2025FY",
+      "task_id": "A",
+      "track": "reits",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 1,
+      "prompt": "prompts/reits_A.txt",
+      "system": "prompts/system_reits_A.txt",
+      "inputs": [
+        "data/reits/508028_2025FY.txt"
+      ],
+      "groundtruth": null
+    },
+    {
+      "doc_id": "508056_2025FY",
+      "task_id": "A",
+      "track": "reits",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 1,
+      "prompt": "prompts/reits_A.txt",
+      "system": "prompts/system_reits_A.txt",
+      "inputs": [
+        "data/reits/508056_2025FY.txt"
+      ],
+      "groundtruth": null
+    },
+    {
+      "doc_id": "508060_2025FY",
+      "task_id": "A",
+      "track": "reits",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 1,
+      "prompt": "prompts/reits_A.txt",
+      "system": "prompts/system_reits_A.txt",
+      "inputs": [
+        "data/reits/508060_2025FY.txt"
+      ],
+      "groundtruth": null
+    },
+    {
+      "doc_id": "508068_2025FY",
+      "task_id": "A",
+      "track": "reits",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 1,
+      "prompt": "prompts/reits_A.txt",
+      "system": "prompts/system_reits_A.txt",
+      "inputs": [
+        "data/reits/508068_2025FY.txt"
+      ],
+      "groundtruth": null
+    },
+    {
+      "doc_id": "508087_2025FY",
+      "task_id": "A",
+      "track": "reits",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 1,
+      "prompt": "prompts/reits_A.txt",
+      "system": "prompts/system_reits_A.txt",
+      "inputs": [
+        "data/reits/508087_2025FY.txt"
+      ],
+      "groundtruth": null
+    },
+    {
+      "doc_id": "508096_2026Q2",
+      "task_id": "A",
+      "track": "reits",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 1,
+      "prompt": "prompts/reits_A.txt",
+      "system": "prompts/system_reits_A.txt",
+      "inputs": [
+        "data/reits/508096_2026Q2.txt"
+      ],
+      "groundtruth": null
+    },
+    {
+      "doc_id": "prospectus_xiamen_huoju",
+      "task_id": "B",
+      "track": "reits",
+      "input_mode": "text",
+      "pages": [],
+      "runs": 1,
+      "prompt": "prompts/reits_B_chunk.txt",
+      "system": "prompts/system_reits_B.txt",
+      "inputs": [
+        "data/reits/prospectus_1511p.txt"
+      ],
+      "groundtruth": null
+    }
+  ],
+  "derived": [
+    {
+      "task_id": "T3",
+      "from": [
+        "li_us_20f_fy2025:T2",
+        "li_hk_ar_fy2025:T2"
+      ],
+      "metrics": [
+        "revenue",
+        "gross_profit",
+        "net_income",
+        "total_assets",
+        "cash_and_equivalents",
+        "deliveries_total"
+      ]
+    }
+  ],
+  "hashes": {
+    "prompts": {
+      "prompts/T1.txt": "922a3a04c7d6cc7ba4aafd887b9841dc48a255f15962d4318d7b15dac1cd2a5f",
+      "prompts/T2.txt": "ec4a083d5363379b41458220821ed03b52521373f2cd0b2a36ac17a0ad3a1ac3",
+      "prompts/T4.txt": "69ede3e905e6ef03c729e4ce42025dd90ba11c09ace196427fc1e3e17b7d820a",
+      "prompts/T5_li_hk_listing_doc_2021.txt": "c617eec519d66dca32b0327497039b65a2862cc09b9d34bfcfa2cca2712cc751",
+      "prompts/T5_seres_a_annual_2025.txt": "2b0ba7ff687f1eb78d3d5d4a51b568bc727a95995efdd300244f7cc38f5e2008",
+      "prompts/T6.txt": "be31b2139b323cf3f091518a9dd60616c9b27dbab7e6795b89857fc924be20e4",
+      "prompts/T7.txt": "a99e0aa115c40f001b157f4d449a7dd8d45c28c8cb1e77548075a2161986b8d8",
+      "prompts/reits_A.txt": "f38060382f56b28e06b600733c6d576758b8a77550fec7c098316eaceb6f8419",
+      "prompts/reits_B_chunk.txt": "b6a44b83468413e50982fb44b47e602d1386338aa747c58db39a226c1f0ba945",
+      "prompts/system_T6.txt": "db5c332653c33ea0df0c4d5ed673264c2a713666638e093316edd29d8a22dbdf",
+      "prompts/system_T7.txt": "3f7068e1bf5ec5e988b1ad879fc32e8beaf933255f74a925df32087a150bd4ae",
+      "prompts/system_reits_A.txt": "e5a00cdbb6769cf97da8717544ca0308ae3b560ff6d63715bcdee2b65790fc50",
+      "prompts/system_reits_B.txt": "db4f0fb7659d2cc2756c5cdc69ffa19a8c1bb60bc9bb86fe656065ee20714715",
+      "prompts/system_standard.txt": "bd92cdbe68d53af60d54824e862fdcb60de14aad7900747b11d844fd47fd10e4"
+    },
+    "inputs": {
+      "data/text/delivery_2026-03.txt": "50e693309104fee9c4561fe4b4df0cdfc04a10dc320d467bf04082e4b0fc9956",
+      "data/text/delivery_2026-04.txt": "fe17ef3301be54c3be3b9d65b03f520d0fe14e6b48b0bdbaf33bf844b1a7444a",
+      "data/text/delivery_2026-05.txt": "3c5fd65881ec7931ed374252721ef1e027b4ef81c1909a5acc765765b7bd4525",
+      "data/text/delivery_2026-06.txt": "ad9139d2c2667e2aea20942720ce54553641aa9d569b734739de0f006555f2e1",
+      "data/text/delivery_2026-07.txt": "6f3e095ed7356cf609102f67ae2dc725205a2e70f72382ff9fbfa38bbe92f3de",
+      "data/text/delivery_2026-08.txt": "ef52e06512f8b3d84d20073fe7508ba5ecbbd29e5439560bafc971f4f0638999",
+      "data/text/delivery_2026-09.txt": "35c50590e9ab27ea0be968d8a00fa41cebec75f46846db4e206771e5dc309778",
+      "data/text/delivery_2026-10.txt": "9efe04abff5669ce08fb2e56baaa0f16d7570139e02c3b07091e36371035bd29",
+      "data/text/production_sales_flash_2026-05.txt": "844bf362432d263ec35f8897d1b660ee403abb2d5b0a0110b158464a5c230abd",
+      "data/text/production_sales_flash_2026-06.txt": "b1c60079571911903b3f6ac565cd7c0f0aa8e3545e8119f8071de7d365bded9b",
+      "data/text/production_sales_flash_2026-07.txt": "8dff4e0ea4404030a548644239b64a808f29b6e7bef09d6af1a25701ac19da03",
+      "data/text/production_sales_flash_2026-08.txt": "3192e57ce9ab16d42561120c07b6ee2cbdaa280ef669d2a3731e1b31afc6052d",
+      "data/text/production_sales_flash_2026-09.txt": "981dfbc37f149f070dc2dc457b2f5c22864e480a9b98d9efcae7ef3d7573a2a8",
+      "data/text/production_sales_flash_2026-10.txt": "d6445a5812f3a243831453a4311ff4a9608eb86ba20458c236a41fe6df60cc30",
+      "data/text/us_20f_fy2025.txt": "d89f2f9f227946d1bf5cf84759c3e3ff9a0dd202ece7fa3141c0c0f7b905105e",
+      "data/text/hk_annual_report_fy2025_zh.txt": "f50a3e4c63d0adf14b5e08f6927b846104755d698e75c1216bdda2d446f93a0f",
+      "data/text/a_share_annual_report_2025.txt": "ebf4a917ec2904ad238e64759b98abba94fd931adce6b642dcfc1319a06f128c",
+      "data/text/hk_listing_doc_2021_global_offering_zh.txt": "71c1c4d637f12d99b9976d32213f594ea799af7b1fc391298489bab5b78a8654",
+      "data/pages/hk_listing_doc_2021_global_offering_zh/p0198.png": "73fc83ccbba2b232fb654ce0383912ef53f432aed0c799d139f5f4fc202c9e2f",
+      "data/pages/hk_listing_doc_2021_global_offering_zh/p0206.png": "f923e7c8213db3b60d2cde8de69491feb7ca969bdfc83afe27639e1a80a7e0ff",
+      "data/pages/hk_listing_doc_2021_global_offering_zh/p0208.png": "bc3c96e78f3571a37c7f9be5bd7b74bd361532255415cdda03793ffccfd5a10d",
+      "data/pages/a_share_annual_report_2025/p0011.png": "711872a7a9519b16a8f9251e5e0e654f6959dcc8ed20f6c7e32fdb3f6f304cb0",
+      "data/pages/a_share_annual_report_2025/p0075.png": "ef846d24339b34f3e654a3cec45c6549af9ca754be1e0e9a7c5bd662f347ff9f",
+      "data/text/legal_seres_asset_purchase.txt": "fffb2937b99ae476df45eed8e08cc3f6fbac7af9ce5826411b61c264b4810da7",
+      "data/text/legal_byd_private_placement.txt": "21bacadb12f7d176042c7ace23476efd58909b5af95133177dd12c63fd36532e",
+      "data/text/legal_changan_private_placement.txt": "738f8b193e9638e23c7736c4a9f918fa62b8b32f4e93658c9d6b1c1ba5f19e66",
+      "data/pages/legal_seres_main_scanned/p0001.png": "0ca702f4cb78867560c9176bc322ed7144a2b4d77341f6873ee355abecd25739",
+      "data/pages/legal_seres_main_scanned/p0002.png": "fb5b5d2e67964cffb60fb4501098d349956b43712e736f6e795ff3e21de150c6",
+      "data/pages/legal_seres_main_scanned/p0003.png": "8c99e82b277f33f2beffdfeb3fa88e84bc7db0fef047f633d9a2b327fd9fb5b3",
+      "data/pages/legal_seres_main_scanned/p0004.png": "8a02f591f96d0eff588ad8a8b0201865c4baf88aa34c09feb53565009556f855",
+      "data/pages/legal_seres_main_scanned/p0054.png": "7ed63ea97dd55e003267694b275b9253b6d424b4b2813ec7e1f39db1a0fc6fa5",
+      "data/pages/legal_seres_main_scanned/p0055.png": "d1f0ed8e3dcc40fbc00098566afddfaba4a5eed1d642f4cf16272a627b7d85e7",
+      "data/pages/legal_seres_asset_scanned/p0001.png": "374c3df51e9b2bc0e07e40d547ef61514304dd17d64b8d73e21297d7691bf946",
+      "data/pages/legal_seres_asset_scanned/p0002.png": "20015f09f2c646336e031bd84c2a104ac5e598aed56df26fce52aec87afa4070",
+      "data/pages/legal_seres_asset_scanned/p0003.png": "4a3105a807883d2563dd9e467ca7f8d7af2473dd8ee885b017b8425584b284aa",
+      "data/pages/legal_seres_asset_scanned/p0004.png": "9191b6b314aa7e63807600c3c762d780acc832ce990a109fb86accb453001536",
+      "data/pages/legal_seres_asset_scanned/p0194.png": "81beb6ee205661eed6ff70c6b878338f60ed135513de61a1dd25be5423107b64",
+      "data/pages/legal_seres_asset_scanned/p0195.png": "0ef5bb282da19dcf4bae76e9b9a4c0554d38cac7045e8378a22820275124eb0e",
+      "data/pages/scanned_byd_csrc_ipo_approval_2011/p0001.png": "e71564abfa6443b9a8eff126e0af7e3e24ec01b3a65eef887272988b73574a1b",
+      "data/pages/scanned_byd_csrc_ipo_approval_2011/p0002.png": "e267d80e3b25e7e9903518c06d122187a5285d9fc1ac8b3c4de5684ab4d361c7",
+      "data/pages/scanned_seres_holder_reply_seal_2016/p0001.png": "88a246d38774426ae7c346d9eb823aac09f511afe1a3d13a5d0fd990f7796b87",
+      "data/pages/scanned_seres_legal_opinion_sign_2016/p0001.png": "5f59bf16c90f20ace08b2170c9e23636b1e1cf13a204686f2b11cb3f9527b9ac",
+      "data/pages/scanned_seres_legal_opinion_sign_2016/p0002.png": "8dfec6a46f923f73e615e24f3e68199461d330fe3af740f20fe0a3e8cd632954",
+      "data/pages/scanned_seres_legal_opinion_sign_2016/p0003.png": "de98d39cec41f21b9d171a55f5ef464e74242ad79d0b31159705f3e71a09d2bd",
+      "data/pages/scanned_seres_legal_opinion_sign_2016/p0004.png": "07a3de32370cb9f64aa0be90ad3464b46ad97b43c414a7a39d296f7a05286ca8",
+      "data/reits/508021_2024FY.txt": "87a7130cc718360b420ce769dcf619e98b32d9dc317652e119266cd70b4d902d",
+      "data/reits/180102_2025FY.txt": "c9390c22587b575125f4d8e56448d26f7f62c192233d2c6fce35faa45c563542",
+      "data/reits/180202_2025FY.txt": "df4132fc86a8d0a844d9d9769def777a6f3db2dbafeb161def934c18b3dcfe7e",
+      "data/reits/508007_2025FY.txt": "c95a09dc0b685a4f1c0d9a63f60e659c2e343d53e5114663d6d07302d48642f2",
+      "data/reits/180301_2025FY.txt": "34e306cab488543eb7e0f386e01fe22a8ad6456097e6527cb97517021f85611c",
+      "data/reits/180501_2025FY.txt": "d2ac515f2e6e5025ca19ed3edec5c6d182b111523f52b80ae135e8874fb7212d",
+      "data/reits/180601_2025FY.txt": "6d4c0a5b5c324cd2ff377d773a58a90c335861cb459ca6929f64a42e8747afc1",
+      "data/reits/180605_2025FY.txt": "e57c2f7277a4a6a81f4a559c7efa0358ceb04679545efb932e7e3eb1d23aa17f",
+      "data/reits/180607_2025FY.txt": "dd6f9af2eb8a2ebe88d57142f09ef1d001e04ffa68a731286c86c058e8202ad3",
+      "data/reits/180701_2025FY.txt": "aef7998cdb34633cb4ca906d46ad0304baff7c68b14d46eb202abf667904d14d",
+      "data/reits/508028_2025FY.txt": "5d12d912b7a9237c47e12b823d2c2364a0ced5909def8c37e2bcdc0b48f2e1c2",
+      "data/reits/508056_2025FY.txt": "5e7e895221524c46273409e74606f6d634655115f1d1fc468f4e8dcd8936fd25",
+      "data/reits/508060_2025FY.txt": "a3370d4de4ddf285ccbb607b192c29e8f269de38f3ff973a2985e8f424a4abd2",
+      "data/reits/508068_2025FY.txt": "55020c3cec92066a31e192a477b872c45f4058794ca88032e44d4fac1cad752c",
+      "data/reits/508087_2025FY.txt": "f0aa548176ae75d8efbda52056686f7fecafc6107b953b147d1bb7c772297e16",
+      "data/reits/508096_2026Q2.txt": "a368c19db9faf405a46dac11d29ca20546b27aece2f7dc62f225c78b6f380d0d",
+      "data/reits/prospectus_1511p.txt": "e9dd196dd0a2a1c8b10a9fbbefa82129fc0002e68330d4f217269884416e8ad3"
+    },
+    "groundtruth": {
+      "groundtruth/li_us_delivery_2026-03__T1.json": "db0b536cf04389f8c77721dd02d95dff486d850cc27c88e66295d44dffa47e91",
+      "groundtruth/li_us_delivery_2026-04__T1.json": "a855f69dd43de908e3838ee4320ccc3796f53d50e36d4d9ab9942f7847829fa2",
+      "groundtruth/li_us_delivery_2026-05__T1.json": "6caac48b40b4bb57e7b11dcefb51bab020362466c0425a671557de7375254b63",
+      "groundtruth/li_us_delivery_2026-06__T1.json": "f6a940af5f53d8af7639508b63e02a2932496f25fa03f66935a6c10e7a4b2630",
+      "groundtruth/li_us_delivery_2026-07__T1.json": "aaf685597545dae07b864586c24a9a70987e9733cfe40c6dae88f1c2ba85292f",
+      "groundtruth/li_us_delivery_2026-08__T1.json": "f8557c29add4171b8fa69e5710aa3647aac46823de2f52d070b40b7f1cfa3818",
+      "groundtruth/li_us_delivery_2026-09__T1.json": "58b7bc87ab47304d3a9be2b030f9c1a17f2f9ad6fb9617d117479c1f01e4d245",
+      "groundtruth/li_us_delivery_2026-10__T1.json": "e4c1f854a88812b235cb7ab0637c41f62e4939287fd5b350d10c2e2f170c3ba7",
+      "groundtruth/seres_a_prod_sales_2026-05__T1.json": "2ec067aead69527be830acb4f799b47b80394aa7f90a40d9448bf41e207c571a",
+      "groundtruth/seres_a_prod_sales_2026-06__T1.json": "e4bf432b5f58dfac80be086b42488b7f7b6b3cdb20f0610a2645dd84d074f85a",
+      "groundtruth/seres_a_prod_sales_2026-07__T1.json": "b3f2f832de14f26fb469fef6cdd0d689dca98386e7ebcef5bd915eb94dcc2768",
+      "groundtruth/seres_a_prod_sales_2026-08__T1.json": "621d93486d248bd7d921b7a5482b541904bad9a07d997c7613c7bbbce9bd6c82",
+      "groundtruth/seres_a_prod_sales_2026-09__T1.json": "2035e6e0735240e55d6df9ed10d61b5ec0b2ff1cd9fb54808261409f40c50915",
+      "groundtruth/seres_a_prod_sales_2026-10__T1.json": "44d7825c192ebaf1dbe175698bd2de504f9b21dc94cbd134acf8890832070682",
+      "groundtruth/li_us_20f_fy2025__T2.json": "57d970d038070e58746711d62bb7c0fe563d60d95e672bdd30f702fa61014917",
+      "groundtruth/li_hk_ar_fy2025__T2.json": "cfb69765549caf7eefe29e623dfb96158d06d892aab4710c9dc3b58e9ef930d5",
+      "groundtruth/seres_a_annual_2025__T2.json": "b0d2742c6bf4de9f4e9b13f3acfabe80a4f2ac78d0ffdd803eb1a8dab0c07f35",
+      "groundtruth/li_hk_listing_doc_2021__T2.json": "89b3e69ecf4a5b73628d34d6fcbeae28896a1c99e8374afcbe374a2d60a30b29",
+      "groundtruth/li_hk_listing_doc_2021__T5.json": "a392ccf1657e5ecbe1ed007449208731842c2bea7e4110e1051363f83ea32373",
+      "groundtruth/seres_a_annual_2025__T5.json": "4791a68a528e1796dafbeaee7c5c7d172ba9da58d046c29b6a605cae70c81bb5",
+      "groundtruth/hard/legal_seres_asset_purchase__T6.json": "1f630a9033cea34f8ecc5d8b49ad95d9f0a329fe30f0dd00ac2d71ef36a475c0",
+      "groundtruth/hard/legal_byd_private_placement__T6.json": "96d5bbdc4f80cbe1cf86c7ec69a29c5f2983697320e25a3aa89df67d98377a2b",
+      "groundtruth/hard/legal_changan_private_placement__T6.json": "5dcce3cc35c72c5ff096e61b65c297dfc5dc0f3fd5ce32ce19e1e8fa87a14579",
+      "groundtruth/hard/legal_seres_main_scanned__T7.json": "31c5c538abcbe38cfaa92d46028711da92846f18a2d544d4ffdac116ed12c0c7",
+      "groundtruth/hard/legal_seres_asset_scanned__T7.json": "b010a8ade911bab5d7439f0117575bd3c9b548d702d224be9161e803eca48277",
+      "groundtruth/hard/scanned_byd_csrc_ipo_approval_2011__T7.json": "d81fea216ef3a6719abcb466776b6fe0e7161f3fa2688518a0d22f078453e771",
+      "groundtruth/hard/scanned_seres_holder_reply_seal_2016__T7.json": "0fd729dce5e5b879198c5471dee2e20050d8c534a1d42ce767086b92ac70d822",
+      "groundtruth/hard/scanned_seres_legal_opinion_sign_2016__T7.json": "dbccbb7833838646efaac411a95ac6f78ca831341156b42e488e8ac474caa9e2",
+      "groundtruth/target_periods.json": "12aaba97ede2ffd700b7b92087107c31bbbc20ae9415a729a49f0d90c88cd0fd"
+    },
+    "scorers": {
+      "scripts/score.py": "3597c23b3d1e1ddf694c7b2beb46088efb4164ab6ebc2c37f57f31a6355e7c36",
+      "scripts/score_hard.py": "548cc5bd4fc389bc421fc7bc8013dfedafd7065bcedf42504fad404d82fd3ff6",
+      "scripts/score_t3.py": "9074fc86bb495ede1b85dfedc4b0ae19f2190bfe53f16c6b89ff19fa07c8cac7",
+      "scripts/score_reits.py": "5b5d70b7b6261a3a7e1c64b8008f373ef54744ceb8107ad14eac41aef0918e69",
+      "scripts/score_all.py": "6887fc49d6c6d389efd60d98d13aba51ccd8358de8661203271f33a30344c3a6",
+      "scripts/run_eval.py": "4299941949ee874f186ca1a447b4e32c0e8c311f7d698702017711674a1ad543",
+      "scripts/make_taskpack.py": "9d4562366f4b6af1dab6be89989a192b2ffa1c31966aaac7a94093fa0d737193",
+      "scripts/parse_outputs.py": "5d7db61c9cae0cd2d2dda223855130ca637561e9d0a2378c7fa4f2e88d47d8eb"
+    }
+  }
+}

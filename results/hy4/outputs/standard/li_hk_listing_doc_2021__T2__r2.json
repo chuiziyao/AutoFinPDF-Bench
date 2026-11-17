@@ -1,0 +1,397 @@
+{
+  "meta": {
+    "company": "理想汽車 / Li Auto Inc.",
+    "market": "HK",
+    "doc_type": "listing_document",
+    "fiscal_period": "FY2020",
+    "currency": "CNY",
+    "accounting_standard": "US_GAAP"
+  },
+  "statements": [
+    {
+      "statement": "income_statement",
+      "item": "revenue",
+      "period": "FY2020",
+      "value": 9456609,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 25
+    },
+    {
+      "statement": "income_statement",
+      "item": "revenue",
+      "period": "FY2019",
+      "value": 284367,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 25
+    },
+    {
+      "statement": "income_statement",
+      "item": "cost_of_revenue",
+      "period": "FY2020",
+      "value": -7907270,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 25
+    },
+    {
+      "statement": "income_statement",
+      "item": "cost_of_revenue",
+      "period": "FY2019",
+      "value": -284462,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 25
+    },
+    {
+      "statement": "income_statement",
+      "item": "gross_profit",
+      "period": "FY2020",
+      "value": 1549339,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 25
+    },
+    {
+      "statement": "income_statement",
+      "item": "gross_profit",
+      "period": "FY2019",
+      "value": -95,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 25
+    },
+    {
+      "statement": "income_statement",
+      "item": "operating_expenses",
+      "period": "FY2020",
+      "value": -2218676,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 25
+    },
+    {
+      "statement": "income_statement",
+      "item": "operating_expenses",
+      "period": "FY2019",
+      "value": -1858519,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 25
+    },
+    {
+      "statement": "income_statement",
+      "item": "operating_income",
+      "period": "FY2020",
+      "value": -669337,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 26
+    },
+    {
+      "statement": "income_statement",
+      "item": "operating_income",
+      "period": "FY2019",
+      "value": -1858614,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 26
+    },
+    {
+      "statement": "income_statement",
+      "item": "net_income",
+      "period": "FY2020",
+      "value": -151657,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 26
+    },
+    {
+      "statement": "income_statement",
+      "item": "net_income",
+      "period": "FY2019",
+      "value": -2438536,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 26
+    },
+    {
+      "statement": "income_statement",
+      "item": "net_income_attributable",
+      "period": "FY2020",
+      "value": -791985,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 26
+    },
+    {
+      "statement": "income_statement",
+      "item": "net_income_attributable",
+      "period": "FY2019",
+      "value": -3281607,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 26
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "total_assets",
+      "period": "FY2020",
+      "value": 36373276,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 28
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "total_assets",
+      "period": "FY2019",
+      "value": 9513422,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 28
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "total_liabilities",
+      "period": "FY2020",
+      "value": 6569679,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 28
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "total_liabilities",
+      "period": "FY2019",
+      "value": 4932291,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 28
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "total_equity",
+      "period": "FY2020",
+      "value": 29803597,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 28
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "total_equity",
+      "period": "FY2019",
+      "value": 4581131,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 28
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "cash_and_equivalents",
+      "period": "FY2020",
+      "value": 8938341,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 28
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "cash_and_equivalents",
+      "period": "FY2019",
+      "value": 1296215,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 28
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "short_term_investments",
+      "period": "FY2020",
+      "value": 19701382,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 28
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "short_term_investments",
+      "period": "FY2019",
+      "value": 2272653,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 28
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "accounts_payable",
+      "period": "FY2020",
+      "value": 3160515,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 28
+    },
+    {
+      "statement": "balance_sheet",
+      "item": "accounts_payable",
+      "period": "FY2019",
+      "value": 624666,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 28
+    },
+    {
+      "statement": "cash_flow",
+      "item": "operating_cash_flow",
+      "period": "FY2020",
+      "value": 3139804,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 30
+    },
+    {
+      "statement": "cash_flow",
+      "item": "operating_cash_flow",
+      "period": "FY2019",
+      "value": -1793710,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 30
+    },
+    {
+      "statement": "cash_flow",
+      "item": "investing_cash_flow",
+      "period": "FY2020",
+      "value": -18737725,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 30
+    },
+    {
+      "statement": "cash_flow",
+      "item": "investing_cash_flow",
+      "period": "FY2019",
+      "value": -2574836,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 30
+    },
+    {
+      "statement": "cash_flow",
+      "item": "financing_cash_flow",
+      "period": "FY2020",
+      "value": 24710697,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 30
+    },
+    {
+      "statement": "cash_flow",
+      "item": "financing_cash_flow",
+      "period": "FY2019",
+      "value": 5655690,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 30
+    },
+    {
+      "statement": "cash_flow",
+      "item": "capex",
+      "period": "FY2020",
+      "value": -675187,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 0
+    },
+    {
+      "statement": "cash_flow",
+      "item": "capex",
+      "period": "FY2019",
+      "value": -952901,
+      "unit": "thousand",
+      "currency": "CNY",
+      "page": 0
+    }
+  ],
+  "key_metrics": [
+    {
+      "statement": "metric",
+      "item": "gross_margin",
+      "period": "FY2020",
+      "value": 16.38,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 25
+    },
+    {
+      "statement": "metric",
+      "item": "vehicle_margin",
+      "period": "FY2020",
+      "value": 16.36,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 25
+    },
+    {
+      "statement": "metric",
+      "item": "operating_margin",
+      "period": "FY2020",
+      "value": -7.08,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 26
+    },
+    {
+      "statement": "metric",
+      "item": "net_margin",
+      "period": "FY2020",
+      "value": -1.6,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 26
+    },
+    {
+      "statement": "metric",
+      "item": "deliveries_total",
+      "period": "FY2020",
+      "value": 32624,
+      "unit": "count",
+      "currency": "CNY",
+      "page": 33
+    }
+  ],
+  "deliveries": [],
+  "events": [],
+  "uncertain": [
+    {
+      "field": "statements.eps_basic / eps_diluted / inventory / accounts_receivable",
+      "reason": "招股书「历史财务资料概要」页未列示每股亏损、存货及应收账款单列金额，按禁止编造原则不填列。"
+    },
+    {
+      "field": "statements.total_equity",
+      "reason": "取概要表「资产净额」行；招股书存在可转换可赎回优先股分类为夹层权益，资产净额与股东权益总额口径可能不同。"
+    },
+    {
+      "field": "statements.capex",
+      "reason": "取合并现金流量表「购买物业、厂房及设备以及无形资产」行（人民币千元），原文亦披露 2020 年资本开支人民币 675.2 百万元；该行所在页无明确物理页标注，page 填 0。"
+    },
+    {
+      "field": "key_metrics 各比率",
+      "reason": "招股书概要未直接列报毛利率/车辆毛利率/营业利润率/净利率百分比；此处按概要表收入、毛利、经营亏损、净亏损计算所得，FY2020 分别约 16.38%/16.36%/-7.08%/-1.60%。"
+    },
+    {
+      "field": "key_metrics.deliveries_total",
+      "reason": "按材料所列 2020 年四个季度交付量 2,896 / 6,604 / 8,660 / 14,464 辆加总为 32,624 辆，非原文单列数字。"
+    },
+    {
+      "field": "key_metrics.revenue_yoy / cash_and_short_term_investments",
+      "reason": "原文仅列示 2019 年与 2020 年收入金额，未列报收入同比百分比；亦未披露「现金状况」合计口径，故不填列。"
+    },
+    {
+      "field": "meta.fiscal_period",
+      "reason": "招股书业绩记录期为 2018–2020 年及 2021 年第一季度，此处以最近完整年度 FY2020 为本期、FY2019 为上年同期。"
+    }
+  ]
+}

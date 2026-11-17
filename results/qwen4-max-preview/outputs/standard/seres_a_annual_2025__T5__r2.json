@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "company": "赛力斯集团股份有限公司",
+    "market": "A",
+    "doc_type": "年度报告",
+    "fiscal_period": "FY2025",
+    "currency": "CNY",
+    "accounting_standard": "CAS"
+  },
+  "statements": [],
+  "key_metrics": [
+    {
+      "statement": "metric",
+      "item": "premium_fuel_sales",
+      "period": "FY2022",
+      "value": 308,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "premium_fuel_sales",
+      "period": "FY2023",
+      "value": 296,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "premium_fuel_sales",
+      "period": "FY2025",
+      "value": 166,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_penetration",
+      "period": "FY2019",
+      "value": 5,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_penetration",
+      "period": "FY2025",
+      "value": 59,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_sales",
+      "period": "FY2019",
+      "value": 16,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_sales",
+      "period": "FY2020",
+      "value": 33,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_sales",
+      "period": "FY2021",
+      "value": 66,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_sales",
+      "period": "FY2022",
+      "value": 128,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_sales",
+      "period": "FY2023",
+      "value": 180,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_sales",
+      "period": "FY2024",
+      "value": 198,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "premium_nev_sales",
+      "period": "FY2025",
+      "value": 250,
+      "unit": "wan",
+      "currency": "CNY",
+      "page": 11
+    },
+    {
+      "statement": "metric",
+      "item": "ownership_pct_xiaokang_to_seres",
+      "period": "FY2025",
+      "value": 22.99,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 75
+    },
+    {
+      "statement": "metric",
+      "item": "ownership_pct_xiaokang_to_yuan",
+      "period": "FY2025",
+      "value": 17.33,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 75
+    },
+    {
+      "statement": "metric",
+      "item": "ownership_pct_yuan_to_seres",
+      "period": "FY2025",
+      "value": 3.79,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 75
+    },
+    {
+      "statement": "metric",
+      "item": "ownership_pct_zhangxinghai_to_xiaokang",
+      "period": "FY2025",
+      "value": 50,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 75
+    },
+    {
+      "statement": "metric",
+      "item": "ownership_pct_zhangxinghai_to_yuan",
+      "period": "FY2025",
+      "value": 11.97,
+      "unit": "percent",
+      "currency": "CNY",
+      "page": 75
+    }
+  ],
+  "deliveries": [],
+  "events": [],
+  "uncertain": [
+    {
+      "field": "key_metrics.premium_nev_sales (FY2019-FY2025)",
+      "reason": "p11 图1柱状图无数据标签，按左轴0-300万辆刻度估读，存在约±3万辆误差"
+    },
+    {
+      "field": "key_metrics.premium_nev_penetration (FY2019, FY2025)",
+      "reason": "p11 图1折线无数据标签，按右轴0%-70%刻度估读，2019约5%、2025约59%（接近60%），存在约±1-2个百分点误差"
+    },
+    {
+      "field": "key_metrics.premium_fuel_sales (FY2022, FY2023)",
+      "reason": "p11 图2折线无数据标签，按0-350万辆刻度估读，2022约308、2023约296，存在约±3万辆误差；FY2025约166与正文披露166万辆一致"
+    }
+  ]
+}

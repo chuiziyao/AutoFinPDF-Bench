@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "company": "Li Auto Inc.",
+    "market": "US",
+    "doc_type": "delivery_update",
+    "fiscal_period": "2026-07",
+    "currency": "CNY",
+    "accounting_standard": "US_GAAP"
+  },
+  "statements": [],
+  "key_metrics": [],
+  "deliveries": [
+    {
+      "month": "2026-07",
+      "model": "total",
+      "count": 30468,
+      "page": 1
+    }
+  ],
+  "events": [],
+  "uncertain": [
+    {
+      "field": "meta.currency",
+      "reason": "公告为交付量更新，未披露任何金额或记账币种，按公司常规报告币种填列为CNY"
+    },
+    {
+      "field": "meta.accounting_standard",
+      "reason": "公告未说明会计准则，按公司SEC披露惯例填列为US_GAAP"
+    }
+  ]
+}

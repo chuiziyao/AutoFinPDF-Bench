@@ -1,0 +1,144 @@
+{
+  "fields": [
+    {
+      "name": "不动产项目整体-日均车流量",
+      "value": 18557,
+      "unit": "辆",
+      "period": "2025A",
+      "page": 11
+    },
+    {
+      "name": "不动产项目整体-日均车流量",
+      "value": 23146,
+      "unit": "辆",
+      "period": "2024A",
+      "page": 11
+    },
+    {
+      "name": "不动产项目整体-日均车流量",
+      "value": 7571,
+      "unit": "辆",
+      "period": "2025A",
+      "page": 11
+    },
+    {
+      "name": "不动产项目整体-日均车流量",
+      "value": 10456,
+      "unit": "辆",
+      "period": "2024A",
+      "page": 11
+    },
+    {
+      "name": "不动产项目整体-日均车流量",
+      "value": 10986,
+      "unit": "辆",
+      "period": "2025A",
+      "page": 11
+    },
+    {
+      "name": "不动产项目整体-日均车流量",
+      "value": 12690,
+      "unit": "辆",
+      "period": "2024A",
+      "page": 11
+    },
+    {
+      "name": "中金山东高速REIT-营业收入",
+      "value": 258245437.66,
+      "unit": "元",
+      "period": "2025A",
+      "page": 8
+    },
+    {
+      "name": "中金山东高速REIT-营业收入",
+      "value": 307329245.85,
+      "unit": "元",
+      "period": "2024A",
+      "page": 8
+    },
+    {
+      "name": "中金山东高速REIT-净利润",
+      "value": 65120233.74,
+      "unit": "元",
+      "period": "2025A",
+      "page": 8
+    },
+    {
+      "name": "中金山东高速REIT-净利润",
+      "value": 73812061.59,
+      "unit": "元",
+      "period": "2024A",
+      "page": 8
+    },
+    {
+      "name": "中金山东高速REIT-现金流分派率",
+      "value": 6.47,
+      "unit": "%",
+      "period": "2025A",
+      "page": 8
+    },
+    {
+      "name": "中金山东高速REIT-现金流分派率",
+      "value": 6.26,
+      "unit": "%",
+      "period": "2024A",
+      "page": 8
+    },
+    {
+      "name": "中金山东高速REIT-现金流分派率（年化）",
+      "value": 6.47,
+      "unit": "%",
+      "period": "2025A",
+      "page": 8
+    },
+    {
+      "name": "中金山东高速REIT-现金流分派率（年化）",
+      "value": 6.26,
+      "unit": "%",
+      "period": "2024A",
+      "page": 8
+    },
+    {
+      "name": "中金山东高速REIT-可供分配金额",
+      "value": 190503651.05,
+      "unit": "元",
+      "period": "2025A",
+      "page": 9
+    },
+    {
+      "name": "中金山东高速REIT-营业收入（项目公司）",
+      "value": 255921562.49,
+      "unit": "元",
+      "period": "2025A",
+      "page": 16
+    },
+    {
+      "name": "中金山东高速REIT-营业收入（项目公司）",
+      "value": 304382978.85,
+      "unit": "元",
+      "period": "2024A",
+      "page": 16
+    },
+    {
+      "name": "中金山东高速REIT-EBITDA（项目公司）",
+      "value": 195530966.32,
+      "unit": "元",
+      "period": "2025A",
+      "page": 16
+    },
+    {
+      "name": "中金山东高速REIT-EBITDA（项目公司）",
+      "value": 216313747.68,
+      "unit": "元",
+      "period": "2024A",
+      "page": 16
+    },
+    {
+      "name": "鄄菏高速项目-收费经营期限",
+      "value": 25,
+      "unit": "年",
+      "period": "2025A",
+      "page": 11
+    }
+  ]
+}

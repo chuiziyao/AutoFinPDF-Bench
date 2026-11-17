@@ -1,0 +1,116 @@
+{
+  "fields": [
+    {
+      "name": "不动产项目整体-WALT加权剩余租期",
+      "value": 2.00,
+      "unit": "年",
+      "period": "2025A",
+      "page": 17
+    },
+    {
+      "name": "不动产项目整体-WALT加权剩余租期",
+      "value": 2.17,
+      "unit": "年",
+      "period": "2024A",
+      "page": 17
+    },
+    {
+      "name": "华夏华润商业REIT-营业收入",
+      "value": 762299913.58,
+      "unit": "元",
+      "period": "2025A",
+      "page": 9
+    },
+    {
+      "name": "华夏华润商业REIT-营业收入",
+      "value": 641985940.06,
+      "unit": "元",
+      "period": "2024A",
+      "page": 9
+    },
+    {
+      "name": "华夏华润商业REIT-净利润",
+      "value": 55734549.19,
+      "unit": "元",
+      "period": "2025A",
+      "page": 9
+    },
+    {
+      "name": "华夏华润商业REIT-净利润",
+      "value": 12312039.93,
+      "unit": "元",
+      "period": "2024A",
+      "page": 9
+    },
+    {
+      "name": "华夏华润商业REIT-现金流分派率",
+      "value": 3.72,
+      "unit": "%",
+      "period": "2025A",
+      "page": 9
+    },
+    {
+      "name": "华夏华润商业REIT-现金流分派率",
+      "value": 3.75,
+      "unit": "%",
+      "period": "2024A",
+      "page": 9
+    },
+    {
+      "name": "华夏华润商业REIT-现金流分派率（年化）",
+      "value": 3.72,
+      "unit": "%",
+      "period": "2025A",
+      "page": 9
+    },
+    {
+      "name": "华夏华润商业REIT-现金流分派率（年化）",
+      "value": 4.18,
+      "unit": "%",
+      "period": "2024A",
+      "page": 9
+    },
+    {
+      "name": "华夏华润商业REIT-可供分配金额",
+      "value": 365063481.02,
+      "unit": "元",
+      "period": "2025A",
+      "page": 10
+    },
+    {
+      "name": "华夏华润商业REIT-营业收入（项目公司）",
+      "value": 754249801.49,
+      "unit": "元",
+      "period": "2025A",
+      "page": 20
+    },
+    {
+      "name": "华夏华润商业REIT-营业收入（项目公司）",
+      "value": 629930099.88,
+      "unit": "元",
+      "period": "2024A",
+      "page": 20
+    },
+    {
+      "name": "华夏华润商业REIT-EBITDA（项目公司）",
+      "value": 439213795.94,
+      "unit": "元",
+      "period": "2025A",
+      "page": 20
+    },
+    {
+      "name": "华夏华润商业REIT-EBITDA（项目公司）",
+      "value": 363265453.53,
+      "unit": "元",
+      "period": "2024A",
+      "page": 20
+    },
+    {
+      "name": "青岛万象城-WALT加权剩余租期",
+      "value": 2.00,
+      "unit": "年",
+      "period": "2025A",
+      "page": 14
+    }
+  ]
+}

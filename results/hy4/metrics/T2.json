@@ -1,0 +1,192 @@
+{
+  "aggregate": {
+    "precision": 0.9868,
+    "recall": 0.9371,
+    "f1": 0.9591,
+    "exact_match_rate": 0.9264,
+    "coverage": 0.9489,
+    "hallucination_rate": 0.0,
+    "value_error_rate": 0.0118,
+    "documents": 4,
+    "total_gt_fields": 182
+  },
+  "per_document": {
+    "li_hk_ar_fy2025__T2.json": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match_rate": 1.0,
+      "coverage": 1.0,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0,
+      "runs": 2,
+      "gt_fields": 50,
+      "pred_fields": 54,
+      "per_run_f1": [
+        1.0,
+        1.0
+      ],
+      "errors_r1": []
+    },
+    "li_hk_listing_doc_2021__T2.json": {
+      "precision": 0.9714,
+      "recall": 0.7727,
+      "f1": 0.8608,
+      "exact_match_rate": 0.7727,
+      "coverage": 0.7955,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0227,
+      "runs": 2,
+      "gt_fields": 44,
+      "pred_fields": 39,
+      "per_run_f1": [
+        0.8608,
+        0.8608
+      ],
+      "errors_r1": [
+        {
+          "type": "missing",
+          "key": [
+            "income_statement",
+            "eps_basic",
+            "FY2020",
+            "CNY"
+          ]
+        },
+        {
+          "type": "missing",
+          "key": [
+            "income_statement",
+            "eps_basic",
+            "FY2019",
+            "CNY"
+          ]
+        },
+        {
+          "type": "missing",
+          "key": [
+            "income_statement",
+            "eps_diluted",
+            "FY2020",
+            "CNY"
+          ]
+        },
+        {
+          "type": "missing",
+          "key": [
+            "income_statement",
+            "eps_diluted",
+            "FY2019",
+            "CNY"
+          ]
+        },
+        {
+          "type": "value_mismatch",
+          "key": [
+            "balance_sheet",
+            "total_equity",
+            "FY2019",
+            "CNY"
+          ],
+          "gt": -5674531,
+          "pred": 4581131,
+          "gt_unit": "thousand",
+          "pred_unit": "thousand"
+        },
+        {
+          "type": "missing",
+          "key": [
+            "balance_sheet",
+            "inventory",
+            "FY2020",
+            "CNY"
+          ]
+        },
+        {
+          "type": "missing",
+          "key": [
+            "balance_sheet",
+            "inventory",
+            "FY2019",
+            "CNY"
+          ]
+        },
+        {
+          "type": "missing",
+          "key": [
+            "balance_sheet",
+            "accounts_receivable",
+            "FY2020",
+            "CNY"
+          ]
+        },
+        {
+          "type": "missing",
+          "key": [
+            "balance_sheet",
+            "accounts_receivable",
+            "FY2019",
+            "CNY"
+          ]
+        },
+        {
+          "type": "missing",
+          "key": [
+            "metric",
+            "deliveries_total",
+            "FY2019",
+            "CNY"
+          ]
+        }
+      ]
+    },
+    "li_us_20f_fy2025__T2.json": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match_rate": 0.9574,
+      "coverage": 1.0,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0,
+      "runs": 2,
+      "gt_fields": 47,
+      "pred_fields": 55,
+      "per_run_f1": [
+        1.0,
+        1.0
+      ],
+      "errors_r1": []
+    },
+    "seres_a_annual_2025__T2.json": {
+      "precision": 0.9756,
+      "recall": 0.9756,
+      "f1": 0.9756,
+      "exact_match_rate": 0.9756,
+      "coverage": 1.0,
+      "hallucination_rate": 0.0,
+      "value_error_rate": 0.0244,
+      "runs": 2,
+      "gt_fields": 41,
+      "pred_fields": 44,
+      "per_run_f1": [
+        0.9756,
+        0.9756
+      ],
+      "errors_r1": [
+        {
+          "type": "value_mismatch",
+          "key": [
+            "metric",
+            "deliveries_total",
+            "FY2025",
+            "CNY"
+          ],
+          "gt": 516860,
+          "pred": 516900,
+          "gt_unit": "count",
+          "pred_unit": "count"
+        }
+      ]
+    }
+  }
+}

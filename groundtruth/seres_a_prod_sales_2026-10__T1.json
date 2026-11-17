@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "doc_id": "seres_a_prod_sales_2026-10",
+    "company_id": "seres",
+    "company": "赛力斯",
+    "market": "A",
+    "doc_type": "production_sales_flash",
+    "fiscal_period": "2026-10",
+    "currency": "CNY",
+    "accounting_standard": "CAS",
+    "_provenance": {
+      "source_snippet": "单位：辆\n产品名称\n产量\n销量\n本月\n本月同比\n本年累计\n累计同比\n本月\n本月同比\n本年累计\n累计同比\n新能源汽车\n24,728 -52.99%\n282,771\n-22.03%\n24,921\n-51.57%\n281,442\n-20.96%\n其中：赛力斯汽车\n21,781 -56.97%\n249,796\n-24.86%\n22,105\n-54.69%\n249,377\n-23.27%\n其他车型\n1,978 -42.47%\n24,452\n-36.98%\n2,116\n-27.73%\n28,756\n-26.17%\n合计\n26,706 -52.34%\n307,223\n-23.48%\n27,037\n-50.29%\n310,198\n-21.48%",
+      "page": 1,
+      "verified": false,
+      "verifier": null,
+      "verified_date": null
+    }
+  },
+  "statements": [],
+  "key_metrics": [],
+  "deliveries": [
+    {
+      "month": "2026-10",
+      "model": "NEV",
+      "count": 24921,
+      "page": 1
+    },
+    {
+      "month": "2026-10",
+      "model": "Seres",
+      "count": 22105,
+      "page": 1
+    },
+    {
+      "month": "2026-10",
+      "model": "Other",
+      "count": 2116,
+      "page": 1
+    },
+    {
+      "month": "2026-10",
+      "model": "Total",
+      "count": 27037,
+      "page": 1
+    }
+  ],
+  "events": [],
+  "uncertain": []
+}

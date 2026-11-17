@@ -1,0 +1,14 @@
+AutoFinPDF-Bench
+Copyright 2026 AutoFinPDF-Bench contributors
+
+This product includes software developed for the AutoFinPDF-Bench project
+(Apache License 2.0).
+
+Ground-truth annotations and derived extraction data (data/, groundtruth/)
+are additionally made available under CC BY 4.0
+(https://creativecommons.org/licenses/by/4.0/).
+
+Original disclosure documents referenced by data/manifest.json remain the
+property of their issuers (listed companies, fund managers, regulators);
+they are cited from official public disclosure channels for research purposes
+with source URLs and SHA-256 hashes recorded.

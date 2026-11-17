@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "company": "Li Auto Inc.",
+    "market": "US",
+    "doc_type": "月度交付更新公告",
+    "fiscal_period": "2026-05",
+    "currency": "USD",
+    "accounting_standard": "US_GAAP"
+  },
+  "statements": [],
+  "key_metrics": [],
+  "deliveries": [
+    {
+      "month": "2026-05",
+      "model": "total",
+      "count": 33350,
+      "page": 1
+    }
+  ],
+  "events": [],
+  "uncertain": [
+    {
+      "field": "meta.currency",
+      "reason": "公告未披露任何金额及币种，按SEC备案(Exhibit 99.1)默认填USD"
+    },
+    {
+      "field": "meta.accounting_standard",
+      "reason": "公告未说明会计准则，按美股上市公司惯例推定为US_GAAP"
+    },
+    {
+      "field": "deliveries.Li i6",
+      "reason": "“consistently exceeded 20,000 units”为模糊表述，无精确月度数字，不予抽取"
+    },
+    {
+      "field": "deliveries.cumulative",
+      "reason": "累计交付1,702,792辆属累计口径，按任务要求不输出"
+    }
+  ]
+}

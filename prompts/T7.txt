@@ -1,0 +1,1 @@
+【任务T7】下方为扫描件页面图像（无文本层）。请 OCR 识别并结构化抽取：文档标题/日期/类型、涉及主体(parties)、关键事实(key_facts：金额/数量/日期/编号等)、批准事项或结论(conclusions)，并给出 OCR 全文摘要(full_text_summary)。逐项附页码；识别不清的字段入 uncertain。只输出 JSON。

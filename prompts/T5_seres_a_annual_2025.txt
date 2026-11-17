@@ -1,0 +1,14 @@
+【任务T5】下方为赛力斯2025年报页面图像：p11 两幅行业销量图（无数据标签，须按坐标轴读图估读，单位万辆/百分比），p75 产权及控制关系方框图（百分比在图中）。
+请仅根据图像，把下列指标按图中数值结构化输出到 key_metrics（statement="metric", currency="CNY"），每条含 item/period/value/unit/page。
+p11 无数据标签，按坐标轴合理估读；ownership_pct_* 为图中持股百分数。行业口径，非公司交付量。
+单位严格按清单：thousand=千輛，wan=万辆，count=輛，percent=百分比；数值按图面原样。读不准的放 uncertain，不要编造。只输出 JSON。
+
+字段清单（item | periods | unit | page）：
+premium_fuel_sales | FY2022, FY2023, FY2025 | wan | 11
+premium_nev_penetration | FY2019, FY2025 | percent | 11
+premium_nev_sales | FY2019, FY2020, FY2021, FY2022, FY2023, FY2024, FY2025 | wan | 11
+ownership_pct_xiaokang_to_seres | FY2025 | percent | 75
+ownership_pct_xiaokang_to_yuan | FY2025 | percent | 75
+ownership_pct_yuan_to_seres | FY2025 | percent | 75
+ownership_pct_zhangxinghai_to_xiaokang | FY2025 | percent | 75
+ownership_pct_zhangxinghai_to_yuan | FY2025 | percent | 75
